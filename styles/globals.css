@@ -163,6 +163,13 @@ body .btn-primary:focus-visible {
     outline: none;
 }
 
+body .btn-primary-two {
+    background: var(--bgColorSecondary);
+    color: #fff;
+    border-color: transparent;
+    outline: none;
+}
+
 /* navigation bar design */
 .navbar-nav .nav-item a {
     color:var(--whiteColor);
@@ -224,7 +231,9 @@ body .btn-primary:focus-visible {
 .space5{
     padding-bottom: 30px;
 }
-
+.space10{
+    padding-bottom: 50px;
+}
 .footer li{
     padding-top: 6px;
     padding-bottom: 6px;
