@@ -1,0 +1,69 @@
+:root {
+   --primaryColor: #59AA47;
+   --secondaryColor:#8B8E8F;
+   --bgColorPrimary: #59AA47;
+   --bgColorSecondary: #5C5856;
+   --whiteColor:#fff;
+   --fontFamily: 'Poppins', sans-serif;
+}
+/* HeroBanner design */
+.herobanner {
+   background-image: url('/images/hero-banner.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 800px;
+}
+
+.section .inner-text {
+   padding-top: 30%;
+   color: var(--whiteColor);
+}
+
+.section .inner-text h1 {
+   font-weight: 600;
+}
+
+.section .inner-text p {
+   font-weight: 600;
+   padding-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+   .section .inner-text {
+      padding-top: 30%;
+      color: var(--whiteColor);
+   }
+
+   .section .inner-text h1 {
+      font-weight: 600;
+      font-size: 30px;
+   }
+}
+
+/* count design */
+.section-two{
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.count-design{
+   background-color: var(--bgColorPrimary);
+}
+.count-inner{
+   border-radius: 10px 0 0 10px; /* Adjust the pixel value as needed */
+  background-color: #ff0000; /* Red color, you can change it to any color code or name */
+  padding: 10px; /* Add padding as needed */
+}
+.count-inner h2{
+   padding-left: 10px;
+   font-weight: 600;
+   color: var(--whiteColor);
+}
+.count-inner h2 span{
+   font-size: 15px;
+}
+
+.count-design p{
+   padding-left: 60px;
+   font-size: 18px;
+   color:var(--whiteColor)
+}
