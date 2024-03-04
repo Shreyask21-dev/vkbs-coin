@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 export default function HomePage() {
   return (
@@ -224,6 +225,98 @@ export default function HomePage() {
         </div>
       </div>
 
+
+{/* client logo */}
+
+     {/* customlist-section */}
+     {/* <div className='section customlist-section'>
+                <div className='container'>
+                    <h4 className='mb-1 fs-4'>Join the list of our</h4>
+                    <h2 className='primarycolor fs-1 mb-4'>Satisfied Customers</h2>
+                    <Splide
+                        options={{
+                            perPage: 5,
+                            breakpoints: {
+                                991: {
+                                    perPage: 3,
+                                },
+                                767: {
+                                    perPage: 2,
+                                },
+                                640: {
+                                    perPage: 1,
+                                },
+                            },
+                            rewind: true,
+                            autoplay: true,
+                            interval: 6000,
+                            // type: 'fade',
+                            // speed: 2200
+                        }}
+                        aria-label="customList">
+                        <SplideSlide>
+                            <div className="clientlogo-item">
+                                <img src="https://wp.testbytes.net/wp-content/themes/testbyteswp-backend/images/p-2.png" alt="partners_logo"
+                                    className="img-responsive" />
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="clientlogo-item">
+                                <img src="https://wp.testbytes.net/wp-content/themes/testbyteswp-backend/images/p-1.png" alt="partners_logo"
+                                    className="img-responsive" />
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="clientlogo-item">
+                                <img src="https://wp.testbytes.net/wp-content/themes/testbyteswp-backend/images/p-6.png" alt="partners_logo"
+                                    className="img-responsive" />
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="clientlogo-item">
+                                <img src="https://wp.testbytes.net/wp-content/themes/testbyteswp-backend/images/p-7.png" alt="partners_logo"
+                                    className="img-responsive" />
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="clientlogo-item">
+                                <img src="https://wp.testbytes.net/wp-content/themes/testbyteswp-backend/images/p-9.png" alt="partners_logo"
+                                    className="img-responsive" />
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="clientlogo-item">
+                                <img src="https://wp.testbytes.net/wp-content/themes/testbyteswp-backend/images/p-10.png" alt="partners_logo"
+                                    className="img-responsive" />
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="clientlogo-item">
+                                <img src="https://wp.testbytes.net/wp-content/themes/testbyteswp-backend/images/p-11.png" alt="partners_logo"
+                                    className="img-responsive" />
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="clientlogo-item">
+                                <img src="https://wp.testbytes.net/wp-content/themes/testbyteswp-backend/images/p4.png" alt="partners_logo"
+                                    className="img-responsive" />
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="clientlogo-item">
+                                <img src="https://wp.testbytes.net/wp-content/themes/testbyteswp-backend/images/p-5.png" alt="partners_logo"
+                                    className="img-responsive" />
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="clientlogo-item">
+                                <img src="https://wp.testbytes.net/wp-content/themes/testbyteswp-backend/images/p-12.png" alt="partners_logo"
+                                    className="img-responsive" />
+                            </div>
+                        </SplideSlide>
+                    </Splide>
+                </div>
+     </div> */}
 
 
     </>

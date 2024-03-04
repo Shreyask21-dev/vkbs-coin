@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <nav className="head-footer-bg navbar navbar-expand-lg" id="customnavbar">
+    <nav className="head-footer-bg sticky-header  navbar navbar-expand-lg" id="customnavbar">
       <div className="container">
         <Link href='/' className="navbar-brand">
           <img src="/images/vkbs-logo.png" width='132' height='55' alt="logo" />

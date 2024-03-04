@@ -281,3 +281,9 @@ body .btn-primary-two {
     text-align: center;
     font-size: 16px;
 }
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
