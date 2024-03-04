@@ -56,7 +56,8 @@ body a {
     background: #555; 
 }
 .section {
-    padding-bottom: 100px;
+    padding-bottom:100px;
+    padding-top: 100px;
 }
 .inner-services img {
     margin-bottom: 18px;

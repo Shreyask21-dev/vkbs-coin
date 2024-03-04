@@ -49,13 +49,16 @@
    background-color: var(--bgColorPrimary);
 }
 .count-inner{
-   border-radius: 10px 0 0 10px; /* Adjust the pixel value as needed */
-  background-color: #ff0000; /* Red color, you can change it to any color code or name */
-  padding: 10px; /* Add padding as needed */
+   border-right: 2px solid #fff;
 }
 .count-inner h2{
    padding-left: 10px;
-   font-weight: 600;
+   font-weight: 700;
+   color: var(--whiteColor);
+}
+.count-inner-4 h2{
+   padding-left: 10px;
+   font-weight: 700;
    color: var(--whiteColor);
 }
 .count-inner h2 span{
@@ -63,7 +66,32 @@
 }
 
 .count-design p{
-   padding-left: 60px;
+  
    font-size: 18px;
-   color:var(--whiteColor)
+   color:var(--whiteColor);
+   text-align: revert-layer;
+}
+
+  /* {Turnkey MEP Solutions} */
+
+
+  .two-right {
+   background-image: url('/images/two-right-two.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* height: 800px; */
+}
+
+.two-right .inner-two {
+   display: flex;
+   align-items: baseline;
+   height: 100%;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: center;
+}
+
+.section span{
+   color: var(--bgColorPrimary);
+   font-size: 16px;
 }
