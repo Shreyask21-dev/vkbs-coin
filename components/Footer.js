@@ -16,18 +16,19 @@ export default function Footer() {
             <div className='col-lg-2'>
               <h5>Quick Links</h5>
               <ul className='footer-nav'>
-                <li><Link href="#">Our Story</Link></li>
-                <li><Link href="#">Projects</Link></li>
-                <li><Link href="#">Career</Link></li>
-                <li><Link href="#">Blog</Link></li>
+                <li><Link href="/out-story">Our Story</Link></li>
+                <li><Link href="/project">Projects</Link></li>
+                <li><Link href="/career">Career</Link></li>
+                <li><Link href="/blog">Blog</Link></li>
+                <li><Link href="/event">Event</Link></li>
               </ul>
             </div>
             <div className='col-lg-2'>
               <h5>Our Solutions</h5>
               <ul className='footer-nav'>
-                <li><Link href="#">MEP</Link></li>
-                <li> <Link href="#">After Sales Services</Link></li>
-                <li><Link href="#">Prefabrication</Link></li>
+                <li><Link href="/mep">MEP</Link></li>
+                <li> <Link href="/sales-services">After Sales Services</Link></li>
+                <li><Link href="/prefabrication">Prefabrication</Link></li>
                 
               </ul>
             </div>

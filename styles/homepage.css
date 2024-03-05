@@ -14,6 +14,13 @@
    height: 800px;
 }
 
+.inner-hero-banner {
+   background-image: url('/images/inner-banner.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 700px;
+}
+
 .section .inner-text {
    padding-top: 30%;
    color: var(--whiteColor);
@@ -159,8 +166,10 @@
    height: 100%;
    flex-direction: column;
    flex-wrap: nowrap;
-   padding-left: 25px;
    justify-content: center;
+}
+.bg-exp{
+   padding-left: 25px;
 }
 .expertise .bg-exp-data h6{
    color: var(--whiteColor);
@@ -177,8 +186,49 @@
    font-size: 15px;
 }
 
+.section .bg-exp-data {
+   /* border: 1px solid transparent; */
+   opacity: 1; /* Set the initial opacity */
+   transition: border-color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+   border-radius: 15px;
+ }
+ 
+ .section .bg-exp-data:hover {
+   border-color: var(--bgColorPrimary);
+   opacity: 0.8; 
+   border-radius: 15px;
+ }
+ 
+
 /* quality */
 
 .quality {
    background-color: #F2F2F2;
+}
+
+.inner-hero-banner .inner-text{
+   display: flex;
+   align-items: baseline;
+   height: 100%;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   padding-left: 25px;
+   justify-content: center;
+}
+
+.line {
+   background-color: var(--bgColorPrimary);
+   height: 5px;
+   width: 100px;
+}
+
+
+.section .primary-text {
+   text-align: center;
+   font-size: 36px;
+   font-weight: bold;
+   padding-bottom: 50px;
+}
+.section .primary-text span{
+ color: #fff;
 }

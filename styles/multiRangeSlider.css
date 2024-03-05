@@ -104,3 +104,56 @@
 	position: relative;
   }
   
+
+
+  /* customlist-section */
+.customlist-section {
+	background: var(--primaryColor);
+  }
+  .customlist-section .clientlogo-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	height: 150px;
+	padding: 30px 20px;
+	border: solid 1px var(--secondaryColor);
+  }
+  .splide {
+	padding-bottom: 50px;
+  }
+  .splide .splide__arrows {
+	display: flex;
+	justify-content: center;
+	width: 90px;
+	gap: 5px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+  }
+  .splide .splide__arrows button.splide__arrow {
+	position: relative;
+	left: 0;
+	top: 0;
+	transform: none;
+	width: 35px;
+	height: 35px;
+	background: var(--primaryColor);
+	opacity: 1;
+	color: #fff;
+	outline: none;
+	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  }
+  .splide .splide__arrows button.splide__arrow svg {
+	fill: #fff;
+  }
+  .splide .splide__arrows button.splide__arrow:hover {
+	background: var(--secondaryColor);
+  }
+  .splide .splide__pagination .splide__pagination__page {
+	background: var(--primaryColor);
+	outline: none;
+  }
+  .splide .splide__pagination .splide__pagination__page.is-active {
+	background: var(--secondaryColor);
+  }

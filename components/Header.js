@@ -21,50 +21,50 @@ export default function Header() {
             </li>
 
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link dropdown-toggle" href="/about-us" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 ABOUT US
               </Link>
               <ul className="dropdown-menu">
-                <li><Link className="dropdown-item " href="#">About ONE</Link></li>
-                <li><Link className="dropdown-item " href="#">About TWO</Link></li>
+                <li><Link className="dropdown-item" href="/about-us">About ONE</Link></li>
+                <li><Link className="dropdown-item" href="/about-us">About TWO</Link></li>
               </ul>
             </li>
 
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link dropdown-toggle" href="/solution" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 SOLUTIONS
               </Link>
               <ul className="dropdown-menu">
-                <li><Link className="dropdown-item " href="#">SOLUTIONS ONE</Link></li>
-                <li><Link className="dropdown-item " href="#">SOLUTIONS TWO</Link></li>
+                <li><Link className="dropdown-item " href="/solution">SOLUTIONS ONE</Link></li>
+                <li><Link className="dropdown-item " href="/solution">SOLUTIONS TWO</Link></li>
               </ul>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" href="/project">
                 PROJECTS
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" href="/sustainability">
                 SUSTAINABILITY
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" href="/career">
                 CAREER
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" href="news-and-event">
                 NEWS & EVENTS
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" href="/contact-us">
                 CONTACT US
               </Link>
             </li>
