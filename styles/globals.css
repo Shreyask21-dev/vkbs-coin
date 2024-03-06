@@ -364,8 +364,8 @@ p{
 }
 
 .sticky-header {
-    position: fixed;
-    top: 0;
+    position: fixed !important;
+    top: 0 !important;
     width: 100%;
     z-index: 2;
   }
