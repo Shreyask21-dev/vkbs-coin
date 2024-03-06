@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 
@@ -72,8 +71,6 @@ export default function HomePage() {
                 <p>Ongoing & Completed Projects </p>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
