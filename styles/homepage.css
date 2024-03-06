@@ -21,6 +21,10 @@
    height: 700px;
 }
 
+.inner-hero-banner p{
+   color: #fff;
+}
+
 .section .inner-text {
    padding-top: 20%;
    color: var(--whiteColor);
