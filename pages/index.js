@@ -104,6 +104,83 @@ export default function HomePage() {
           <div className='section-slider'>
             <h6>OUR EXPERTISE</h6>
             <h5>Our Solutions</h5>
+            <div className='space5'></div>
+            <Splide
+                        options={{
+                            perPage: 4,
+                            breakpoints: {
+                                991: {
+                                    perPage: 3,
+                                },
+                                767: {
+                                    perPage: 2,
+                                },
+                                640: {
+                                    perPage: 1,
+                                },
+                            },
+                            rewind: true,
+                            autoplay: true,
+                            interval: 6000,
+                            // type: 'fade',
+                            // speed: 2200
+                        }}
+                        aria-label="customList">
+                        <SplideSlide>
+                            <div className="solution-item solution-one">
+                                <img src="/images/soution-icon-1.png" alt="partners_logo"
+                                    className="img-responsive" />
+                                    <div className='solu-heading-tag'>Our MEP Services</div>
+                                    <span>Read More →</span>
+                            </div>
+                        </SplideSlide>
+                     
+
+                        <SplideSlide>
+                            <div className="solution-item">
+                                <img src="/images/solution-Icon-2.png" alt="partners_logo"
+                                    className="img-responsive" />
+                                     <div className='solu-heading-tag'>Integrated MEP Contracting</div>
+                            </div>
+                        </SplideSlide>
+
+                        <SplideSlide>
+                            <div className="solution-item">
+                                <img src="/images/solution-icon-three.png" alt="partners_logo"
+                                    className="img-responsive" />
+                                     <div className='solu-heading-tag'>Pre Fabrication</div>
+                            </div>
+                        </SplideSlide>
+
+                        <SplideSlide>
+                            <div className="solution-item">
+                                <img src="/images/solution-con-four.png" alt="partners_logo"
+                                    className="img-responsive" />
+                                     <div className='solu-heading-tag'>Retrofitting Services</div>
+                            </div>
+                        </SplideSlide>
+
+                        <SplideSlide>
+                            <div className="solution-item">
+                                <img src="/images/solution-con-four.png" alt="partners_logo"
+                                    className="img-responsive" />
+                                     <div className='solu-heading-tag'>Retrofitting Services</div>
+                            </div>
+                        </SplideSlide>
+
+                        
+
+                       
+
+
+                       
+
+                      
+                     
+                      
+                     
+                         
+                    </Splide>
           </div>
         </div>
       </div>
@@ -233,7 +310,6 @@ export default function HomePage() {
     
       <div className='section customlist-section'>
                 <div className='container'>
-
                     <h2 className='primary-text'>Trusted by more than <span>30,000</span> companies</h2>
                     <Splide
                         options={{

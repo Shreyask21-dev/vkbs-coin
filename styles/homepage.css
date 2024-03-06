@@ -232,3 +232,38 @@
 .section .primary-text span{
  color: #fff;
 }
+
+
+.solution-one{
+   background-image: url('/images/solution-one.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.solution-item{
+   display: flex;
+   align-items: baseline;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: nowrap;
+   margin: 15px;
+   justify-content: center;
+   border-radius: 10px;
+   height: 275px;
+   border: 1px solid #fff;
+}
+
+.section .section-slider .solu-heading-tag{
+   color:#fff;
+   font-size: 18px;
+   font-weight: bold;
+   padding-top: 15px;
+   align-items: center;
+   text-align: center;
+}
+
+.section .section-slider span{
+   color: var(--bgColorPrimary);
+   padding-top: 5px;
+   
+}

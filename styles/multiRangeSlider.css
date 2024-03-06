@@ -157,3 +157,29 @@
   .splide .splide__pagination .splide__pagination__page.is-active {
 	background: var(--secondaryColor);
   }
+
+
+  .section .section-slider .splide .splide__arrows {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    gap: 5px;
+    position: absolute;
+    /* bottom: 0; */
+    right: 10px !important;
+    top: -100px !important;
+	z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+	.section .section-slider .splide .splide__arrows {
+		display: flex;
+		justify-content: center;
+		width: 90px;
+		gap: 5px;
+		position: absolute;
+		right: 10px !important;
+		top: -45px !important;
+		
+	}
+}
