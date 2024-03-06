@@ -24,6 +24,9 @@
 .inner-hero-banner p{
    color: #fff;
 }
+.herobanner p{
+   color: var(--whiteColor);
+}
 
 .section .inner-text {
    padding-top: 20%;
