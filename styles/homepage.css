@@ -52,6 +52,13 @@
       font-weight: 600;
       font-size: 30px;
    }
+   .inner-two{
+      padding-bottom: 20px;
+   }
+   .expertise .bg-exp-data {
+     
+      height: 520px !important;
+  }
 }
 
 /* count design */
@@ -198,6 +205,8 @@
    opacity: 1; /* Set the initial opacity */
    transition: border-color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
    border-radius: 15px;
+   width: 100%;
+
  }
  
  .section .bg-exp-data:hover {
@@ -206,7 +215,12 @@
    border-radius: 15px;
  }
  
-
+ .expertise .col-lg-3 {
+   display: flex;
+   justify-content: center; /* Center horizontally */
+   align-items: center; /* Center vertically */
+   /* height: 100vh;  */
+ }
 /* quality */
 
 .quality {
