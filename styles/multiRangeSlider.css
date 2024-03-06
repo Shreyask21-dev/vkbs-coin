@@ -164,6 +164,7 @@
     justify-content: center;
     width: 90px;
     gap: 5px;
+	border-radius: 0%;
     position: absolute;
     /* bottom: 0; */
     right: 10px !important;
