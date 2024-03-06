@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '@/styles/globals.css'
 import '@/styles/homepage.css'
 import '@/styles/multiRangeSlider.css'
+import '@/styles/timeline.css'
 import Layout from "@/components/Layout";
 
 export default function App({ Component, pageProps }) {

@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 :root {
     --primaryColor: #59AA47;
@@ -169,6 +169,10 @@ body .btn-primary-two {
     border-color: transparent;
     outline: none;
 }
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
 
 /* navigation bar design */
 .navbar-nav .nav-item a {
@@ -280,6 +284,10 @@ body .btn-primary-two {
     color: var(--whiteColor);
     text-align: center;
     font-size: 16px;
+}
+
+.social-media-list{
+    padding-left: 15px
 }
 
 .sticky-header {

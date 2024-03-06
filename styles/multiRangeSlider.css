@@ -164,7 +164,7 @@
     justify-content: center;
     width: 90px;
     gap: 5px;
-	border-radius: 0%;
+	border-radius: 0% !important;
     position: absolute;
     /* bottom: 0; */
     right: 10px !important;
@@ -176,6 +176,7 @@
 	.section .section-slider .splide .splide__arrows {
 		display: flex;
 		justify-content: center;
+		border-radius: 0% !important;
 		width: 90px;
 		gap: 5px;
 		position: absolute;
