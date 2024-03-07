@@ -12,6 +12,7 @@ body {
     background: #fff;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 400;
+    box-sizing: border-box;
 }
 h1 {
     font-size: 60px;

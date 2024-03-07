@@ -20,7 +20,7 @@ export default function Companytimeline() {
       </div>
 
       {/* count design */}
-      <div className='timeline count-design'>
+      <div className='section-two count-design'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6'>

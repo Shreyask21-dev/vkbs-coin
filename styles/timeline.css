@@ -1,3 +1,13 @@
+
+:root {
+  --primaryColor: #59AA47;
+  --secondaryColor:#8B8E8F;
+  --bgColorPrimary: #59AA47;
+  --bgColorSecondary: #5C5856;
+  --whiteColor:#fff;
+  --fontFamily: 'Poppins', sans-serif;
+}
+
 .timeline{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -18,54 +28,166 @@
 
 
 /* ........... */
-/* styles/Home.module.css */
-.container-base {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-    text-align: center;
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline-start{
+  background-color: #F2F2F2;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.timeline-start h2{
+  font-size: 60px;
+  font-weight: bold;
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+.timeline .left .content{
+  background-color: var(--bgColorPrimary);
+}
+.content h2{
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.content p{
+  color: #fff;
+  text-align: center;
+}
+.content .content-body p{
+  color: var(--bgColorPrimary);
+  font-size: 20px;
+  text-align: center;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: var(--bgColorPrimary);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* container-time around content */
+.container-time {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container-time::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: white;
+  border: 4px solid var(--bgColorSecondary);
+  top: 58px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container-time to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container-time to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container-time (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 61px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--bgColorPrimary);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--bgColorPrimary);
+}
+
+/* Add arrows to the right container-time (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 60px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--bgColorSecondary);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--bgColorSecondary) transparent transparent;
+}
+
+/* Fix the circle for container-times on the right side */
+.right::after {
+  left: -13px;
+}
+
+/* The actual content */
+.content:hover {
+  transform: scale(1.1);
+  
+}
+.content {
+  padding: 20px 30px;
+  background-color: var(--bgColorSecondary);
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+ transition: transform 0.3s ease-in-out;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
   }
   
-  .timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  /* Full-width container-times */
+  .container-time {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
   }
   
-  .timelineItem {
-    display: flex;
-    margin-bottom: 20px;
-    opacity: 0;
-    transform: translateX(-50%);
-    animation: fadeIn 0.8s ease-out forwards;
+  /* Make sure that all arrows are pointing leftwards */
+  .container-time::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 18px;
   }
   
-  .timelineItem:nth-child(even) {
-    flex-direction: row-reverse;
+  /* Make all right container-times behave like the left ones */
+  .right {
+  left: 0%;
   }
-  
-  .timelineYear {
-    width: 60px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-  
-  .timelineContent {
-    padding: 10px;
-    border: 1px solid #3498db;
-    border-radius: 5px;
-    background-color: #fff;
-  }
-  
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
+}
