@@ -1,11 +1,4 @@
-:root {
-   --primaryColor: #59AA47;
-   --secondaryColor:#8B8E8F;
-   --bgColorPrimary: #59AA47;
-   --bgColorSecondary: #5C5856;
-   --whiteColor:#fff;
-   --fontFamily: 'Poppins', sans-serif;
-}
+
 /* HeroBanner design */
 .herobanner {
    background-image: url('/images/hero-banner.png');

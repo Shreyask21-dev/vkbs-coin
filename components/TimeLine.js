@@ -23,6 +23,7 @@ export default function TimeLine() {
         <div className='container'>
           <div class="timeline">
             <div class="container-time left">
+             
               <div class="content">
                 <h2>2005</h2>
                 <p>Company launched for HVAC Services</p>

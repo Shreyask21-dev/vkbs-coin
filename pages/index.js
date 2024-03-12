@@ -1,11 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
+import Head from 'next/head';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 
 export default function HomePage() {
   return (
     <>
+    <Head>
+      <title>VKBS</title>
+    </Head>
       {/* Hero banner design */}
       <div className='section herobanner'>
         <div className='container'>

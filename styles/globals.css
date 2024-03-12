@@ -7,6 +7,23 @@
     --bgColorSecondary: #5C5856;
     --whiteColor:#fff;
     --fontFamily: 'Poppins', sans-serif;
+
+    /* wordpress root file */
+    --e-global-color-primary: #59AA47;
+    --e-global-color-secondary: #8B8E8F;
+    --e-global-color-text: #8B8E8F;
+    --e-global-color-accent: #5C5856;
+    --e-global-typography-primary-font-family: "Poppins";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Poppins";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-size: 16px;
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-text-line-height: 22px;
+    --e-global-typography-text-letter-spacing: 0.3px;
+    --e-global-typography-accent-font-family: "Poppins";
+    --e-global-typography-accent-font-weight: 500;
 }
 body {
     background: #fff;
@@ -35,11 +52,17 @@ h6 {
 img {
     max-width: 100%;
 }
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
 
 body a {
     color: var(--primaryColor);
     text-decoration: none;
 }
+
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -170,11 +193,7 @@ body .btn-primary-two {
     border-color: transparent;
     outline: none;
 }
-p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #8B8E8F;
-}
+
 
 
 /* loader CSS */
@@ -372,3 +391,43 @@ p{
   }
 
   
+
+  /* project page design */
+  .project-bg{
+    background-color: #F2F2F2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .project-page .inner-page{
+    background-color: #fff;
+  }
+
+  .project-page ul {
+    list-style:none;
+  }
+  .project-page ul li{
+    color: #303030;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .project-page ul li .active{
+    font-size: 24px !important;
+    font-weight: bold;
+    border-bottom: 4px solid var(--bgColorPrimary);
+    border-radius: 0px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    
+  }
+
+  .project-page .inner-page h3{
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+
+  .project-page .inner-page h3 strong{
+    color: var(--bgColorPrimary);
+  }
