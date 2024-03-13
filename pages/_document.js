@@ -11,9 +11,9 @@ export default function Document() {
 
        <link rel='stylesheet' id='vkbs-style-css' href='https://vkbs.coinage.host/wp-content/themes/vkbs/style.css?ver=1.0.0' media='all' />
         {/* elementor links end */}
-        <meta http-equiv="cache-control" content="no-cache" />
-        <meta http-equiv="expires" content="0" />
-        <meta http-equiv="pragma" content="no-cache" />
+        <meta httpEquiv="cache-control" content="no-cache" />
+        <meta httpEquiv="expires" content="0" />
+        <meta httpEquiv="pragma" content="no-cache" />
       </Head>
       <body>
         <Main />

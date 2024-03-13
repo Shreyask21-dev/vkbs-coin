@@ -181,7 +181,7 @@ body .btn-primary:active,
 body .btn-default:active,
 body .btn-primary:focus-visible {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20) !important;
-    background: var(--secondaryColor) !important;
+    background: var(--secondaryColor);
     color: #fff !important;
     border-color: transparent !important;
     outline: none;
@@ -194,6 +194,20 @@ body .btn-primary-two {
     outline: none;
 }
 
+body .btn-job{
+    background: var(--whiteColor);
+    color: #303030;
+    border-radius: 5px;
+    border: solid 1px #303030;
+    width: 100%;
+}
+body .btn-job:hover{
+    background-color: var(--bgColorPrimary) !important;
+    color: #fff;
+    border-radius: 5px;
+    border: solid 0px #303030;
+    width: 100%;
+}
 
 
 /* loader CSS */
@@ -331,6 +345,10 @@ body .btn-primary-two {
 .space10{
     padding-bottom: 50px;
 }
+.space2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .footer li{
     padding-top: 6px;
     padding-bottom: 6px;
@@ -409,8 +427,15 @@ body .btn-primary-two {
   .project-page ul li{
     color: #303030;
     font-size: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 22px;
+  }
+
+  .project-page ul li :hover{
+    color: #59AA47;
+    background-color: #fff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
   }
 
   .project-page ul li .active{
@@ -420,6 +445,8 @@ body .btn-primary-two {
     border-radius: 0px;
     padding-top: 5px;
     padding-bottom: 15px;
+    padding-left: 5px;
+    background-color: #fff;
     
   }
 
@@ -431,3 +458,137 @@ body .btn-primary-two {
   .project-page .inner-page h3 strong{
     color: var(--bgColorPrimary);
   }
+
+
+  /* .........All Job Post.... */
+
+  .job-slider{
+    background-color: #F2F2F2;
+  }
+  .job-slider h4{
+    font-size: 50px;
+    font-weight: bold;
+    color: #303030;
+  }
+
+  .job-slider .job-item{
+    background-color: #fff;
+    padding: 15px 15px 15px 15px;
+    border-top: 4px solid var(--bgColorPrimary);
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .job-slider .job-item strong{
+     font-size: 12px;
+     color: #000;
+  }
+
+  .job-slider .job-item .job-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #303030;
+    padding-top: 20px;
+  }
+  .job-slider .job-item ul{
+    list-style: none;
+    display: flex;
+    padding: 0px;
+  }
+  .job-slider .job-item ul li{
+    list-style: none;
+    background-color: #F2F2F2;
+    color: #8B8E8F;
+    padding: 10px 25px 10px 25px;
+    border-radius: 7px;
+    margin: 5px;
+  }
+
+  .job-slider .job-item .job-description{
+    padding-top: 10px;
+  }
+
+
+
+  /* inner career page */
+
+
+  .section-carrers .year-class ul{
+    list-style: none;
+    display: flex;
+    padding: 0px;
+  }
+  .section-carrers .year-class ul li{
+    list-style: none;
+    background-color: #F2F2F2;
+    color: #8B8E8F;
+    padding: 10px 25px 10px 25px;
+    border-radius: 7px;
+    margin: 5px;
+  }
+
+  .section-carrers h1{
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .share-link{
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .arrow {
+    position: relative;
+    display: inline-block;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.arrow img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.arrow:hover img {
+    transform: scale(1.1); /* Change the scale value to adjust the pop effect */
+}
+
+.section-job {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.section-carrers-elemntor .job-elemento-decrip{
+    background-color: #F2F2F2;
+    padding: 20px 20px 20px 20px;
+
+}
+
+/* .......section-news....... */
+
+.section-news{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('/images/two-right-two.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.news-event-section h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.inner-event-right{
+    padding-bottom: 10px;
+}
+.inner-event-right img{
+    height: 140px;
+    width: 100%;
+}
+
+.accolades-slider{
+    background-color: #5C5856;
+}
+.accolades-slider .inner-accolades-slider h4{
+   color: #fff;
+   font-size: 50px;
+   font-weight: bold;
+}

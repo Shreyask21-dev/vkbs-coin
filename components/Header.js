@@ -33,6 +33,7 @@ export default function Header() {
                 <li><Link className="dropdown-item " href="/about-us">About Company</Link></li>
                 <li><Link className="dropdown-item" href="/company-timeline">Company Timeline</Link></li>
                
+               
               </ul>
             </li>
 
@@ -59,13 +60,13 @@ export default function Header() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${LiveUrl == '/career' ? 'active' : ''}`} href="/career">
+              <Link className={`nav-link ${LiveUrl == '/carrers' ? 'active' : ''}`} href="/carrers">
                 CAREER
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className={`nav-link ${LiveUrl == '/news-and-event' ? 'active' : ''}`} href="/news-and-event">
+              <Link className={`nav-link ${LiveUrl == '/news-and-event' ? 'active' : ''}`} href="/news-event">
                 NEWS & EVENTS
               </Link>
             </li>

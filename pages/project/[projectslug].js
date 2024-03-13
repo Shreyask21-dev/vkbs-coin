@@ -94,7 +94,7 @@ export default function InnerProjectPage({ projectSingle }) {
                             </div>
                             <div className='col-lg-9'>
                                 <div className="inner-page">
-                                    <h3><strong>client</strong> : {projectSingle?.data?.project?.title} </h3>
+                                    <h3><strong>Client</strong> : {projectSingle?.data?.project?.title} </h3>
                                     {projectSingle?.data?.project?.content !== null && (
                                         <div
                                             dangerouslySetInnerHTML={{
