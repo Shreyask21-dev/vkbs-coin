@@ -55,24 +55,24 @@ export default function Header() {
 
             <li className="nav-item">
             {/* LiveUrl */}
-              <Link className={`nav-link ${LiveUrl == '/sustainability' ? 'active' : ''}`} href="/sustainability">
+              <Link className={`nav-link ${LiveUrl == '/sustainability/' ? 'active' : ''}`} href="/sustainability/">
                 SUSTAINABILITY
               </Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${LiveUrl == '/carrers' ? 'active' : ''}`} href="/carrers">
+              <Link className={`nav-link ${LiveUrl == '/carrers/' ? 'active' : ''}`} href="/carrers/">
                 CAREER
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className={`nav-link ${LiveUrl == '/news-and-event' ? 'active' : ''}`} href="/news-event">
+              <Link className={`nav-link ${LiveUrl == '/news-event/' ? 'active' : ''}`} href="/news-event/">
                 NEWS & EVENTS
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className={`nav-link ${LiveUrl == '/contact-us' ? 'active' : ''}`} href="/contact-us">
+              <Link className={`nav-link ${LiveUrl == '/contact-us/' ? 'active' : ''}`} href="/contact-us/">
                 CONTACT US
               </Link>
             </li>
