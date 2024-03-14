@@ -91,7 +91,6 @@ export default function NewsEventIndex() {
         </div>
       </div>
 
-      
           {/* Our Accolades */}
 
       <div className='section accolades-slider'>

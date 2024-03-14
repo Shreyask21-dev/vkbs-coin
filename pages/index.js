@@ -36,7 +36,7 @@ export default function HomePage() {
           <div className='row'>
 
             <div className='col-lg-3'>
-              <div className='count-inner'>
+              <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   <img src='/images/building.png' width='40' height='50' alt='' />
                   <h2>346Mn <span>Sq.Ft</span></h2>
@@ -46,7 +46,7 @@ export default function HomePage() {
             </div>
 
             <div className='col-lg-3'>
-              <div className='count-inner'>
+              <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   {/* <img src='/images/building.png' width='50' height='62' alt=''/> */}
                   <h2>₹ 2450 Cr</h2>
@@ -57,17 +57,17 @@ export default function HomePage() {
 
 
             <div className='col-lg-3'>
-              <div className='count-inner'>
+              <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   <img src='/images/man.png' width='45' height='50' alt='' />
-                  <h2>346Mn <span>Sq.Ft</span></h2>
+                  <h2>6500</h2>
                 </div>
-                <p>Team Strength</p>
+                <p clas>Team Strength</p>
               </div>
             </div>
 
             <div className='col-lg-3'>
-              <div className='count-inner-4'>
+              <div className='count-inner-4 counter-center'>
                 <div className='d-flex'>
                   <img src='/images/location.png' width='30' height='40' alt='' />
                   <h2>17 States</h2>
@@ -141,7 +141,7 @@ export default function HomePage() {
                             <div className="solution-item">
                                 <img src="/images/solution-Icon-2.png" alt="partners_logo"
                                     className="img-responsive" />
-                                     <div className='solu-heading-tag'>Integrated MEP Contracting</div>
+                                     <div className='solu-heading-tag'>Integrated MEP <br/>Contracting</div>
                             </div>
                         </SplideSlide>
 
@@ -169,18 +169,6 @@ export default function HomePage() {
                             </div>
                         </SplideSlide>
 
-                        
-
-                       
-
-
-                       
-
-                      
-                     
-                      
-                     
-                         
                     </Splide>
           </div>
         </div>
@@ -194,8 +182,10 @@ export default function HomePage() {
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h6>unleashing MEP Revolution with</h6>
+                <div className='space5'></div>
                 <h3>Pre-Fabrication</h3>
-                <p>Reimagining onsite execution, VKBS revolutionizes MEP services by integrating manufacturing excellence through pre-fabrication for rapid assembly of defect-free modular components.. Our pioneering template-driven prefab techniques integrate innovation with quality and safety to fast-track projects and maximize customer delight.</p>
+                <div className='space5'></div>
+                <p className='paragraph'>Reimagining onsite execution, VKBS revolutionizes MEP services by integrating manufacturing excellence through pre-fabrication for rapid assembly of defect-free modular components.. Our pioneering template-driven prefab techniques integrate innovation with quality and safety to fast-track projects and maximize customer delight.</p>
                 <Link href='/'
                   type="button"
                   className="mt-2 btn btn-primary btn-rounded btn-lg">
@@ -236,7 +226,7 @@ export default function HomePage() {
               <p>Bangalore</p>
               <Link href='/'
                 type="button"
-                className="mt-2 btn btn-primary-two btn-rounded btn-lg">
+                className="mt-2 btn btn-primary-two  btn-lg">
                 View 
               </Link>
             </div>
@@ -264,7 +254,7 @@ export default function HomePage() {
               <div className='inner-two'>
                 <h6>MEP Excellence With</h6>
                 <h3>Integrated Project Delivery</h3>
-                <p>Our MEP services are powered by Centre of Excellence, Project Control Department, stringent 4-Level Monitoring governance, and Transition Task Force, ensuring seamless integration across project lifecycles. This unified alignment of cross-functional expert teams results in optimized outcomes by collectively driving adherence to critical success benchmarks - safety, quality, timely delivery and perfection - across the entirety of Mechanical, Electrical and Plumbing solutions.</p>
+                <p className='paragraph'>Our MEP services are powered by Centre of Excellence, Project Control Department, stringent 4-Level Monitoring governance, and Transition Task Force, ensuring seamless integration across project lifecycles. This unified alignment of cross-functional expert teams results in optimized outcomes by collectively driving adherence to critical success benchmarks - safety, quality, timely delivery and perfection - across the entirety of Mechanical, Electrical and Plumbing solutions.</p>
                 <Link href='/'
                   type="button"
                   className="mt-2 btn btn-primary btn-rounded btn-lg">
@@ -291,8 +281,10 @@ export default function HomePage() {
             <div className='col-lg-6'>
             <div className='inner-two'>
                 <h6>why us</h6>
+                
                 <h3>Unwavering Commitment to Quality Delivery</h3>
-                <p>With over 65 million square feet of MEP projects executed, 2 million square feet of EPC development encompassing 2000+ residential units, 6,00,000 square feet of specialized fit-outs and delivery of 2,00,000+ square feet A-grade workspaces - VKBS offers unrivaled competencies spanning integrated design-build services, project management and quality-focused sustainable execution of complex mechanical, electrical and plumbing solutions pan-India, making us the industry's most trusted one-stop MEP services provider.</p>
+                <p className='paragraph'>With over 65 million square feet of MEP projects executed, 2 million square feet of EPC development encompassing 2000+ residential units, 6,00,000 square feet of specialized fit-outs and delivery of 2,00,000+ square feet A-grade workspaces - VKBS offers unrivaled competencies spanning integrated design-build services, project management and quality-focused sustainable execution of complex mechanical, electrical and plumbing solutions pan-India, making us the industry's most trusted one-stop MEP services provider.</p>
+          
                 <Link href='/contact-us'
                   type="button"
                   className="mt-2 btn btn-primary btn-rounded btn-lg">

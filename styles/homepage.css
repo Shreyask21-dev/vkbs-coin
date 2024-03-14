@@ -91,9 +91,23 @@
    text-align: revert-layer;
 }
 
+
+.counter-center{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
   /* {Turnkey MEP Solutions} */
 
-
+.two-right .inner-two h6{
+   padding-left: 10px;
+   padding-right: 10px;
+   border: 1px solid var(--bgColorPrimary);
+   border-radius: 1px;
+    box-shadow: 2px 1px;
+   
+}
   .two-right {
    background-image: url('/images/two-right-two.png');
    background-repeat: no-repeat;
@@ -125,10 +139,24 @@
 .section h6{
    color: #59AA47;
    font-size: 16px;
-   padding-bottom: 20px;
+   text-transform: uppercase;
+   /* text-transform: capitalize; */
+
+   
+}
+
+p.paragraph {
+   color: #8B8E8F !important;
 }
 
 /* solution-slider */
+
+.splide__arrow {
+  
+   border-radius: 0% !important;
+   cursor: pointer;
+   
+}
 
 .solution-slider{
    background-color: var(--bgColorSecondary);
@@ -177,6 +205,7 @@
 }
 .bg-exp{
    padding-left: 25px;
+   padding-right: 20px;
 }
 .expertise .bg-exp-data h6{
    color: var(--whiteColor);
@@ -190,7 +219,7 @@
 
 .expertise .bg-exp-data p{
    color: var(--whiteColor);
-   font-size: 15px;
+   font-size: 10px;
 }
 
 .section .bg-exp-data {
@@ -242,9 +271,10 @@
    font-size: 36px;
    font-weight: bold;
    padding-bottom: 50px;
+   text-transform: uppercase;
 }
 .section .primary-text span{
- color: #fff;
+ color: var(--bgColorPrimary);
 }
 
 
@@ -260,7 +290,7 @@
    flex-direction: column;
    align-items: center;
    flex-wrap: nowrap;
-   margin: 15px;
+   margin: 25px;
    justify-content: center;
    border-radius: 10px;
    height: 275px;

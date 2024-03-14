@@ -77,6 +77,13 @@ export default function Header() {
               </Link>
             </li>
 
+            {/* Search Icon */}
+           <li className="nav-item">
+             <Link className="nav-link" href="#">
+                 <i className="fa fa-search"></i>
+             </Link>
+         </li>
+            
           </ul>
         </div>
       </div>

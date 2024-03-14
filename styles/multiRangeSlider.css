@@ -108,7 +108,7 @@
 
   /* customlist-section */
 .customlist-section {
-	background: var(--primaryColor);
+	background: #fff;
   }
   .customlist-section .clientlogo-item {
 	display: flex;

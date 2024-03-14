@@ -181,7 +181,7 @@ body .btn-primary:active,
 body .btn-default:active,
 body .btn-primary:focus-visible {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20) !important;
-    background: var(--secondaryColor);
+    background: var(--bgColorPrimary);
     color: #fff !important;
     border-color: transparent !important;
     outline: none;
@@ -192,6 +192,14 @@ body .btn-primary-two {
     color: #fff;
     border-color: transparent;
     outline: none;
+    border-radius: 0px;
+}
+body .btn-primary-two:hover {
+    background: var(--bgColorSecondary);
+    color: #fff;
+    border-color: transparent;
+    outline: none;
+    border-radius: 0px;
 }
 
 body .btn-job{
@@ -304,7 +312,7 @@ body .btn-job:hover{
 }
 
 .sticky-header.navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: 40px !important;
+    padding-left: 20px !important;
  }
 
 .sticky-header .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
