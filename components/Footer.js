@@ -18,9 +18,9 @@ export default function Footer() {
               <ul className='footer-nav'>
                 <li><Link href="/out-story">Our Story</Link></li>
                 <li><Link href="/project">Projects</Link></li>
-                <li><Link href="/career">Career</Link></li>
+                <li><Link href="/careers">Career</Link></li>
                 <li><Link href="/blog">Blog</Link></li>
-                <li><Link href="/event">Event</Link></li>
+                <li><Link href="/news-event">Event</Link></li>
               </ul>
             </div>
             <div className='col-lg-2'>
