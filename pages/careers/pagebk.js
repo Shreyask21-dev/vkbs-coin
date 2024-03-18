@@ -5,10 +5,11 @@ import { useRouter } from 'next/router'
 import PopForm from '@/components/PopForm'
 import { BASEPATH } from "@/config";
 
-export default function CareersJobPage({ JobSingle }) {
-  const [showModal, setShowModal] = useState(false);
+export default function CarrersJobPage({ JobSingle }) {
 
-  const router = useRouter();
+console.log("JobSingle" ,JobSingle);
+
+const [showModal, setShowModal] = useState(false);
 
   const handleOpenModal = () => {
     setShowModal(true);
@@ -18,6 +19,9 @@ export default function CareersJobPage({ JobSingle }) {
     setShowModal(false);
   };
 
+
+  
+  const router = useRouter();
   
   return (
     <>
@@ -75,7 +79,7 @@ export default function CareersJobPage({ JobSingle }) {
 
       </div>
        
-      <div className='section-job section-carrers-apply'>
+       <div className='section-job section-carrers-apply'>
         <div className='container'>
           <div className='apply-option d-flex'>
           <button onClick={handleOpenModal} className="mt-2 btn btn-primary btn-job-carrer"> Apply Now</button>
@@ -85,7 +89,6 @@ export default function CareersJobPage({ JobSingle }) {
          </div>
         </div>
        </div>
-
 
        {showModal && (
         <div className='container'>
@@ -100,7 +103,7 @@ export default function CareersJobPage({ JobSingle }) {
         </div>
         </div>
       )}
-       
+
        <div className='space5'></div>
 
     </>
@@ -115,19 +118,19 @@ export async function getStaticPaths() {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       query: `
-          query NewQuery {
-            careers {
-              nodes {
-                slug
-              }
-            }
+      query MyQuery2 {
+        careers {
+          nodes {
+            slug
           }
+        }
+      }
            `,
     }),
   });
   const projectResut = await pageAPI.json();
   const paths = projectResut.data.careers.nodes.map((list) => ({
-    params: { careerslug: list.slug },
+    params: {careerslug: list.slug },
   }));
   return {
     paths,
@@ -144,15 +147,24 @@ export async function getStaticProps({ params }) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       query: `
-        query NewQuery {
-          career(id: "${params.careerslug}" ,idType: URI) {
-             careerId
-              slug
-              title
+        // query NewQuery {
+        //   carrer(id: "${params.careerslug}" ,idType: SLUG) {
+        //     careerId
+        //       slug
+        //       title
+        //       content
+        //       excerpt
+        //     }
+        //   }
+
+
+          query MyQuery2Copy {
+            career(id: "lorem-ipsum-dolor-sit-amet-consectetur", idType: SLUG) {
+              careerId
               content
-              excerpt
             }
           }
+       
         `,
     }),
   });
