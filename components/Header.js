@@ -51,7 +51,7 @@ export default function Header() {
                 SOLUTIONS
               </Link>
               <ul className="dropdown-menu">
-              <li><Link className="dropdown-item" href="/mechanical/">Branches</Link></li>
+              <li><Link className="dropdown-item" href="/mechanical/">Sector</Link></li>
                 <li><Link className="dropdown-item " href="/after-sales/">After Sales</Link></li>
                 <li><Link className="dropdown-item " href="/prefabrication/">Prefabrication</Link></li>
               </ul>
