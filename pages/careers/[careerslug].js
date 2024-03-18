@@ -2,12 +2,24 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import PopForm from '@/components/PopForm'
 
 import { BASEPATH } from "@/config";
 
 export default function CarrersJobPage({ JobSingle }) {
 
-console.log("JobSingle" ,JobSingle)
+console.log("JobSingle" ,JobSingle);
+
+const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
 
   
   const router = useRouter();
@@ -71,13 +83,26 @@ console.log("JobSingle" ,JobSingle)
        <div className='section-job section-carrers-apply'>
         <div className='container'>
           <div className='apply-option d-flex'>
-            <Link href='#' type="button" className="mt-2 btn btn-primary btn-job-carrer"> Apply Now</Link>
+          <button onClick={handleOpenModal} className="mt-2 btn btn-primary btn-job-carrer"> Apply Now</button>
             <div className='share-link'>
                <img src='/images/share.png' height='45' width='45' alt=''/>
             </div>
          </div>
         </div>
        </div>
+
+       {showModal && (
+        <div className='continer'>
+          <div className="modal-box">
+          <div className="modal-content-box">
+          <h3 className="head">Please fill in details to proceed</h3>
+            <span className="close" onClick={handleCloseModal}>close</span>
+            <PopForm/>
+          </div>
+        </div>
+        </div>
+      )}
+
        <div className='space5'></div>
 
     </>

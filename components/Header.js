@@ -31,7 +31,6 @@ export default function Header() {
               </Link>
               <ul className="dropdown-menu">
                 <li><Link className="dropdown-item " href="/about-us">About Company</Link></li>
-                {/* url Our Story */}
                 <li><Link className="dropdown-item" href="/out-story/">Our Story</Link></li>
                 <li><Link className="dropdown-item" href="/infrastructure/">Infrastructure</Link></li>
                 <li><Link className="dropdown-item" href="/quality-assurance/">Quality Assurance</Link></li>
@@ -52,6 +51,7 @@ export default function Header() {
                 SOLUTIONS
               </Link>
               <ul className="dropdown-menu">
+              <li><Link className="dropdown-item" href="/mechanical/">Branches</Link></li>
                 <li><Link className="dropdown-item " href="/after-sales/">After Sales</Link></li>
                 <li><Link className="dropdown-item " href="/prefabrication/">Prefabrication</Link></li>
               </ul>
@@ -75,11 +75,19 @@ export default function Header() {
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link className={`nav-link ${LiveUrl == '/news-event/' ? 'active' : ''}`} href="/news-event/">
-                NEWS & EVENTS
+           
+            
+
+            <li className="nav-item dropdown">
+              <Link className="nav-link dropdown-toggle" href="/mechanical/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              EVENTS
               </Link>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item " href="/news-event//">NEWS EVENT</Link></li>
+                <li><Link className="dropdown-item " href="/blog/">BLOG</Link></li>
+              </ul>
             </li>
+
 
             <li className="nav-item">
               <Link className={`nav-link ${LiveUrl == '/contact-us/' ? 'active' : ''}`} href="/contact-us/">

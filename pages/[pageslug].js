@@ -7,8 +7,7 @@ import { useRouter } from 'next/router'
 
 export default function SinglePage({ PageApiResult }) {
 
-  var team = PageApiResult.data.page.slug
-  console.log()
+ 
     
   console.log("PageApiResult", PageApiResult.data.page.slug)
   if (PageApiResult.data.page !== null) {
@@ -19,7 +18,7 @@ export default function SinglePage({ PageApiResult }) {
           <link rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${PageApiResult?.data?.page?.pageId}.css`} media="all" />
         </Head>
         {/* Hero banner design */}
-        <div className={`section inner-hero-banner ${PageApiResult.data.page.slug =='team' && 'hide-team'}`}>
+        <div className={`section inner-hero-banner ${PageApiResult.data.page.slug == 'team' && 'hide-team'}`}>
           <div className='container'>
             <div className='row'>
               <div className='col-lg-8'>
