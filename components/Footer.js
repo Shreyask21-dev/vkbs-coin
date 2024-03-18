@@ -17,7 +17,7 @@ export default function Footer() {
               <h5>Quick Links</h5>
               <ul className='footer-nav'>
                 <li><Link href="/out-story">Our Story</Link></li>
-                <li><Link href="/project">Projects</Link></li>
+                <li><Link href="/project/infrastructures/">Projects</Link></li>
                 <li><Link href="/careers">Career</Link></li>
                 <li><Link href="/blog">Blog</Link></li>
                 <li><Link href="/news-event">Event</Link></li>

@@ -8,8 +8,8 @@ import { useState, useEffect } from 'react';
 export default function HomePage() {
 
   const [value, setValue] = useState(0);
-  const [price , setprice] = useState(0);
-  const [team , setteam] = useState(0);
+  const [price , setprice] = useState(2000);
+  const [team , setteam] = useState(6000);
   const [stateList , setStateList] = useState(0);
 
   // Function to increment the value
@@ -24,7 +24,7 @@ export default function HomePage() {
   };
 
   useEffect(() => {
-    const intervalId = setInterval(incrementValue, 10); 
+    const intervalId = setInterval(incrementValue, 1); 
     return () => clearInterval(intervalId); 
   }, []); 
 
@@ -58,7 +58,7 @@ export default function HomePage() {
     };
 
     useEffect(() => {
-      const intervalId = setInterval(incrementValue3, 1); 
+      const intervalId = setInterval(incrementValue3, 0.5); 
       return () => clearInterval(intervalId); 
     }, []);
 
@@ -298,7 +298,8 @@ export default function HomePage() {
           <div className='row'>
          
           <div className='col-lg-3 '>
-            <div className='bg-exp-data bg-exp-1 '>
+            <div className='bg-exp-data bg-exp-1'>
+            <div className='inner-data-cont'>
               <h6>Infrastructure</h6>
               <h3>Lorem ipsum dolor sit amet consectetur.</h3>
               <p>Bangalore</p>
@@ -307,12 +308,14 @@ export default function HomePage() {
                 className="mt-2 btn btn-primary-two  btn-lg">
                 View 
               </Link>
+              </div>
             </div>
            </div>
 
            <div className='col-lg-3 '>
-            <div className='bg-exp-data bg-exp-2 '>
-              <h6>Infrastructure</h6>
+            <div className='bg-exp-data bg-exp-2'>
+              <div className='inner-data-cont'>
+              <h6>Infrastructure222</h6>
               <h3>Lorem ipsum dolor sit amet consectetur.</h3>
               <p>Bangalore</p>
               <Link href='/'
@@ -320,11 +323,13 @@ export default function HomePage() {
                 className="mt-2 btn btn-primary-two  btn-lg">
                 View 
               </Link>
+              </div>
             </div>
            </div>
 
            <div className='col-lg-3 '>
-            <div className='bg-exp-data bg-exp-3 '>
+            <div className='bg-exp-data bg-exp-3'>
+            <div className='inner-data-cont'>
               <h6>Infrastructure</h6>
               <h3>Lorem ipsum dolor sit amet consectetur.</h3>
               <p>Bangalore</p>
@@ -333,11 +338,13 @@ export default function HomePage() {
                 className="mt-2 btn btn-primary-two  btn-lg">
                 View 
               </Link>
+              </div>
             </div>
            </div>
 
            <div className='col-lg-3 '>
             <div className='bg-exp-data bg-exp-4'>
+            <div className='inner-data-cont'>
               <h6>Infrastructure</h6>
               <h3>Lorem ipsum dolor sit amet consectetur.</h3>
               <p>Bangalore</p>
@@ -346,6 +353,7 @@ export default function HomePage() {
                 className="mt-2 btn btn-primary-two  btn-lg">
                 View 
               </Link>
+              </div>
             </div>
            </div>
 

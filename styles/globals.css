@@ -600,3 +600,7 @@ body .btn-job:hover{
    font-size: 50px;
    font-weight: bold;
 }
+
+.hide-team{
+    display: none !important;
+}

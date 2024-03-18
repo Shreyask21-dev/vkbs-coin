@@ -7,16 +7,16 @@ import { BASEPATH } from "@/config";
 
 export default function CarrersJobPage({ JobSingle }) {
 
+console.log("JobSingle" ,JobSingle)
 
-
-  console.log("JobSingle", JobSingle)
+  
   const router = useRouter();
   
   return (
     <>
       <Head>
         <title>careers</title>
-        <link rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${JobSingle?.data?.carrer?.carrerId}.css`} media="all" />
+        <link rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${JobSingle?.data?.career?.careerId}.css`} media="all" />
       </Head>
 
       <div className='section inner-hero-banner'>
@@ -62,7 +62,7 @@ export default function CarrersJobPage({ JobSingle }) {
       <div className='section-carrers-elemntor'>
         <div className='container'>
        <div className='job-elemento-decrip'>
-          <div className='job-description' dangerouslySetInnerHTML={{__html: `${JobSingle.data?.carrer?.content}`}}></div>
+          <div className='job-description' dangerouslySetInnerHTML={{__html: `${JobSingle.data?.career?.content}`}}></div>
        </div>
         </div>
 
@@ -92,19 +92,19 @@ export async function getStaticPaths() {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       query: `
-          query NewQuery {
-            carrers {
-              nodes {
-                slug
-              }
-            }
+      query MyQuery2 {
+        careers {
+          nodes {
+            slug
           }
+        }
+      }
            `,
     }),
   });
   const projectResut = await pageAPI.json();
-  const paths = projectResut.data.carrers.nodes.map((list) => ({
-    params: { carrerslug: list.slug },
+  const paths = projectResut.data.careers.nodes.map((list) => ({
+    params: {careerslug: list.slug },
   }));
   return {
     paths,
@@ -122,14 +122,16 @@ export async function getStaticProps({ params }) {
     body: JSON.stringify({
       query: `
         query NewQuery {
-          carrer(id: "${params.carrerslug}" ,idType: URI) {
-             carrerId
+          carrer(id: "${params.careerslug}" ,idType: URI) {
+            careerId
               slug
               title
               content
               excerpt
             }
           }
+
+       
         `,
     }),
   });

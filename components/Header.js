@@ -31,19 +31,29 @@ export default function Header() {
               </Link>
               <ul className="dropdown-menu">
                 <li><Link className="dropdown-item " href="/about-us">About Company</Link></li>
-                <li><Link className="dropdown-item" href="/company-timeline">Company Timeline</Link></li>
-               
+                {/* url Our Story */}
+                <li><Link className="dropdown-item" href="/out-story/">Our Story</Link></li>
+                <li><Link className="dropdown-item" href="/infrastructure/">Infrastructure</Link></li>
+                <li><Link className="dropdown-item" href="/quality-assurance/">Quality Assurance</Link></li>
+                <li><Link className="dropdown-item" href="/team/">Team</Link></li>
+                <li><Link className="dropdown-item" href="/corporate-policies/">Corporate Policies</Link></li>
                
               </ul>
             </li>
 
+            {/* <li className="nav-item">
+              <Link className={`nav-link`} href="/mechanical/">
+                 SOLUTIONS
+              </Link>
+            </li> */}
+
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" href="/solution" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link dropdown-toggle" href="/mechanical/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 SOLUTIONS
               </Link>
               <ul className="dropdown-menu">
-                <li><Link className="dropdown-item " href="/solution">SOLUTIONS ONE</Link></li>
-                <li><Link className="dropdown-item " href="/solution">SOLUTIONS TWO</Link></li>
+                <li><Link className="dropdown-item " href="/after-sales/">After Sales</Link></li>
+                <li><Link className="dropdown-item " href="/prefabrication/">Prefabrication</Link></li>
               </ul>
             </li>
 
@@ -60,8 +70,8 @@ export default function Header() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${LiveUrl == '/carrers/' ? 'active' : ''}`} href="/carrers/">
-                CAREER
+              <Link className={`nav-link ${LiveUrl == '/careers/' ? 'active' : ''}`} href="/careers/">
+              CAREERS
               </Link>
             </li>
 

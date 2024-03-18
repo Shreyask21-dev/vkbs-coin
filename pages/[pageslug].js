@@ -2,56 +2,63 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import { BASEPATH } from "@/config";
+import { useRouter } from 'next/router'
 
-export default function SinglePage({PageApiResult}) {
-  console.log("PageApiResult", PageApiResult)
-  if (PageApiResult.data.page !== null) 
 
-  {
-  return (
-  <>
-  <Head>
-    <title>{PageApiResult?.data?.page?.title}</title>
-    <link rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${PageApiResult?.data?.page?.pageId}.css`} media="all" />
-  </Head>
-   {/* Hero banner design */}
-   <div className='section inner-hero-banner'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-lg-8'>
-              <div className='inner-text'>
-                <h1>{PageApiResult?.data?.page?.title}</h1>
-                <div className="description" dangerouslySetInnerHTML={{ __html: PageApiResult?.data?.page?.excerpt }}></div>
-                 <div className='line'></div>
+export default function SinglePage({ PageApiResult }) {
+
+  var team = PageApiResult.data.page.slug
+  console.log()
+    
+  console.log("PageApiResult", PageApiResult.data.page.slug)
+  if (PageApiResult.data.page !== null) {
+    return (
+      <>
+        <Head>
+          <title>{PageApiResult?.data?.page?.title}</title>
+          <link rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${PageApiResult?.data?.page?.pageId}.css`} media="all" />
+        </Head>
+        {/* Hero banner design */}
+        <div className={`section inner-hero-banner ${PageApiResult.data.page.slug =='team' && 'hide-team'}`}>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-8'>
+                <div className='inner-text'>
+                  <h1>{PageApiResult?.data?.page?.title}</h1>
+                  <div className="description" dangerouslySetInnerHTML={{ __html: PageApiResult?.data?.page?.excerpt }}></div>
+                  <div className='line'></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* inner elementor page Design */}
-      <div className="innerpages-contentsdata">
-                    {PageApiResult?.data?.page?.content !== null && (
-                        <div
-                            dangerouslySetInnerHTML={{
-                                __html: `${PageApiResult?.data?.page?.content}`,
-                            }}
-                        ></div>
-                    )}
-                </div>
-  </>
-  )
-}
+        {/* inner elementor page Design */}
+        <div className="innerpages-contentsdata">
+          {PageApiResult?.data?.page?.content !== null && (
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `${PageApiResult?.data?.page?.content}`,
+              }}
+            ></div>
+          )}
+        </div>
+
+
+             
+      </>
+    )
+  }
 }
 
 
 
 export async function getStaticPaths() {
   const pageAPI = await fetch(`${BASEPATH}graphql`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-          query: `
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      query: `
            query NewQuery {
             pages(first: 5) {
               nodes {
@@ -62,28 +69,27 @@ export async function getStaticPaths() {
             }
           }
            `,
-      }),
+    }),
   });
   const pageResut = await pageAPI.json();
   const paths = pageResut.data.pages.nodes.map((list) => ({
-      params: { pageslug: list.slug },
+    params: { pageslug: list.slug },
   }));
   return {
-      paths,
-      fallback: "blocking",
+    paths,
+    fallback: "blocking",
   };
 }
 
 
 
 
-export async function getStaticProps({ params }) 
-{
+export async function getStaticProps({ params }) {
   const resultData = await fetch(`${BASEPATH}graphql`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-          query: `
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      query: `
         query NewQuery {
             page(id: "${params.pageslug}" ,idType: URI) {
               pageId
@@ -94,17 +100,17 @@ export async function getStaticProps({ params })
             }
           }
         `,
-      }),
+    }),
   });
 
   const PageApiResult = await resultData.json();
 
 
   return {
-      props: {
-        PageApiResult,
+    props: {
+      PageApiResult,
 
-      },
-      revalidate: 10,
+    },
+    revalidate: 10,
   };
 }

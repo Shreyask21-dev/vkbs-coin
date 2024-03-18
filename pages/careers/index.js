@@ -156,7 +156,7 @@ export async function getServerSideProps() {
       body: JSON.stringify({
         query: `
         query NewQuery {
-          carrers {
+          careers {
             nodes {
               slug
               uri
@@ -177,7 +177,7 @@ export async function getServerSideProps() {
 
     return {
       props: {
-        carrersData: data.data.carrers,
+        carrersData: data.data.careers,
       },
     };
   } catch (error) {
