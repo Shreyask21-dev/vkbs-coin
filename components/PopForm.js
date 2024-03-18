@@ -4,9 +4,7 @@ import Link from "next/link";
 
 export default function PopForm() {
 
-  const [showModal, setShowModal] = useState(false);
-
- 
+  
 
   return (
     <div>
