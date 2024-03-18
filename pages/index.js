@@ -41,7 +41,7 @@ export default function HomePage() {
                   <img src='/images/building.png' width='40' height='50' alt='' />
                   <h2>346Mn <span>Sq.Ft</span></h2>
                 </div>
-                <p>MEP Projects Delivered</p>
+                <p className='mt-n1'>MEP Projects Delivered</p>
               </div>
             </div>
 
@@ -51,7 +51,7 @@ export default function HomePage() {
                   {/* <img src='/images/building.png' width='50' height='62' alt=''/> */}
                   <h2>₹ 2450 Cr</h2>
                 </div>
-                <p>MEP Projects Completed</p>
+                <p className='mt-n1'>MEP Projects Completed</p>
               </div>
             </div>
 
@@ -62,7 +62,7 @@ export default function HomePage() {
                   <img src='/images/man.png' width='45' height='50' alt='' />
                   <h2>6500</h2>
                 </div>
-                <p clas>Team Strength</p>
+                <p className='mt-n1'>Team Strength</p>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ export default function HomePage() {
                   <img src='/images/location.png' width='30' height='40' alt='' />
                   <h2>17 States</h2>
                 </div>
-                <p>Ongoing & Completed Projects </p>
+                <p className='mt-n1'>Ongoing & Completed Projects </p>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function HomePage() {
                      
 
                         <SplideSlide>
-                            <div className="solution-item">
+                            <div className="solution-item solution-one">
                                 <img src="/images/solution-Icon-2.png" alt="partners_logo"
                                     className="img-responsive" />
                                      <div className='solu-heading-tag'>Integrated MEP <br/>Contracting</div>
@@ -146,7 +146,7 @@ export default function HomePage() {
                         </SplideSlide>
 
                         <SplideSlide>
-                            <div className="solution-item">
+                            <div className="solution-item solution-one">
                                 <img src="/images/solution-icon-three.png" alt="partners_logo"
                                     className="img-responsive" />
                                      <div className='solu-heading-tag'>Pre Fabrication</div>
@@ -154,7 +154,7 @@ export default function HomePage() {
                         </SplideSlide>
 
                         <SplideSlide>
-                            <div className="solution-item">
+                            <div className="solution-item solution-one">
                                 <img src="/images/solution-con-four.png" alt="partners_logo"
                                     className="img-responsive" />
                                      <div className='solu-heading-tag'>Retrofitting Services</div>
@@ -162,14 +162,14 @@ export default function HomePage() {
                         </SplideSlide>
 
                         <SplideSlide>
-                            <div className="solution-item">
+                            <div className="solution-item solution-one">
                                 <img src="/images/solution-con-four.png" alt="partners_logo"
                                     className="img-responsive" />
                                      <div className='solu-heading-tag'>Retrofitting Services</div>
                             </div>
                         </SplideSlide>
 
-                    </Splide>
+            </Splide>
           </div>
         </div>
       </div>
@@ -219,8 +219,9 @@ export default function HomePage() {
           </div>
           <div className='space10'></div>
           <div className='row'>
-          <div className='col-lg-3'>
-            <div className='bg-exp bg-exp-data'>
+         
+          <div className='col-lg-3 '>
+            <div className='bg-exp-data bg-exp-1 '>
               <h6>Infrastructure</h6>
               <h3>Lorem ipsum dolor sit amet consectetur.</h3>
               <p>Bangalore</p>
@@ -230,17 +231,50 @@ export default function HomePage() {
                 View 
               </Link>
             </div>
+           </div>
+
+           <div className='col-lg-3 '>
+            <div className='bg-exp-data bg-exp-2 '>
+              <h6>Infrastructure</h6>
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <p>Bangalore</p>
+              <Link href='/'
+                type="button"
+                className="mt-2 btn btn-primary-two  btn-lg">
+                View 
+              </Link>
+            </div>
+           </div>
+
+           <div className='col-lg-3 '>
+            <div className='bg-exp-data bg-exp-3 '>
+              <h6>Infrastructure</h6>
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <p>Bangalore</p>
+              <Link href='/'
+                type="button"
+                className="mt-2 btn btn-primary-two  btn-lg">
+                View 
+              </Link>
+            </div>
+           </div>
+
+           <div className='col-lg-3 '>
+            <div className='bg-exp-data bg-exp-4'>
+              <h6>Infrastructure</h6>
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <p>Bangalore</p>
+              <Link href='/'
+                type="button"
+                className="mt-2 btn btn-primary-two  btn-lg">
+                View 
+              </Link>
+            </div>
+           </div>
+
            
-           </div>
-           <div className='col-lg-3'>
-              <img src='/images/exp1.png' className='bg-exp-data' alt='' />
-           </div>
-           <div className='col-lg-3'>
-           <img src='/images/exp2.png' className='bg-exp-data' alt='' />
-           </div>
-           <div className='col-lg-3'>
-           <img src='/images/exp3.png' className='bg-exp-data' alt='' />
-           </div>
+  
+           
           </div>
         </div>
       </div>
@@ -281,7 +315,6 @@ export default function HomePage() {
             <div className='col-lg-6'>
             <div className='inner-two'>
                 <h6>why us</h6>
-                
                 <h3>Unwavering Commitment to Quality Delivery</h3>
                 <p className='paragraph'>With over 65 million square feet of MEP projects executed, 2 million square feet of EPC development encompassing 2000+ residential units, 6,00,000 square feet of specialized fit-outs and delivery of 2,00,000+ square feet A-grade workspaces - VKBS offers unrivaled competencies spanning integrated design-build services, project management and quality-focused sustainable execution of complex mechanical, electrical and plumbing solutions pan-India, making us the industry's most trusted one-stop MEP services provider.</p>
           
