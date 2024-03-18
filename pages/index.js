@@ -3,8 +3,85 @@ import Link from 'next/link'
 import Head from 'next/head';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import { useState, useEffect } from 'react';
 
 export default function HomePage() {
+
+  const [value, setValue] = useState(0);
+  const [price , setprice] = useState(0);
+  const [team , setteam] = useState(0);
+  const [stateList , setStateList] = useState(0);
+
+  // Function to increment the value
+  const incrementValue = () => {
+    setValue(prevValue => {
+      if (prevValue < 346) {
+        return prevValue + 1;
+      } else {
+        return prevValue;
+      }
+    });
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(incrementValue, 10); 
+    return () => clearInterval(intervalId); 
+  }, []); 
+
+
+    // Function to increment the price
+    const incrementValue2 = () => {
+      setprice(prevValue => {
+        if (prevValue < 2450) {
+          return prevValue + 1;
+        } else {
+          return prevValue;
+        }
+      });
+    };
+
+    useEffect(() => {
+      const intervalId = setInterval(incrementValue2, 1); 
+      return () => clearInterval(intervalId); 
+    }, []);
+ 
+
+    // Function to increment the price
+    const incrementValue3 = () => {
+      setteam(prevValue => {
+        if (prevValue < 6500) {
+          return prevValue + 1;
+        } else {
+          return prevValue;
+        }
+      });
+    };
+
+    useEffect(() => {
+      const intervalId = setInterval(incrementValue3, 1); 
+      return () => clearInterval(intervalId); 
+    }, []);
+
+
+     // Function to increment the price
+     const incrementValue4 = () => {
+      setStateList(prevValue => {
+        if (prevValue < 17) {
+          return prevValue + 1;
+        } else {
+          return prevValue;
+        }
+      });
+    };
+
+    useEffect(() => {
+      const intervalId = setInterval(incrementValue4, 10); 
+      return () => clearInterval(intervalId); 
+    }, []);
+
+    
+ 
+  
   return (
     <>
     <Head>
@@ -39,7 +116,7 @@ export default function HomePage() {
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   <img src='/images/building.png' width='40' height='50' alt='' />
-                  <h2>346Mn <span>Sq.Ft</span></h2>
+                  <h2>{value}<span>Sq.Ft</span></h2>
                 </div>
                 <p className='mt-n1'>MEP Projects Delivered</p>
               </div>
@@ -49,7 +126,7 @@ export default function HomePage() {
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   {/* <img src='/images/building.png' width='50' height='62' alt=''/> */}
-                  <h2>₹ 2450 Cr</h2>
+                  <h2>₹ {price} Cr</h2>
                 </div>
                 <p className='mt-n1'>MEP Projects Completed</p>
               </div>
@@ -60,7 +137,7 @@ export default function HomePage() {
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   <img src='/images/man.png' width='45' height='50' alt='' />
-                  <h2>6500</h2>
+                  <h2>{team}</h2>
                 </div>
                 <p className='mt-n1'>Team Strength</p>
               </div>
@@ -70,7 +147,7 @@ export default function HomePage() {
               <div className='count-inner-4 counter-center'>
                 <div className='d-flex'>
                   <img src='/images/location.png' width='30' height='40' alt='' />
-                  <h2>17 States</h2>
+                  <h2>{stateList} States</h2>
                 </div>
                 <p className='mt-n1'>Ongoing & Completed Projects </p>
               </div>
