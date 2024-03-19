@@ -7,7 +7,7 @@ import '@/styles/globals.css'
 import '@/styles/homepage.css'
 import '@/styles/multiRangeSlider.css'
 import '@/styles/timeline.css'
-import '@/styles/elementor.css'
+// import '@/styles/elementor.css'
 
 
 export default function App({ Component, pageProps }) {

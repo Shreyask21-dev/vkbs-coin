@@ -9,8 +9,8 @@ export default function InnerProjectPage({ projectSingle }) {
     const [setProjectName, getProjectName] = useState([])
     const router = useRouter();
     var LiveUrl = router.asPath;
- 
-   
+
+
 
     useEffect(() => {
         async function fetchData() {
@@ -85,7 +85,7 @@ export default function InnerProjectPage({ projectSingle }) {
                                     {
                                         setProjectName.map((item, index) => (
                                             <>
-                                                 <li> <Link className={`nav-link ${LiveUrl == `${item.uri}` ? 'active' : ''}`} href={item.uri}>{item.title}</Link></li>
+                                                <li> <Link className={`nav-link ${LiveUrl == `${item.uri}` ? 'active' : ''}`} href={item.uri}>{item.title}</Link></li>
                                             </>
                                         ))
                                     }
@@ -93,6 +93,7 @@ export default function InnerProjectPage({ projectSingle }) {
                                 </ul>
                             </div>
                             <div className='col-lg-9'>
+
                                 <div className="inner-page">
                                     <h3><strong>Client</strong> : {projectSingle?.data?.project?.title} </h3>
                                     {projectSingle?.data?.project?.content !== null && (
@@ -102,6 +103,25 @@ export default function InnerProjectPage({ projectSingle }) {
                                             }}
                                         ></div>
                                     )}
+                                    {/* <div className='row'>
+                                        <div className='col-lg-6 d-flex'>
+                                            <h5>Area :</h5>
+                                            <h6>7,50,000 Sqft.</h6>
+                                        </div>
+                                        <div className='col-lg-6 d-flex'>
+                                            <h5>Equipment Capacity :</h5>
+                                            <h6>Lorem Ipsum</h6>
+                                        </div>
+                                        <div className='space2'></div>
+                                        <div className='col-lg-6 d-flex'>
+                                            <h5>Consultant :</h5>
+                                            <h6>Lorem Ipsum</h6>
+                                        </div>
+                                        <div className='col-lg-6 d-flex'>
+                                            <h5>Location :</h5>
+                                            <h6>Lorem Ipsum</h6>
+                                        </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

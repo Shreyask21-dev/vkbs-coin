@@ -34,7 +34,7 @@ body {
 h1 {
     font-size: 60px;
 }
-h2 {
+/* h2 {
     font-size: 50px;
 }
 h3 {
@@ -48,7 +48,7 @@ h5 {
 }
 h6 {
     font-size: 15px;
-}
+} */
 img {
     max-width: 100%;
 }
@@ -421,29 +421,34 @@ body .btn-job:hover{
   /* project page design */
   .project-bg{
     background-color: #F2F2F2;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .project-page .inner-page{
     background-color: #fff;
+    padding-left: 25px;
+    padding-right: 20px;
   }
 
   .project-page ul {
     list-style:none;
+    padding-left: 30px;
   }
   .project-page ul li{
     color: #303030;
     font-size: 24px;
-    padding-bottom: 22px;
+    padding-bottom: 15px;
+  }
+  .project-page .col-lg-3 , .col-lg-9{
+    margin: 0;
+    padding: 0;
   }
 
   .project-page ul li :hover{
     color: #59AA47;
     background-color: #fff;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 3px;
+    
   }
 
   .project-page ul li .active{
@@ -459,7 +464,7 @@ body .btn-job:hover{
   }
 
   .project-page .inner-page h3{
-    padding-left: 40px;
+    padding-left: 0px;
     padding-top: 20px;
   }
 
@@ -617,4 +622,19 @@ body .btn-job:hover{
 
 .d-flex-model:hover img {
     transform: scale(1.1); 
+}
+
+.project-page .project-bg h5{
+    font-size: 30px;
+    color: var(--bgColorPrimary);
+}
+
+.project-page .project-bg h6{
+    font-size: 30px;
+    color: #303030;
+}
+
+.head-pg h3 strong{
+	font-size:  24px !important; 
+	color: #303030 !important;
 }
