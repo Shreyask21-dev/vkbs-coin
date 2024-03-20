@@ -652,7 +652,7 @@ body .btn-job:hover{
   }
   .news-list .news ul li img{
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 15px;
   }
 
   .enquiry .col-lg-5{
@@ -729,4 +729,9 @@ body .btn-job:hover{
 .reset-btn:hover{
     margin-left: 20px;
     border: 1px solid var(--bgColorPrimary);
+}
+
+.news-list .inner-img img{
+  height: 30px;
+  
 }

@@ -91,7 +91,7 @@ export default function NewsEventIndex() {
         </div>
       </div>
 
-          {/* Our Accolades */}
+      {/* Our Accolades */}
 
       <div className='section accolades-slider'>
         <div className='container'>
@@ -99,53 +99,53 @@ export default function NewsEventIndex() {
             <h4>Accolades</h4>
             <div className='space5'></div>
             <Splide
-                        options={{
-                            perPage: 4,
-                            breakpoints: {
-                                991: {
-                                    perPage: 3,
-                                },
-                                767: {
-                                    perPage: 2,
-                                },
-                                640: {
-                                    perPage: 1,
-                                },
-                            },
-                            rewind: true,
-                            autoplay: true,
-                            interval: 6000,
-                            // type: 'fade',
-                            // speed: 2200
-                        }}
-                        aria-label="customList">
-                       
-                     
-                       <SplideSlide>
-                             <div className="item-accolades">
-                                 <img src='/images/a1.png' alt='' />
-                             </div>
-                         </SplideSlide>
+              options={{
+                perPage: 4,
+                breakpoints: {
+                  991: {
+                    perPage: 3,
+                  },
+                  767: {
+                    perPage: 2,
+                  },
+                  640: {
+                    perPage: 1,
+                  },
+                },
+                rewind: true,
+                autoplay: true,
+                interval: 6000,
+                // type: 'fade',
+                // speed: 2200
+              }}
+              aria-label="customList">
 
-                         <SplideSlide>
-                             <div className="item-accolades">
-                                 <img src='/images/a2.png' alt='' />
-                             </div>
-                         </SplideSlide>
 
-                         <SplideSlide>
-                             <div className="item-accolades">
-                                 <img src='/images/a3.png' alt='' />
-                             </div>
-                         </SplideSlide>
+              <SplideSlide>
+                <div className="item-accolades">
+                  <img src='/images/a1.png' alt='' />
+                </div>
+              </SplideSlide>
 
-                         <SplideSlide>
-                             <div className="item-accolades">
-                                 <img src='/images/a4.png' alt='' />
-                             </div>
-                         </SplideSlide>
+              <SplideSlide>
+                <div className="item-accolades">
+                  <img src='/images/a2.png' alt='' />
+                </div>
+              </SplideSlide>
 
-                    
+              <SplideSlide>
+                <div className="item-accolades">
+                  <img src='/images/a3.png' alt='' />
+                </div>
+              </SplideSlide>
+
+              <SplideSlide>
+                <div className="item-accolades">
+                  <img src='/images/a4.png' alt='' />
+                </div>
+              </SplideSlide>
+
+
             </Splide>
           </div>
         </div>
@@ -156,43 +156,61 @@ export default function NewsEventIndex() {
           <h3>News</h3>
           <div className='row'>
             <div className='col-lg-6'>
-               <div className='news'>
+              <div className='news'>
                 <ul>
                   <li>
-                    <img src='/images/news.png' alt='' />
-                    VKBS awarded E&M Works of 15 stations for Ahmedabad Metro by GMRCL</li>
+                    <div className="inner-img d-flex ">
+                      <img src='/images/news.png' alt='' />
+                      <span>VKBS awarded E&M Works of 15 stations for Ahmedabad Metro by GMRCL</span>
+                    </div>
+
+                  </li>
                   <li>
-                  <img src='/images/news.png' alt='' />
-                    VKBS awarded E&M Works of 20 stations for Surat Metro by GMRCL</li>
+                    <div className="inner-img d-flex"><img src='/images/news.png' alt='' />
+                      <span>VKBS awarded E&M Works of 20 stations for Surat Metro by GMRCL</span>
+                    </div>
+
+                  </li>
                   <li>
-                  <img src='/images/news.png' alt='' />
-                    VKBS awarded MEP works for Sattva Horizon at Bengaluru</li>
-                  <li>
-                  <img src='/images/news.png' alt='' />
-                    VKBS Awarded HVAC package for New Terminal at Pune Airport</li>
+                    <div className="inner-img d-flex">
+                      <img src='/images/news.png' alt='' />
+                      <span>VKBS awarded MEP works for Sattva Horizon at Bengaluru</span>
+                    </div>
+
+                  </li>
+
                 </ul>
-               </div>
+              </div>
             </div>
 
             <div className='col-lg-6'>
-            <div className='news'>
+              <div className='news'>
                 <ul>
                   <li>
-                  <img src='/images/news.png' alt='' />
-                  VKBS Awarded HVAC package for BAM Digital Realty Data Centre at Chennai</li>
+                    <div className="inner-img d-flex">
+                      <img src='/images/news.png' alt='' />
+                      <span>VKBS Awarded HVAC package for BAM Digital Realty Data Centre at Chennai</span>
+                    </div>
+                  </li>
                   <li>
-                  <img src='/images/news.png' alt='' />
-                    VKBS Awarded MEP package for Microsoft Central Kitchen at Hyderabad</li>
+                    <div className="inner-img d-flex">
+                      <img src='/images/news.png' alt='' />
+                      <span>VKBS Awarded MEP package for Microsoft Central Kitchen at Hyderabad</span>
+                    </div>
+                  </li>
                   <li>
-                  <img src='/images/news.png' alt='' />
-                    VKBS Awarded HVAC package for LSR Tudor Vantage at Hyderabad</li>
+                    <div className="inner-img d-flex">
+                      <img src='/images/news.png' alt='' />
+                      <span>VKBS Awarded HVAC package for LSR Tudor Vantage at Hyderabad</span>
+                    </div>
+                  </li>
                 </ul>
-                  </div>
-               </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-        
+
     </>
   )
 }
