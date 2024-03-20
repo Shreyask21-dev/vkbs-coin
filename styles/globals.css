@@ -735,3 +735,8 @@ body .btn-job:hover{
   height: 30px;
   
 }
+
+.location .tab-buttons {
+    padding-left: 30px;
+    padding-top: 10px;
+}
