@@ -1,148 +1,109 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import Link from "next/link";
 
-const EnquiryForm = () => {
+
+export default function PopForm() {
+
+
+
   return (
-    <div className="container">
-      <div className="col-lg-8  boderstyle ">
-        <div className=" innersectionsty ">
-          <div className="">
-            <h3 className="head">Enquiry form</h3>
-            <p className="substitle">
-              Connect with us by completing the below form
-            </p>
-          </div>
-          <div className="col-12  ">
-            <form>
-              <div className="row">
-                <div className="col-6 mb-3 ">
-                  <label
-                    className="mr-sm-2 sr-only labelname"
-                    htmlFor="inlineFormCustomSelect"
-                  >
-                    Segments:
-                  </label>
-                  <select className="custom-selec" id="inlineFormCustomSelect">
-                    <option selected className="innerlabel">
-                      Select Segments
-                    </option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div className="col-6 mb-3 classn">
-                  <label
-                    className="mr-sm-2 sr-only
+    <div>
+
+
+      <div className="enq-form">
+        <div className="container ">
+          <h4>Enquiry form</h4>
+          <p>Connect with us by completing the below form</p>
+          <div className="space5"></div>
+          <form>
+            <div className="row">
+              <div className="col-lg-6 mb-3 ">
+                <p>Company Name:</p>
+                <input
+                  type="text"
+                  class="form-control custom-selecfirst"
+                  placeholder="Company Name"
+                />
+              </div>
+              <div className="col-lg-6 mb-3 classn">
+                <p>Name of contact person</p>
+                <input
+                  type="text"
+                  class="form-control custom-selecfirst"
+                  placeholder="Name of contact person"
+                />
+              </div>
+
+
+              <div class="col-lg-6  mb-3">
+                <p>Designation :</p>
+                <input
+                  type="text"
+                  class="form-control custom-selecee"
+                  placeholder="Enter Designation"
+                />
+              </div>
+              <div class="col-lg-6 mb-3">
+                <p>Address</p>
+                <input
+                  type="text"
+                  class="form-control custom-selecpp"
+                  placeholder="Enter Address"
+                />
+              </div>
+
+
+              <div class="col-lg-6  mb-3">
+                <p>Contact No:</p>
+                <input
+                  type="text"
+                  class="form-control custom-selecdd"
+                  placeholder="Contact No"
+                />
+              </div>
+
+              <div class="col-lg-6  mb-3">
+                <p>Email:</p>
+                <input
+                  type="text"
+                  class="form-control custom-selecbuild"
+                  placeholder="Email"
+                />
+              </div>
               
-              labelname
-              "
-                    htmlFor="inlineFormCustomSelect"
-                  >
-                    Services:
-                  </label>
-                  <select
-                    className="custom-selec mr-sm-2"
-                    id="inlineFormCustomSelect"
-                  >
-                    <option selected>Select Segments</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
+
+              <div class="col-lg-12 mb-3">
+                <p>Your Message</p>
+                <textarea
+                  type="text"
+                  class="form-control custom-selecaddress"
+                  placeholder="Your Message"
+                />
               </div>
 
-              <div class="row">
-                <div class="col-6  mb-3">
-                  <label className="mr-sm-2 sr-only  labelname">
-                    Company Name:
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control custom-sele"
-                    placeholder="Enter company name"
-                  />
-                </div>
-                <div class="col-6  mb-3">
-                  <label className="mr-sm-2 sr-only  labelname">
-                    Name of contact person:
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control custom-sele"
-                    placeholder="Enter name of contact person:"
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6  mb-3">
-                  <label className="mr-sm-2 sr-only  labelname">
-                    Designation:
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control custom-sele"
-                    placeholder="Enter Designation"
-                  />
-                </div>
-                <div class="col-6  mb-3">
-                  <label className="mr-sm-2 sr-only  labelname">Address</label>
-                  <input
-                    type="text"
-                    class="form-control custom-sele"
-                    placeholder="Enter Address"
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6  mb-3">
-                  <label className="mr-sm-2 sr-only  labelname">
-                    Contact No:
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control custom-sele"
-                    placeholder="Enter contact number"
-                  />
-                </div>
-                <div class="col-6  mb-3">
-                  <label className="mr-sm-2 sr-only  labelname">Email:</label>
-                  <input
-                    type="email"
-                    class="form-control custom-sele"
-                    placeholder="Enter Email"
-                  />
-                </div>
+              <div className="btn-classes d-flex">
+              <button
+                  type="button"
+                  className="mt-2 btn btn-primary btn-rounded btn-lg">
+                  Apply Now
+                </button>
 
-                <div class="col-12 mb-3">
-                  <label
-                    className="mr-sm-2 sr-only labelname"
-                    htmlFor="customMessage"
-                  >
-                    Your Message
-                  </label>
-                  <textarea
-                    id="customMessage"
-                    className="form-control customMessage"
-                    placeholder="Your Message"
-                  ></textarea>
-                </div>
-              </div>
-            </form>
-            <div className="d-flex">
-              <div>
-                <button className="btn">Apply Now</button>
+                <button
+                  type="button"
+                  className="mt-2 btn btn-lg reset-btn">
+                  Reset
+                </button>
+
               </div>
 
-              <div>
-                <button className="btnre">Reset</button>
-              </div>
+
             </div>
-          </div>
+          </form>
+
         </div>
       </div>
     </div>
-  );
-};
 
-export default EnquiryForm;
+
+  );
+}

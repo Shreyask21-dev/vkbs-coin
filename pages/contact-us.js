@@ -1,7 +1,6 @@
 import React from 'react'
 import EnquiryForm from '@/components/EnquiryForm'
 import Link from 'next/link'
-
 import Head from 'next/head'
 import { BASEPATH } from "@/config";
 
@@ -12,14 +11,7 @@ export default function ContactUs({ LocationData }) {
 
   console.log("LocationData", LocationData)
 
-  const tabs = [
-    { label: 'Mumbai', content: <div>Content for Tab 1</div> },
-    { label: 'Hyderabad', content: <div>Content for Tab 2</div> },
-    { label: 'Bengaluru', content: <div>Content for Tab 3</div> },
-    { label: 'Chennai', content: <div>Content for Tab 4</div> },
-    { label: 'New Delhi', content: <div>Content for Tab 5</div> },
-  ];
-
+ 
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (index) => {
@@ -102,7 +94,7 @@ export default function ContactUs({ LocationData }) {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-7'>
-              {/* <EnquiryForm/> */}
+              <EnquiryForm/>
             </div>
             <div className='col-lg-5'>
               <h6>Social Media</h6>
