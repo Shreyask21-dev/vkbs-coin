@@ -87,6 +87,9 @@ export default function HomePage() {
     <Head>
       <title>VKBS</title>
     </Head>
+
+
+
       {/* Hero banner design */}
       <div className='section herobanner'>
         <div className='container'>

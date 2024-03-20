@@ -46,11 +46,11 @@ export default function Footer() {
             <div className='col-lg-2'>
               <h5>Our Locations</h5>
               <ul className='footer-nav'>
-                <li><Link href="#">New Delhi</Link></li>
-                <li><Link href="#">Mumbai</Link></li>
-                <li><Link href="#">Hyderabad</Link></li>
-                <li><Link href="#">Bangalore</Link></li>
-                <li><Link href="#">Chennai</Link></li>
+                <li><Link href="/contact-us/">New Delhi</Link></li>
+                <li><Link href="/contact-us/">Mumbai</Link></li>
+                <li><Link href="/contact-us/">Hyderabad</Link></li>
+                <li><Link href="/contact-us/">Bangalore</Link></li>
+                <li><Link href="/contact-us/">Chennai</Link></li>
               </ul>
             </div>
           </div>

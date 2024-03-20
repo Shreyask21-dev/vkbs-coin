@@ -151,6 +151,47 @@ export default function NewsEventIndex() {
         </div>
       </div>
       <div className='space5'></div>
+      <div className='section news-list'>
+        <div className='container'>
+          <h3>News</h3>
+          <div className='row'>
+            <div className='col-lg-6'>
+               <div className='news'>
+                <ul>
+                  <li>
+                    <img src='/images/news.png' alt='' />
+                    VKBS awarded E&M Works of 15 stations for Ahmedabad Metro by GMRCL</li>
+                  <li>
+                  <img src='/images/news.png' alt='' />
+                    VKBS awarded E&M Works of 20 stations for Surat Metro by GMRCL</li>
+                  <li>
+                  <img src='/images/news.png' alt='' />
+                    VKBS awarded MEP works for Sattva Horizon at Bengaluru</li>
+                  <li>
+                  <img src='/images/news.png' alt='' />
+                    VKBS Awarded HVAC package for New Terminal at Pune Airport</li>
+                </ul>
+               </div>
+            </div>
+
+            <div className='col-lg-6'>
+            <div className='news'>
+                <ul>
+                  <li>
+                  <img src='/images/news.png' alt='' />
+                  VKBS Awarded HVAC package for BAM Digital Realty Data Centre at Chennai</li>
+                  <li>
+                  <img src='/images/news.png' alt='' />
+                    VKBS Awarded MEP package for Microsoft Central Kitchen at Hyderabad</li>
+                  <li>
+                  <img src='/images/news.png' alt='' />
+                    VKBS Awarded HVAC package for LSR Tudor Vantage at Hyderabad</li>
+                </ul>
+                  </div>
+               </div>
+          </div>
+        </div>
+      </div>
         
     </>
   )
