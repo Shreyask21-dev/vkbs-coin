@@ -117,7 +117,7 @@
 	background: #fff;
 	height: 150px;
 	padding: 30px 20px;
-	border: solid 1px var(--secondaryColor);
+	/* border: solid 1px var(--secondaryColor); */
   }
   .splide {
 	padding-bottom: 50px;
@@ -142,7 +142,7 @@
 	opacity: 1;
 	color: #fff;
 	outline: none;
-	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+	/* box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2); */
   }
   .splide .splide__arrows button.splide__arrow svg {
 	fill: #fff;
