@@ -316,7 +316,7 @@ p.paragraph {
    display: flex;
    justify-content: center; /* Center horizontally */
    align-items: center; /* Center vertically */
-   /* height: 100vh;  */
+    height: 100vh;  
  }
 /* quality */
 
