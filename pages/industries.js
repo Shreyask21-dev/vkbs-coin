@@ -66,14 +66,16 @@ export default function Industries({ IndustryPage }) {
                           ></div>
                       </div>
                       <div className="text-overlay">
-                        <div className='title2'></div>
+                        <div className='inner-over'>{item.title}
                         {item?.content !== null && (
                           <div
                             dangerouslySetInnerHTML={{
-                              __html: `${item.title} ${item?.content}`,
+                              __html: `${item?.content}`,
                             }}
                           ></div>
+                          
                         )}
+                        </div>
                       </div>
                     </div>
                   </div>

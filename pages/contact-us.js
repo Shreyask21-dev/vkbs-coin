@@ -76,14 +76,29 @@ export default function ContactUs({ LocationData }) {
               <div className='tab-bg'>
               <div className="tab-buttons">
                 {
-                  [...LocationData].reverse().map((tab, index) => (
+                  LocationData.map((tab, index) => (
                     <button key={index} className={index === activeTab ? 'active' : ''}
                       onClick={() => handleTabClick(index)}> {tab.title}</button>))
 
                 }
                 </div>
               </div>
-              <div className="tab-content tab-css" dangerouslySetInnerHTML={{ __html: LocationData[activeTab].content}}></div>
+              {/* <div className="tab-content tab-css" dangerouslySetInnerHTML={{ __html: LocationData[activeTab].content}}></div> */}
+              <div className="tab-content tab-css">
+                 <div className='conatiner'>
+                  <div className='row'>
+                    <div className='col-lg-4 added'>
+                     <div className='inner-data-active' dangerouslySetInnerHTML={{ __html: LocationData[activeTab].content}} ></div>
+                    </div>
+                    <div className='col-lg-4'>
+                      <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-1.png'/>
+                    </div>
+                    <div className='col-lg-4'>
+                      <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-3.png'/>
+                    </div>
+                  </div>
+                 </div>
+              </div>
             </div>
 
           </div>
@@ -113,7 +128,7 @@ export default function ContactUs({ LocationData }) {
 
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   try {
     const response = await fetch(`${BASEPATH}graphql`, {
       method: 'POST',
