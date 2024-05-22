@@ -113,7 +113,7 @@ export default function ContactUs({ LocationData }) {
 
 
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   try {
     const response = await fetch(`${BASEPATH}graphql`, {
       method: 'POST',
