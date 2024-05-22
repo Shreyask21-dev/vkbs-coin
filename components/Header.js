@@ -36,7 +36,7 @@ export default function Header() {
                 <li><Link className="dropdown-item" href="/quality-assurance/">Quality Assurance</Link></li>
                 <li><Link className="dropdown-item" href="/team/">Team</Link></li>
                 <li><Link className="dropdown-item" href="/corporate-policies/">Corporate Policies</Link></li>
-               
+                <li><Link className="dropdown-item" href="/industries/">Industries</Link></li>
               </ul>
             </li>
 

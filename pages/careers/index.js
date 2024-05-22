@@ -156,7 +156,7 @@ export async function getServerSideProps() {
       body: JSON.stringify({
         query: `
         query NewQuery {
-          careers {
+          careers(first: 100) {
             nodes {
               slug
               uri

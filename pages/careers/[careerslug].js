@@ -51,7 +51,7 @@ export default function CareersJobPage({ JobSingle }) {
             <div className='space5'></div>
               <strong>location</strong>
               <div className='space5'></div>
-              <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+              <h1>{JobSingle.data?.career?.title}</h1>
               <div className='year-class'>
                 <ul>
                   <li>3-5yrs</li>
