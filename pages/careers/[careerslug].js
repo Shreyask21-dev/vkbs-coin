@@ -18,6 +18,8 @@ export default function CareersJobPage({ JobSingle }) {
     setShowModal(false);
   };
 
+
+  console.log("JobSingle->" , JobSingle)
   
   return (
     <>
@@ -49,13 +51,13 @@ export default function CareersJobPage({ JobSingle }) {
           <div className='row'>
             <div className='col-lg-9'>
             <div className='space5'></div>
-              <strong>location</strong>
+              <strong>{JobSingle?.data?.career?.industryData?.location}</strong>
               <div className='space5'></div>
               <h1>{JobSingle.data?.career?.title}</h1>
               <div className='year-class'>
                 <ul>
-                  <li>3-5yrs</li>
-                  <li>MEP</li>
+                  <li>{JobSingle?.data?.career?.industryData?.year}</li>
+                  <li>{JobSingle?.data?.career?.industryData?.mep}</li>
                 </ul>
               </div>
             </div>
@@ -151,6 +153,11 @@ export async function getStaticProps({ params }) {
               title
               content
               excerpt
+              industryData {
+                location
+                mep
+                year
+              }
             }
           }
         `,

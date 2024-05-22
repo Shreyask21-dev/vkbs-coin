@@ -11,9 +11,6 @@ export default function CareersIndex({carrersData}) {
   const JobData = carrersData.nodes;
    const [jobList , setJobList] =useState(JobData)
    
-
-  
-  console.log("jobList" ,jobList)
   return (
     <>
       <Head>
@@ -108,15 +105,16 @@ export default function CareersIndex({carrersData}) {
                          {
                           jobList.map((item , index)=>(
                             <>
-                            {console.log("item-list" , item)}
+                            
+                            
                              <SplideSlide>
                              <div className="job-item">
-                                 <strong>Location</strong>
+                                 <strong>{item?.industryData?.location}</strong>
                                  <div className='job-title'>{item.title}</div>
                                  <div className='year-class'>
                                     <ul>
-                                        <li>3-5yrs</li>
-                                        <li>MEP</li>
+                                        <li>{item?.industryData?.year}</li>
+                                        <li>{item?.industryData.mep}</li>
                                     </ul>
                                  </div>
                                  <div className='job-description' dangerouslySetInnerHTML={{__html: `${item.excerpt}`}}></div>
@@ -127,13 +125,7 @@ export default function CareersIndex({carrersData}) {
                             </>
                           ))
                          }
-                        
-
-                       
-
-                       
-
-                    
+                      
                     </Splide>
           </div>
         </div>
@@ -162,6 +154,11 @@ export async function getServerSideProps() {
               uri
               title
               excerpt
+              industryData {
+                location
+                mep
+                year
+              }
             }
           }
         }
