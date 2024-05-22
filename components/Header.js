@@ -21,7 +21,7 @@ export default function Header() {
             <li className="nav-item">
               
               <Link className={`nav-link ${LiveUrl == '/' ? 'active' : ''}`} href="/">
-                 Home
+                HOME
               </Link>
             </li>
 

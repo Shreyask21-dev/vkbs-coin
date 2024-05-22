@@ -70,9 +70,9 @@ export default function Companytimeline() {
             <div className='col-lg-3'>
               <div className='count-inner '>
                 
-                  <h2>5</h2>
+                  <h2>4</h2>
                
-                <p>Branch Offices</p>
+                <p>Regional Offices</p>
               </div>
             </div>
 
@@ -91,7 +91,7 @@ export default function Companytimeline() {
 
             <div className='col-lg-3'>
               <div className='count-inner-4'>  
-                  <h2>Rs 2450 <span>cr</span></h2>
+                  <h2>$ 300Mn</h2>
                 <p>MEP projects </p>
               </div>
             </div>

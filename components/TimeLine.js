@@ -76,7 +76,7 @@ export default function TimeLine() {
             <div class="container-time right">
               <div class="content">
                 <h2>2022</h2>
-                 <p>Civil EPC Division starts</p>
+                 <p>Foundation of VKBS Factory in Hyderabad</p>
                 
               </div>
             </div>

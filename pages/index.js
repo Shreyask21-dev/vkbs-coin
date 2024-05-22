@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 export default function HomePage() {
 
   const [value, setValue] = useState(0);
-  const [price , setprice] = useState(2000);
+  const [price , setprice] = useState(300);
   const [team , setteam] = useState(6000);
   const [stateList , setStateList] = useState(0);
 
@@ -32,7 +32,7 @@ export default function HomePage() {
     // Function to increment the price
     const incrementValue2 = () => {
       setprice(prevValue => {
-        if (prevValue < 2450) {
+        if (prevValue < 300) {
           return prevValue + 1;
         } else {
           return prevValue;
@@ -129,7 +129,7 @@ export default function HomePage() {
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   {/* <img src='/images/building.png' width='50' height='62' alt=''/> */}
-                  <h2>₹ {price} Cr</h2>
+                  <h2>₹ {price}Mn</h2>
                 </div>
                 <p className='mt-n1'>MEP Projects Completed</p>
               </div>
@@ -183,7 +183,7 @@ export default function HomePage() {
       <div className='section solution-slider'>
         <div className='container'>
           <div className='section-slider'>
-            <h6>OUR EXPERTISE</h6>
+            <h6>what we do</h6>
             <h5>Our Solutions</h5>
             <div className='space5'></div>
             <Splide

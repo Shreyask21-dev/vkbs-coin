@@ -76,7 +76,7 @@ export default function ContactUs({ LocationData }) {
               <div className='tab-bg'>
               <div className="tab-buttons">
                 {
-                  LocationData.map((tab, index) => (
+                  LocationData.reverse().map((tab, index) => (
                     <button key={index} className={index === activeTab ? 'active' : ''}
                       onClick={() => handleTabClick(index)}> {tab.title}</button>))
 

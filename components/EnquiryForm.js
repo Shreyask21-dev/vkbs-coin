@@ -17,6 +17,25 @@ export default function PopForm() {
           <div className="space5"></div>
           <form>
             <div className="row">
+
+            <div className="col-lg-6 mb-3 ">
+                <p>Segments:</p>
+                <input
+                  type="text"
+                  class="form-control custom-selecfirst"
+                  placeholder="Segments"
+                />
+              </div>
+
+              <div className="col-lg-6 mb-3 ">
+                <p>Services:</p>
+                <input
+                  type="text"
+                  class="form-control custom-selecfirst"
+                  placeholder="Services"
+                />
+              </div>
+
               <div className="col-lg-6 mb-3 ">
                 <p>Company Name:</p>
                 <input
