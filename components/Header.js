@@ -51,9 +51,11 @@ export default function Header() {
                 SOLUTIONS
               </Link>
               <ul className="dropdown-menu">
-              <li><Link className="dropdown-item" href="/mechanical/">Sector</Link></li>
+              <li><Link className="dropdown-item" href="/mechanical/">MEP Mechanical</Link></li>
+                <li><Link className="dropdown-item " href="/electrical/">MEP Electrical</Link></li>
+                <li><Link className="dropdown-item " href="/public-health-engineering/">MEP PHE</Link></li>
                 <li><Link className="dropdown-item " href="/after-sales/">After Sales</Link></li>
-                <li><Link className="dropdown-item " href="/prefabrication/">Prefabrication</Link></li>
+                <li><Link className="dropdown-item " href="/prefabrication/">Prefab</Link></li>
                 <li><Link className="dropdown-item" href="/industries/">Industries</Link></li>
               </ul>
             </li>
