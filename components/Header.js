@@ -60,7 +60,7 @@ export default function Header() {
             </li>
 
             <li className="nav-item">
-              <Link className={`nav-link ${LiveUrl == '/project/infrastructures/' ? '' : ''}`} href="/project/infrastructures/">
+              <Link className={`nav-link ${LiveUrl == '/project/category/infrastructures/' ? '' : ''}`} href="/project/category/infrastructures/">
                 PROJECTS
               </Link>
             </li>
@@ -85,7 +85,7 @@ export default function Header() {
               EVENTS
               </Link>
               <ul className="dropdown-menu">
-                <li><Link className="dropdown-item " href="/news-event//">NEWS EVENT</Link></li>
+                <li><Link className="dropdown-item " href="/news-event/">NEWS EVENT</Link></li>
                 <li><Link className="dropdown-item " href="/blog/">BLOG</Link></li>
               </ul>
             </li>

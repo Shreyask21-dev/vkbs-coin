@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 
 export default function ContactUs({ ProjectData }) {
 
-  console.log("ProjectData", ProjectData)
+ 
 
  
   const [activeTab, setActiveTab] = useState(0);
@@ -73,13 +73,13 @@ export default function ContactUs({ ProjectData }) {
                  <div className='conatiner'>
                   <div className='row'>
                     <div className='col-lg-12'>
-                     <div className='inner-data-active' dangerouslySetInnerHTML={{ __html: ProjectData.nodes[activeTab].name}} >
-                         
-                     </div>
+                     <h1 className='inner-data-active' dangerouslySetInnerHTML={{ __html: ProjectData.nodes[activeTab].name}} ></h1>
                     
-                         
+                         {
+                            
+                         }
                         
-                
+        
                          </div>
                     </div>
                    
@@ -94,7 +94,7 @@ export default function ContactUs({ ProjectData }) {
 
           
         </div>
-      </div>
+     
 
       
     </>

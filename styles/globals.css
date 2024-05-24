@@ -859,3 +859,36 @@ body .btn-job:hover{
     background-color: #0056b3; /* Adjust the hover background color as needed */
   }
   
+
+  .project-hgt {
+    height: 500px !important;
+  }
+
+  .project-title h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .project-page-new{
+    background-color: #F2F2F2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .project-url ul {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+
+  .project-url ul li a{
+  font-size: 24px;
+  font-weight: 400;
+  color: #303030 !important;
+  }
+
+  .project-url ul li .active{
+    background-color: #fff;
+    color: #303030 !important;
+    }

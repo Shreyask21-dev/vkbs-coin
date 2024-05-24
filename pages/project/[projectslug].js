@@ -3,47 +3,17 @@ import Link from 'next/link'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { BASEPATH } from "@/config";
+import ProjectComponent from '@/components/ProjectCat';
 
 export default function InnerProjectPage({ projectSingle }) {
+
+    
 
     const [setProjectName, getProjectName] = useState([])
     const router = useRouter();
     var LiveUrl = router.asPath;
 
-
-
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const response = await fetch(`${BASEPATH}graphql`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        query: `
-                            query NewQuery {
-                                projects(first: 50) {
-                                    nodes {
-                                        title
-                                        uri
-                                    }
-                                }
-                            }
-                        `,
-                    }),
-                });
-
-                const data = await response.json();
-                getProjectName(data.data.projects.nodes)
-
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        }
-        fetchData();
-    }, [])
-
+//   console.log("LiveUrl--->" ,LiveUrl)
 
     if (projectSingle?.data?.project !== null) {
         return (
@@ -53,7 +23,7 @@ export default function InnerProjectPage({ projectSingle }) {
                     <link rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${projectSingle?.data?.project?.projectId}.css`} media="all" />
                 </Head>
 
-                <div className='section inner-hero-banner'>
+                <div className='section inner-hero-banner project-hgt'>
                     <div className='container'>
                         <div className='row'>
                             <div className='col-lg-8'>
@@ -69,28 +39,18 @@ export default function InnerProjectPage({ projectSingle }) {
 
                 <div className='project-title'>
                     <div className='container'>
-                        <div className='space5'></div>
-                        <h1>Projects</h1>
-                        <div className='space5'></div>
+                        <h2>Projects</h2>
                     </div>
                 </div>
 
 
-                <div className='project-page'>
-                    <div className='container'>
+                
+                    <div className='container project-page-new'>
 
                         <div className='row project-bg'>
                             <div className='col-lg-3'>
-                                <ul>
-                                    {
-                                        setProjectName.map((item, index) => (
-                                            <>
-                                                <li> <Link className={`nav-link ${LiveUrl == `${item.uri}` ? 'active' : ''}`} href={item.uri}>{item.title}</Link></li>
-                                            </>
-                                        ))
-                                    }
-
-                                </ul>
+                                {/* here List */}
+                                <ProjectComponent/>
                             </div>
                             <div className='col-lg-9'>
 
@@ -126,7 +86,7 @@ export default function InnerProjectPage({ projectSingle }) {
                             </div>
                         </div>
                     </div>
-                </div>
+                
             </>
         )
     }
