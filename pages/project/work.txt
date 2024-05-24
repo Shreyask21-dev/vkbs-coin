@@ -1,0 +1,159 @@
+import React from 'react'
+import EnquiryForm from '@/components/EnquiryForm'
+import Link from 'next/link'
+import Head from 'next/head'
+import { BASEPATH } from "@/config";
+
+import { useState, useEffect } from 'react';
+
+
+export default function ContactUs({ ProjectData }) {
+
+  console.log("ProjectData", ProjectData)
+
+ 
+  const [activeTab, setActiveTab] = useState(0);
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
+
+
+
+  return (
+    <>
+      <Head>
+        
+       
+      </Head>
+
+      {/* Hero banner design */}
+      <div className='section inner-hero-banner'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-8'>
+              <div className='inner-text'>
+                <h1>Contact Us</h1>
+                <p> Let us know how we can help you with your existing or future projects</p>
+                <div className='line'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+            <div className='space5'></div>
+            
+             <div className='location'>
+                 <div className='container'>
+                  
+          
+            <div className="horizontal-tabs">
+              <div className='row'>
+                <div className='col-lg-3'>
+                <div className='tab-bg-pr'>
+                <div className="tab-buttons-pr">
+                {
+                  ProjectData.nodes.map((tab, index) => (
+                    <>
+                    <button key={index} className={index === activeTab ? 'active' : ''}
+                      onClick={() => handleTabClick(index)}> {tab.name}</button>
+                    </>
+                   
+                    ))
+
+                }
+                </div>
+              </div>
+                </div>
+
+                <div className='col-lg-9'>
+                <div className="tab-content tab-css">
+                 <div className='conatiner'>
+                  <div className='row'>
+                    <div className='col-lg-12'>
+                     <div className='inner-data-active' dangerouslySetInnerHTML={{ __html: ProjectData.nodes[activeTab].name}} >
+                         
+                     </div>
+                    
+                         
+                        
+                
+                         </div>
+                    </div>
+                   
+                  </div>
+                 </div>
+              </div>
+                </div>
+              </div>
+             
+              
+            </div>
+
+          
+        </div>
+      </div>
+
+      
+    </>
+  )
+}
+
+
+
+export async function getServerSideProps() {
+  try {
+    const response = await fetch(`${BASEPATH}graphql`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        query: `
+        query NewQuery {
+            projectCategories {
+              nodes {
+                count
+                slug
+                name
+                projects {
+                  nodes {
+                    excerpt
+                    projectId
+                    title
+                    uri
+                    featuredImage {
+                      node {
+                        guid
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        `,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    return {
+      props: {
+        ProjectData: data.data.projectCategories,
+      },
+    };
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    return {
+      props: {
+        ProjectData: null,
+        error: 'Error fetching data',
+      },
+    };
+  }
+}
