@@ -49,7 +49,7 @@ export default function CategoryList({ CatSingle }) {
                   <>
                     <div className='col-lg-6' key={index}>
                       <div className="inner-card-pr">
-                        <img src={item.featuredImage.node.guid} alt="img" />
+                        <img src={item?.featuredImage?.node?.guid} alt="img" />
                         <h3>{item.title}</h3>
                         {console.log("item--->", item)}
                         <div dangerouslySetInnerHTML={{ __html: `${item?.excerpt}`, }}></div>

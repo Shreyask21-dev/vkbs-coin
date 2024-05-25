@@ -929,6 +929,7 @@ body .btn-job:hover{
 
     .inner-card-pr img{
         height: 240px;
+        border-radius: 15px;
     }
     .inner-page-pr-data {
         padding-left: 30px;
