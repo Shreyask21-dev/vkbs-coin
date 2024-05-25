@@ -13,7 +13,7 @@ export default function InnerProjectPage({ projectSingle }) {
     const router = useRouter();
     var LiveUrl = router.asPath;
 
-//   console.log("LiveUrl--->" ,LiveUrl)
+  console.log("projectSingle--->" , projectSingle)
 
     if (projectSingle?.data?.project !== null) {
         return (
@@ -49,13 +49,15 @@ export default function InnerProjectPage({ projectSingle }) {
 
                         <div className='row project-bg'>
                             <div className='col-lg-3'>
-                                {/* here List */}
                                 <ProjectComponent/>
                             </div>
                             <div className='col-lg-9'>
 
-                                <div className="inner-page">
-                                    <h3><strong>Client</strong> : {projectSingle?.data?.project?.title} </h3>
+                                <div className="inner-page-pr-data">
+                                    <h3> {projectSingle?.data?.project?.title} </h3>
+                                      <div className='thumb-img'>
+                                        <img src={projectSingle?.data?.project?.featuredImage?.node?.guid} />
+                                      </div>
                                     {projectSingle?.data?.project?.content !== null && (
                                         <div
                                             dangerouslySetInnerHTML={{
@@ -63,26 +65,16 @@ export default function InnerProjectPage({ projectSingle }) {
                                             }}
                                         ></div>
                                     )}
-                                    {/* <div className='row'>
-                                        <div className='col-lg-6 d-flex'>
-                                            <h5>Area :</h5>
-                                            <h6>7,50,000 Sqft.</h6>
-                                        </div>
-                                        <div className='col-lg-6 d-flex'>
-                                            <h5>Equipment Capacity :</h5>
-                                            <h6>Lorem Ipsum</h6>
-                                        </div>
-                                        <div className='space2'></div>
-                                        <div className='col-lg-6 d-flex'>
-                                            <h5>Consultant :</h5>
-                                            <h6>Lorem Ipsum</h6>
-                                        </div>
-                                        <div className='col-lg-6 d-flex'>
-                                            <h5>Location :</h5>
-                                            <h6>Lorem Ipsum</h6>
-                                        </div>
-                                    </div> */}
-                                </div>
+                                    <h6>Project Highlights :</h6>
+                               
+                                     <div className='row'>
+                                        <div className='col-lg-6'><h5>Area : {projectSingle?.data?.project?.projectacflist?.area} </h5></div>
+                                        <div className='col-lg-6'><h5>Equipment Capacity : {projectSingle?.data?.project?.projectacflist?.consultant}</h5></div>
+                                        <div className='col-lg-6'><h5>Consultant : {projectSingle?.data?.project?.projectacflist?.equipmentCapacity}</h5></div>
+                                        <div className='col-lg-6'><h5>Location : {projectSingle?.data?.project?.projectacflist?.location}</h5></div>
+                                     </div>
+
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -139,6 +131,18 @@ export async function getStaticProps({ params }) {
                 title
                 content
                 excerpt
+                featuredImage {
+                    node {
+                      guid
+                    }
+                  }
+                  projectacflist {
+                    area
+                    consultant
+                    equipmentCapacity
+                    fieldGroupName
+                    location
+                  }
               }
             }
           `,

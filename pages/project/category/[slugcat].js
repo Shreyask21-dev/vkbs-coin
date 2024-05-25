@@ -27,7 +27,7 @@ export default function CategoryList({ CatSingle }) {
         </div>
       </div>
 
-      <div className='project-title'>
+      <div className='project-title' id="id">
         <div className='container'>
           <h2>Projects</h2>
         </div>
@@ -36,13 +36,13 @@ export default function CategoryList({ CatSingle }) {
   
       <div className='container project-page-new'>
         <div className='row'>
-          <div className='col-lg-3'>
+          <div className='col-lg-3' >
             <ProjectComponent />
           </div>
 
           <div className='col-lg-9'>
            
-            <div className='row'>
+            <div className='row' >
 
               {
                 CatSingle?.data?.projectCategory?.projects?.nodes.map((item, index) => (
