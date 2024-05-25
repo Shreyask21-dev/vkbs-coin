@@ -887,15 +887,16 @@ body .btn-job:hover{
   font-size: 24px;
   font-weight: 400;
   color: #303030 !important;
+  padding-left: 10px;
   }
 
   .project-url ul li .active{
     background-color: #fff;
     color: #303030 !important;
     margin: 0px;
-    padding: 0px;
-    font-size: 30px;
-    font-family: 600;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: 500;
     }
 
 .project-page-new .col-lg-3{
@@ -906,6 +907,9 @@ body .btn-job:hover{
         padding-top: 25px;
         padding-bottom: 25px;
     }
+    .project-page-new .row{
+        margin: 10px;
+    }
 
     .inner-card-pr{
         padding-bottom: 20px;
@@ -914,6 +918,7 @@ body .btn-job:hover{
 
   .inner-card-pr h3{
     font-size: 20px;
+    padding-top: 10px;
   }
 
 
