@@ -56,14 +56,17 @@ export default function Industries({ IndustryPage }) {
             {
               IndustryPage.industries.nodes.map((item, index) => (
                 <>
-                  <div className='col-lg-3'>
+                  <div className='col-lg-4'>
                     <div className="image-container" style={{ backgroundImage: ` linear-gradient(0deg, rgb(20 1 12 / 30%), rgb(238 237 238 / 30%)), url('${item?.featuredImage.node.guid}')` }}>
                       <div className="title-overlay">{item.title} <br/>
-                      <div className='location'
+                     <div className="d-flex">
+                     <img src='/images/location.png' width='18' height='20' alt='' />
+                     <div className='location'
                             dangerouslySetInnerHTML={{
-                              __html: ` ${item.excerpt}`,
+                              __html: `${item.excerpt}`,
                             }}
                           ></div>
+                     </div>
                       </div>
                       <div className="text-overlay">
                         <div className='inner-over'>{item.title}
@@ -100,21 +103,21 @@ export async function getServerSideProps() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         query: `
-          query MyQuery2Copy {
-            industries {
-              nodes {
-                title
-                content
-                excerpt
-                 industrieId
-                featuredImage {
-                  node {
-                    guid
-                  }
+        query MyQuery2Copy {
+          industries(first: 100) {
+            nodes {
+              title
+              content
+              excerpt
+              industrieId
+              featuredImage {
+                node {
+                  guid
                 }
               }
             }
           }
+        }
           `,
       }),
     });
