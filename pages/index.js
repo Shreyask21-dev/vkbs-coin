@@ -309,7 +309,7 @@ export default function HomePage() {
               <Link href='/project/byte-datacentres-mumbai-llp/'
                 type="button"
                 className="mt-2 btn btn-primary-two  btn-lg">
-                View 
+                View More
               </Link>
               </div>
             </div>
@@ -324,7 +324,7 @@ export default function HomePage() {
               <Link href='/project/pune-airport/'
                 type="button"
                 className="mt-2 btn btn-primary-two  btn-lg">
-                View 
+                View More
               </Link>
               </div>
             </div>
@@ -339,7 +339,7 @@ export default function HomePage() {
               <Link href='/project/gmrcl-surat-metro/'
                 type="button"
                 className="mt-2 btn btn-primary-two  btn-lg">
-                View 
+                View More
               </Link>
               </div>
             </div>
@@ -354,7 +354,7 @@ export default function HomePage() {
               <Link href='/project/imcc-it-park-mumbai/'
                 type="button"
                 className="mt-2 btn btn-primary-two  btn-lg">
-                View 
+                View More
               </Link>
               </div>
             </div>
