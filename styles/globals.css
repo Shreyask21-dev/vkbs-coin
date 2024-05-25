@@ -875,6 +875,7 @@ body .btn-job:hover{
     background-color: #F2F2F2;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 10px;
   }
 
   .project-url ul {
@@ -891,4 +892,32 @@ body .btn-job:hover{
   .project-url ul li .active{
     background-color: #fff;
     color: #303030 !important;
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    font-family: 600;
     }
+
+.project-page-new .col-lg-3{
+    padding: 0px;
+}
+    .project-page-new .col-lg-9{
+        background-color: #fff;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .inner-card-pr{
+        padding-bottom: 20px;
+      }
+    
+
+  .inner-card-pr h3{
+    font-size: 20px;
+  }
+
+
+    .inner-card-pr img{
+        height: 240px;
+    }
+   
