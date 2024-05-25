@@ -119,7 +119,7 @@ export default function HomePage() {
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   <img src='/images/building.png' width='40' height='50' alt='' />
-                  <h2>{value}<span>Mn</span></h2>
+                  <h2>{value}Mn <span>Sq.Ft</span></h2>
                 </div>
                 <p className='mt-n1'>MEP Projects Delivered</p>
               </div>
@@ -129,7 +129,7 @@ export default function HomePage() {
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   {/* <img src='/images/building.png' width='50' height='62' alt=''/> */}
-                  <h2>$ {price}Mn</h2>
+                  <h2>$ {price}Mn </h2>
                 </div>
                 <p className='mt-n1'>MEP Projects Completed</p>
               </div>
@@ -303,10 +303,10 @@ export default function HomePage() {
           <div className='col-lg-3 '>
             <div className='bg-exp-data bg-exp-1'>
             <div className='inner-data-cont'>
-              <h6>Infrastructure</h6>
-              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-              <p>Bangalore</p>
-              <Link href='/'
+              <h6>DATA Center</h6>
+              <h3>Byte Datacentres (Mumbai) LLP</h3>
+              <p>Digha, New Mumbai</p>
+              <Link href='/project/byte-datacentres-mumbai-llp/'
                 type="button"
                 className="mt-2 btn btn-primary-two  btn-lg">
                 View 
@@ -318,10 +318,10 @@ export default function HomePage() {
            <div className='col-lg-3 '>
             <div className='bg-exp-data bg-exp-2'>
               <div className='inner-data-cont'>
-              <h6>Infrastructure222</h6>
-              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-              <p>Bangalore</p>
-              <Link href='/'
+              <h6>Infrastructure</h6>
+              <h3>Pune Airport</h3>
+              <p>Pune</p>
+              <Link href='/project/pune-airport/'
                 type="button"
                 className="mt-2 btn btn-primary-two  btn-lg">
                 View 
@@ -334,9 +334,9 @@ export default function HomePage() {
             <div className='bg-exp-data bg-exp-3'>
             <div className='inner-data-cont'>
               <h6>Infrastructure</h6>
-              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-              <p>Bangalore</p>
-              <Link href='/'
+              <h3>GMRCL Surat Metro</h3>
+              <p>Surat, Gujrat</p>
+              <Link href='/project/gmrcl-surat-metro/'
                 type="button"
                 className="mt-2 btn btn-primary-two  btn-lg">
                 View 
@@ -348,10 +348,10 @@ export default function HomePage() {
            <div className='col-lg-3 '>
             <div className='bg-exp-data bg-exp-4'>
             <div className='inner-data-cont'>
-              <h6>Infrastructure</h6>
-              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-              <p>Bangalore</p>
-              <Link href='/'
+              <h6>Commercial</h6>
+              <h3>IMCC IT Park, Mumbai</h3>
+              <p>Ghansoli, Navi Mumbai</p>
+              <Link href='/project/imcc-it-park-mumbai/'
                 type="button"
                 className="mt-2 btn btn-primary-two  btn-lg">
                 View 
