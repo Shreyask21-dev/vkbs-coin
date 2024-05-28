@@ -49,11 +49,24 @@ h5 {
 h6 {
     font-size: 15px;
 } */
+.job-item{
+    height: 100%;
+}
+.viewButton{
+    
+    bottom:0;
+}
+.timelineContainer{
+    background-color: #F2F2F2;
+}
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
 img {
     max-width: 100%;
 }
 p{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif ;
     font-size: 16px;
 }
 
@@ -165,6 +178,7 @@ body .btn-primary {
     color: #fff;
     border-color: transparent;
     outline: none;
+    font-family: Poppins !important;
 }
 body .btn-default {
     background: #fff;
@@ -385,10 +399,10 @@ body .btn-job:hover{
     list-style: none;
 }
 
-.social-media a img {
+/* .social-media a img {
     height: 30px;
     width: 30px;
-}
+} */
 
 @media screen and (max-width: 767px)
 {
@@ -880,32 +894,43 @@ body .btn-job:hover{
 
   .project-url ul {
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     padding-left: 0rem;
   }
 
   .project-url ul li a{
   font-size: 24px;
   font-weight: 400;
-  color: #303030 !important;
   }
 
   .project-url ul li .active{
+    padding-top: 8px;
+    padding-bottom: 10px;
     background-color: #fff;
     color: #303030 !important;
     margin: 0px;
-    padding-left: 10px;
+    padding-left: 0px;
     font-size: 25px;
     font-weight: 500;
+    text-decoration: underline;
+    padding-left: 5px;
+    text-decoration-color: var(--primaryColor);
+    text-underline-offset: 8px;
     border-style: solid;
-    border-width: 0px 0px 2px 0px;
-    border-color: var(--bgColorPrimary);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    /* border-width: 0px 0px 2px 0px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    }
+
+    .project-url ul li{
+       padding-left: 0px;
     }
 
 .project-page-new .col-lg-3{
     padding: 0px;
+}
+.bg-white-2 {
+    background-color: #000;
 }
     .project-page-new .col-lg-9{
         background-color: #fff;
@@ -924,6 +949,19 @@ body .btn-job:hover{
   .inner-card-pr h3{
     font-size: 20px;
     padding-top: 10px;
+    display: -webkit-box;         /* Use a flexbox-based layout model */
+    -webkit-box-orient: vertical; /* Set the box to be vertically oriented */
+    -webkit-line-clamp: 1;        /* Limit the number of lines to 2 */
+    overflow: hidden;             /* Hide overflowed text */
+    text-overflow: ellipsis;      /* Add an ellipsis at the end of the text */
+  }
+
+  .inner-card-pr p{
+    display: -webkit-box;         /* Use a flexbox-based layout model */
+    -webkit-box-orient: vertical; /* Set the box to be vertically oriented */
+    -webkit-line-clamp: 1;        /* Limit the number of lines to 2 */
+    overflow: hidden;             /* Hide overflowed text */
+    text-overflow: ellipsis; 
   }
 
 
@@ -941,7 +979,7 @@ body .btn-job:hover{
         height: 300px;
     }
     .inner-page-pr-data p{
-        padding-top: 10px;
+        padding-top: 20px;
     }
     .inner-page-pr-data h6{
         font-size: 30px;
@@ -950,11 +988,16 @@ body .btn-job:hover{
     }
     .inner-page-pr-data h5{
         padding-top: 25px;
-        font-size: 25px;
+        font-size: 24px;
         color: #59A946;
         font-weight: 600;
     }
     
+
+    .location{
+        font-weight: 400;
+        font-size: 14;
+    }
 
     .image-container .location{
         padding-left: 5px;
@@ -964,3 +1007,22 @@ body .btn-job:hover{
     .count-inner-4.counter-center img {
         margin-top: 7px;
     }
+
+
+    /* Hide the element on mobile devices */
+@media (max-width: 767px) {
+    .tab-buttons {
+        display:block;
+    }
+    .horizontal-tabs .added{
+        margin-bottom: 10px;
+        /* margin: 10px; */
+    } 
+}
+
+
+.inner-page-pr-data h5 strong{
+    color: #303030 !important;
+    font-size: 24px;
+    font-weight: 400;
+}

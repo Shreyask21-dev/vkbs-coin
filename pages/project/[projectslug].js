@@ -67,17 +67,20 @@ export default function InnerProjectPage({ projectSingle }) {
                                     )}
                                     <h6>Project Highlights :</h6>
                                
-                                     <div className='row'>
-                                        <div className='col-lg-6'><h5>Area : {projectSingle?.data?.project?.projectacflist?.area} </h5></div>
-                                        <div className='col-lg-6'><h5>Equipment Capacity : {projectSingle?.data?.project?.projectacflist?.consultant}</h5></div>
-                                        <div className='col-lg-6'><h5>Consultant : {projectSingle?.data?.project?.projectacflist?.equipmentCapacity}</h5></div>
-                                        <div className='col-lg-6'><h5>Location : {projectSingle?.data?.project?.projectacflist?.location}</h5></div>
-                                     </div>
+                                     <div className='d-flex'>
+                                        <div className='col-lg-6'><h5>Area : <strong>{projectSingle?.data?.project?.projectacflist?.area} </strong></h5></div>
+                                        <div className='col-lg-6'><h5>Equipment Capacity : <strong>{projectSingle?.data?.project?.projectacflist?.equipmentCapacity}</strong></h5></div>
+                                    </div>
+                                    <div className='d-flex'>
+                                        <div className='col-lg-6'><h5>Consultant : <strong>{projectSingle?.data?.project?.projectacflist?.consultant}</strong></h5></div>
+                                        <div className='col-lg-6'><h5>Location : <strong>{projectSingle?.data?.project?.projectacflist?.location}</strong></h5></div>
+                                        </div>
 
                             </div>
                             </div>
                         </div>
                     </div>
+                    <div className='space5'></div>
                 
             </>
         )

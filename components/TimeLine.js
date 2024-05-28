@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-
+import timeline from '../public/images/timeline.webp'
+import TimelineImage from 'next/image'
 
 export default function TimeLine() {
 

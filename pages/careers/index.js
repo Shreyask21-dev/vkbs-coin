@@ -118,7 +118,9 @@ export default function CareersIndex({carrersData}) {
                                     </ul>
                                  </div>
                                  <div className='job-description' dangerouslySetInnerHTML={{__html: `${item.excerpt}`}}></div>
-                                 <Link href={item.uri} type="button" className="mt-2 btn btn-primary btn-job"> Read More</Link>
+                                 
+                                  <Link href={item.uri} type="button" className="mt-2 btn btn-primary btn-job "> Read More</Link>
+                                 
                              </div>
                          </SplideSlide>
                             

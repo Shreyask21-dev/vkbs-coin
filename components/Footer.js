@@ -16,7 +16,7 @@ export default function Footer() {
             <div className='col-lg-2'>
               <h5>Quick Links</h5>
               <ul className='footer-nav'>
-                <li><Link href="/out-story">Our Story</Link></li>
+                <li><Link href="/our-story">Our Story</Link></li>
                 <li><Link href="/project/infrastructures/">Projects</Link></li>
                 <li><Link href="/careers">Career</Link></li>
                 <li><Link href="/blog">Blog</Link></li>
@@ -38,7 +38,7 @@ export default function Footer() {
                 You can always contact with us via email  or phone. Get in touch with contact and get a quote form.
               </p>
               <ul className='footer-nav'>
-                <li><img src="/images/envelope.png" alt=''/><span> Username @example.com</span></li>
+                <li><img src="/images/envelope.png" alt=''/><span> username@example.com</span></li>
                 <li><img src="/images/phone.png" alt=''/><span>0000-222-333</span></li>
               </ul>
             </div>
@@ -57,9 +57,21 @@ export default function Footer() {
         </div>
         <div className='container'>
           <div className='social-media'>
-            <img src='/images/facebook.png' className='social-media-list' alt='facebook.png' />
-            <img src='/images/linkedin.png' className='social-media-list' alt='linkedin' />
-            <img src='/images/youtube.png' className='social-media-list' alt='youtube' />
+            <a href="https://www.facebook.com/VKBuildingServices"  target='_blank'> 
+              <span className=''>
+                <img src='/images/facebook.png' className='social-media-list' alt='facebook.png' />
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/company/vk-building-services-pvt-ltd-/" target='_blank'>
+              <span>
+                <img src='/images/linkedin.png' className='social-media-list' alt='linkedin' />
+              </span>
+            </a>
+            <a href="https://www.youtube.com/@vkbuildingservices6575/"  target='_blank'>
+              <span>
+                <img src='/images/youtube.png' className='social-media-list' alt='youtube' />
+              </span>
+            </a>
           </div>
         </div>
       </div>

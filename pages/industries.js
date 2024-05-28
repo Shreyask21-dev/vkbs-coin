@@ -10,7 +10,7 @@ export default function Industries({ IndustryPage }) {
   return (
     <>
       <Head>
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
       </Head>
       {/* Hero banner design */}
       <div className='section inner-hero-banner'>
@@ -60,8 +60,9 @@ export default function Industries({ IndustryPage }) {
                     <div className="image-container" style={{ backgroundImage: ` linear-gradient(0deg, rgb(20 1 12 / 30%), rgb(238 237 238 / 30%)), url('${item?.featuredImage.node.guid}')` }}>
                       <div className="title-overlay">{item.title} <br/>
                      <div className="d-flex">
-                     <img src='/images/location.png' width='18' height='20' alt='' />
-                     <div className='location'
+                     {/* <img src='/images/location.png' width='18' height='20' alt='' /> */}
+                     <span className='pb-2'><i class="bi bi-geo-alt"></i></span>
+                     <div className='location pt-2'
                             dangerouslySetInnerHTML={{
                               __html: `${item.excerpt}`,
                             }}

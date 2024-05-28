@@ -66,7 +66,7 @@ export default function CategoryList({ CatSingle }) {
           </div>
         </div>
       </div>
-     
+      <div className='space5'></div>
     </>
   )
 }

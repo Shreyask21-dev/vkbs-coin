@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 export default function HomePage() {
 
   const [value, setValue] = useState(0);
-  const [price , setprice] = useState(300);
+  const [price , setprice] = useState(0);
   const [team , setteam] = useState(6000);
   const [stateList , setStateList] = useState(0);
 
@@ -75,7 +75,7 @@ export default function HomePage() {
     };
 
     useEffect(() => {
-      const intervalId = setInterval(incrementValue4, 10); 
+      const intervalId = setInterval(incrementValue4, 1); 
       return () => clearInterval(intervalId); 
     }, []);
 
@@ -97,7 +97,7 @@ export default function HomePage() {
             <div className='col-lg-8'>
               <div className='inner-text'>
                 <h1>Welcome To India's <br /> leading MEP Engineering & Contracting Company</h1>
-                <p>Delivering Quality With Innovation Since 2005</p>
+                <p className='poppins'>Delivering Quality With Innovation Since 2005</p>
                 <Link href='/'
                   type="button"
                   className="mt-2 btn btn-primary btn-rounded btn-lg">
@@ -182,6 +182,7 @@ export default function HomePage() {
 
       <div className='section solution-slider'>
         <div className='container'>
+          
           <div className='section-slider'>
             <h6>what we do</h6>
             <h5>Our Solutions</h5>
@@ -212,7 +213,7 @@ export default function HomePage() {
                                 <img src="/images/soution-icon-1.png" alt="partners_logo"
                                     className="img-responsive" />
                                     <div className='solu-heading-tag'>Our MEP Services</div>
-                                    <span>Read More →</span>
+                                    <span className='readMore'><a href="/mechanical/#m">Read More → </a></span>
                             </div>
                         </SplideSlide>
                      
@@ -222,6 +223,8 @@ export default function HomePage() {
                                 <img src="/images/solution-Icon-2.png" alt="partners_logo"
                                     className="img-responsive" />
                                      <div className='solu-heading-tag'>Integrated MEP <br/>Contracting</div>
+                                      <span className='readMore'><a href="/after-sales">Read More → </a></span>
+
                             </div>
                         </SplideSlide>
 
@@ -230,6 +233,8 @@ export default function HomePage() {
                                 <img src="/images/solution-icon-three.png" alt="partners_logo"
                                     className="img-responsive" />
                                      <div className='solu-heading-tag'>Pre Fabrication</div>
+                                    <span className='readMore'><a href="/prefabrication">Read More → </a></span>
+
                             </div>
                         </SplideSlide>
 
@@ -238,16 +243,12 @@ export default function HomePage() {
                                 <img src="/images/solution-con-four.png" alt="partners_logo"
                                     className="img-responsive" />
                                      <div className='solu-heading-tag'>Retrofitting Services</div>
+                                    <span className='readMore'><a href="/industries">Read More → </a></span>
+
                             </div>
                         </SplideSlide>
 
-                        <SplideSlide>
-                            <div className="solution-item solution-one">
-                                <img src="/images/solution-con-four.png" alt="partners_logo"
-                                    className="img-responsive" />
-                                     <div className='solu-heading-tag'>Retrofitting Services</div>
-                            </div>
-                        </SplideSlide>
+              
 
             </Splide>
           </div>
@@ -266,7 +267,7 @@ export default function HomePage() {
                 <h3>Pre-Fabrication</h3>
                 <div className='space5'></div>
                 <p className='paragraph'>Reimagining onsite execution, VKBS revolutionizes MEP services by integrating manufacturing excellence through pre-fabrication for rapid assembly of defect-free modular components.. Our pioneering template-driven prefab techniques integrate innovation with quality and safety to fast-track projects and maximize customer delight.</p>
-                <Link href='/'
+                <Link href='/prefabrication'
                   type="button"
                   className="mt-2 btn btn-primary btn-rounded btn-lg">
                   Know More
@@ -290,7 +291,7 @@ export default function HomePage() {
               <h3>See our expertise</h3>
             </div>
             <div className='col-lg-6 text-end'>
-              <Link href='/'
+              <Link href='/project/category/commercial/#id'
                 type="button"
                 className="mt-2 btn btn-primary btn-rounded btn-lg">
                 View All Projects
@@ -304,11 +305,11 @@ export default function HomePage() {
             <div className='bg-exp-data bg-exp-1'>
             <div className='inner-data-cont'>
               <h6>DATA Center</h6>
-              <h3>Byte Datacentres (Mumbai) LLP</h3>
+              <h3 className='heading'>Byte Datacentres (Mumbai) LLP</h3>
               <p>Digha, New Mumbai</p>
               <Link href='/project/byte-datacentres-mumbai-llp/'
                 type="button"
-                className="mt-2 btn btn-primary-two  btn-lg">
+                className="mt-2 btn btn-primary-two  btn seeMore">
                 View More
               </Link>
               </div>
@@ -323,7 +324,7 @@ export default function HomePage() {
               <p>Pune</p>
               <Link href='/project/pune-airport/'
                 type="button"
-                className="mt-2 btn btn-primary-two  btn-lg">
+                className="mt-2 btn btn-primary-two  btn seeMore">
                 View More
               </Link>
               </div>
@@ -338,7 +339,7 @@ export default function HomePage() {
               <p>Surat, Gujrat</p>
               <Link href='/project/gmrcl-surat-metro/'
                 type="button"
-                className="mt-2 btn btn-primary-two  btn-lg">
+                className="mt-2 btn btn-primary-two btn seeMore">
                 View More
               </Link>
               </div>
@@ -353,7 +354,7 @@ export default function HomePage() {
               <p>Ghansoli, Navi Mumbai</p>
               <Link href='/project/imcc-it-park-mumbai/'
                 type="button"
-                className="mt-2 btn btn-primary-two  btn-lg">
+                className="mt-2 btn btn-primary-two btn seeMore">
                 View More
               </Link>
               </div>
@@ -377,7 +378,7 @@ export default function HomePage() {
                 <h6>MEP Excellence With</h6>
                 <h3>Integrated Project Delivery</h3>
                 <p className='paragraph'>Our MEP services are powered by Centre of Excellence, Project Control Department, stringent 4-Level Monitoring governance, and Transition Task Force, ensuring seamless integration across project lifecycles. This unified alignment of cross-functional expert teams results in optimized outcomes by collectively driving adherence to critical success benchmarks - safety, quality, timely delivery and perfection - across the entirety of Mechanical, Electrical and Plumbing solutions.</p>
-                <Link href='/'
+                <Link href='/quality-assurance'
                   type="button"
                   className="mt-2 btn btn-primary btn-rounded btn-lg">
                   Know More

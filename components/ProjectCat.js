@@ -65,8 +65,8 @@ const ProjectComponent = () => {
         <>
         <div className='project-url'>
         <ul>
-          <li key={item.slug}> 
-             <Link className={`nav-link ${LiveUrl == `/project/category/${item.slug}/#id` ? 'active line-2' : ''}`} href={`/project/category/${item.slug}/#id`}>{item.name} </Link>
+          <li key={item.slug} className=''> 
+             <Link className={`nav-link ${LiveUrl == `/project/category/${item.slug}/#id` ? 'active line-4' : ''}`} href={`/project/category/${item.slug}/#id`}>{item.name}</Link>
           </li>
          
         </ul>

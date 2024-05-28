@@ -94,6 +94,7 @@ export default function NewsEventIndex() {
       {/* Our Accolades */}
 
       <div className='section accolades-slider'>
+        
         <div className='container'>
           <div className='inner-accolades-slider'>
             <h4>Accolades</h4>
@@ -120,30 +121,42 @@ export default function NewsEventIndex() {
               }}
               aria-label="customList">
 
+              <div className='d-flex justify-content-between'>
 
-              <SplideSlide>
-                <div className="item-accolades">
-                  <img src='/images/a1.png' alt='' />
+                <div>
+                  <SplideSlide>
+                    <div className="item-accolades">
+                      <img src='/images/a1.png' alt='' />
+                    </div>
+                  </SplideSlide>
                 </div>
-              </SplideSlide>
 
-              <SplideSlide>
-                <div className="item-accolades">
-                  <img src='/images/a2.png' alt='' />
-                </div>
-              </SplideSlide>
+                <div>
 
-              <SplideSlide>
-                <div className="item-accolades">
-                  <img src='/images/a3.png' alt='' />
+                  <SplideSlide>
+                    <div className="item-accolades">
+                      <img src='/images/a2.png' alt='' />
+                    </div>
+                  </SplideSlide>
                 </div>
-              </SplideSlide>
 
-              <SplideSlide>
-                <div className="item-accolades">
-                  <img src='/images/a4.png' alt='' />
+                <div>
+                  <SplideSlide>
+                    <div className="item-accolades">
+                      <img src='/images/a3.png' alt='' />
+                    </div>
+                  </SplideSlide>
                 </div>
-              </SplideSlide>
+
+                <div>
+                  <SplideSlide>
+                    <div className="item-accolades">
+                      <img src='/images/a4.png' alt='' />
+                    </div>
+                  </SplideSlide>
+                </div>
+
+              </div>
 
 
             </Splide>
