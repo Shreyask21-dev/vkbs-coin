@@ -164,7 +164,7 @@ export default function HomePage() {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6'>
-              <img src='/images/erp.png' className='bg-exp-data' alt='' />
+              <img src='/images/turky.png' className='bg-exp-data' alt='' />
             </div>
             <div className='col-lg-6'>
               <div className='inner-two'>
@@ -275,7 +275,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className='col-lg-6'>
-              <img src='/images/left.png' className='bg-exp-data' alt='' />
+              <img src='/images/pre-feb.png' className='bg-exp-data' alt='' />
             </div>
           </div>
         </div>
@@ -399,7 +399,7 @@ export default function HomePage() {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6'>
-            <img src='/images/pipe.png' className='bg-exp-data' alt='' />
+            <img src='/images/unw.png' className='bg-exp-data' alt='' />
             </div>
             <div className='col-lg-6'>
             <div className='inner-two'>

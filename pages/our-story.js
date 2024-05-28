@@ -134,7 +134,7 @@ export default function Companytimeline() {
               </div>
             </div>
             <div className='col-lg-6'>
-              <img src='/images/timeline-industry.png' className='bg-exp-data' alt='' />
+              <img src='/images/our-story-one.png' className='bg-exp-data' alt='' />
             </div>
           </div>
         </div>
@@ -182,7 +182,7 @@ export default function Companytimeline() {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6'>
-              <img src='/images/guidline.png' className='bg-exp-data' alt='' />
+              <img src='/images/our-story-img.png' className='bg-exp-data' alt='' />
             </div>
             <div className='col-lg-6'>
               <div className='inner-two'>
