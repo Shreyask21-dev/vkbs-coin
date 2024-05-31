@@ -4,7 +4,10 @@
     padding-bottom: 50px;
 }
 .timeline-sub-heading h2{
-    color: #fff;
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
 }
 
 .timeline-section {
@@ -28,8 +31,10 @@
   padding-bottom: 50px;
 }
 .timeline-start h2{
-  font-size: 60px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #303030;
 }
 .timeline {
   position: relative;

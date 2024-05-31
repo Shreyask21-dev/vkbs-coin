@@ -8,11 +8,12 @@
 }
 
 .inner-hero-banner {
-   background-image: url('/images/inner-banner.png');
+   background-image: url('/images/Project.png');
    background-repeat: no-repeat;
    background-size: cover;
    height: 700px;
 }
+
 
 .inner-hero-banner p{
    color: #fff;
@@ -32,7 +33,9 @@
 }
 
 .section .inner-text p {
-   font-weight: 600;
+   line-height: 24px;
+   font-size: 16px;
+   font-weight: 400;
    padding-top: 10px;
 }
 
@@ -60,10 +63,22 @@
    padding-top: 50px;
    padding-bottom: 50px;
 }
+.headingProjects{
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 30px !important;
+   color: #303030;
+}
+.headingProjectSub{
+   font-weight: 400;
+   font-size: 13px !important;
+   font-family: "poppins" !important;
+}
 .section h3{
    font-size: 50px;
-   font-weight: 600;
-
+   font-weight: 700;
+   line-height: 60px;
+   color: #303030;
 }
 .count-design{
    background-color: var(--bgColorPrimary);
@@ -88,8 +103,7 @@
 }
 
 .count-design p{
-  
-   font-size: 18px;
+   font-size: 16px;
    color:var(--whiteColor);
    text-align: revert-layer;
 }
@@ -134,7 +148,7 @@
 }
 .two-right h3{
    font-size: 50px;
-   font-weight: 600;
+   font-weight: 700;
    padding-bottom: 20px;
 
 }
@@ -247,12 +261,7 @@ p.paragraph {
    background-image: url('/images/ser.png');
    background-repeat: no-repeat;
    background-size: cover;
-   /* D9 */
-   
-   /* background: -webkit-linear-gradient(#59A946D9, 
-    #59A946D9), url("/images/ser.png");
-   background-repeat: no-repeat;
-   background-size: cover; */
+
 }
 
 .bg-exp-1:hover {
@@ -268,10 +277,6 @@ p.paragraph {
    background-repeat: no-repeat;
    background-size: cover;
 
-   /* background: -webkit-linear-gradient(#59A946D9, 
-   #59A946D9), url("/images/exp1.png");
-   background-repeat: no-repeat;
-   background-size: cover; */
 }
 
 .bg-exp-2:hover {
@@ -287,12 +292,6 @@ p.paragraph {
    background-repeat: no-repeat;
    background-size: cover;
 
-
-   /* background: -webkit-linear-gradient(#59A946D9, 
-   #59A946D9), url("/images/exp2.png");
-    background-repeat: no-repeat;
-    background-size: cover; */
-
 }
 
 .bg-exp-3:hover {
@@ -307,11 +306,6 @@ p.paragraph {
    background-image: url('/images/exp3.png');
    background-repeat: no-repeat;
    background-size: cover;
-
-   /* background: -webkit-linear-gradient(#59A946D9, 
-   #59A946D9), url("/images/exp3.png");
-    background-repeat: no-repeat;
-    background-size: cover; */
 
 }
 
@@ -373,7 +367,8 @@ p.paragraph {
 .section .primary-text {
    text-align: center;
    font-size: 36px;
-   font-weight: bold;
+   font-weight: 700;
+   line-height: 20px;
    padding-bottom: 50px;
    text-transform: uppercase;
 }
@@ -394,8 +389,6 @@ p.paragraph {
    background-repeat: no-repeat;
    background-size: cover;
 }
-
-
 
 .solution-item{
    display: flex;

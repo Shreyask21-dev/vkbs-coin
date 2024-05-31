@@ -5,7 +5,7 @@ export default function () {
   return (
     <>
      {/* Hero banner design */}
-     <div className='section inner-hero-banner project-hgt'>
+     <div className='section inner-hero-bannerProject project-hgt'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-8'>

@@ -66,7 +66,7 @@ img {
     max-width: 100%;
 }
 p{
-    font-family: 'Roboto', sans-serif ;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
@@ -165,7 +165,9 @@ body a {
         transform:rotate(360deg)
     }
 }
-
+.heading{
+    line-height: 20px;
+}
 
 /* design part here */
 .head-footer-bg{
@@ -399,10 +401,10 @@ body .btn-job:hover{
     list-style: none;
 }
 
-/* .social-media a img {
-    height: 30px;
-    width: 30px;
-} */
+.social-media a img {
+    /* height: 30px;
+    width: 30px; */
+}
 
 @media screen and (max-width: 767px)
 {
@@ -423,6 +425,8 @@ body .btn-job:hover{
 }
 
 .social-media-list{
+    width: 50px;
+    height: 40px;
     padding-left: 15px
 }
 
@@ -491,13 +495,16 @@ body .btn-job:hover{
 
 
   /* .........All Job Post.... */
+  .job-item{
+    height: 100%;
+  }
 
   .job-slider{
     background-color: #F2F2F2;
   }
   .job-slider h4{
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 700;
     color: #303030;
   }
 
@@ -604,7 +611,9 @@ body .btn-job:hover{
 
 .news-event-section h2{
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 60px;
+    color: #303030
 }
 .inner-event-right{
     padding-bottom: 10px;
@@ -680,7 +689,7 @@ body .btn-job:hover{
   }
 
   .enquiry .col-lg-5 h6{
-    font-size: 30px;
+    font-size: 25px;
     color: #303030;
     font-weight: 700;
     padding-left: 10px;
@@ -698,6 +707,10 @@ body .btn-job:hover{
   }
   .tab-buttons {
     display: flex;
+    font-size: 20px;
+    line-height: 28.13px;
+    font-weight: 700;
+    color: #303030;
   }
   .tab-buttons-pr {
     display:block;
@@ -711,6 +724,7 @@ body .btn-job:hover{
   .tab-buttons button.active {
     background-color: #fff;
     border-style: solid;
+    font-weight: bold;
     border-width: 0px 0px 2px 0px;
     border-color: var(--bgColorPrimary);
   }
@@ -797,6 +811,48 @@ body .btn-job:hover{
     font-size: 24px;
     font-weight: 600;
     
+}
+.inner-hero-bannerOurStory{
+    background-image: url('/images/Group.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.inner-hero-bannerContactUs{
+    background-image: url('/images/ContactUs.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 700px; */
+    width: 100%;
+}
+.inner-hero-bannerProject{
+    background-image: url('/images/Project.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.inner-hero-bannerIndustries{
+    background-image: url('/images/Industries.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 700px; */
+    width: 100%;
+}
+.inner-hero-bannerCareer{
+    background-image: url('/images/Career.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 700px; */
+    width: 100%;
+}
+.inner-hero-bannerEvents{
+    background-image: url('/images/Events.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 700px; */
+    width: 100%;
 }
 
 .text-overlay {
@@ -988,7 +1044,7 @@ body .btn-job:hover{
     }
     .inner-page-pr-data h5{
         padding-top: 25px;
-        font-size: 24px;
+        font-size: 25px;
         color: #59A946;
         font-weight: 600;
     }

@@ -57,8 +57,11 @@ export default function Footer() {
         </div>
         <div className='container'>
           <div className='social-media'>
+            {/* <img src='/images/facebook.png' className='social-media-list' alt='facebook.png' />
+            <img src='/images/linkedin.png' className='social-media-list' alt='linkedin' />
+            <img src='/images/youtube.png' className='social-media-list' alt='youtube' /> */}
             <a href="https://www.facebook.com/VKBuildingServices"  target='_blank'> 
-              <span className=''>
+              <span>
                 <img src='/images/facebook.png' className='social-media-list' alt='facebook.png' />
               </span>
             </a>

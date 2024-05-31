@@ -1,6 +1,6 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Link from 'next/link'
-import timeline from '../public/images/timeline.webp'
+// import timeline from '../public/images/timeline.webp'
 import TimelineImage from 'next/image'
 
 export default function TimeLine() {
@@ -9,7 +9,7 @@ export default function TimeLine() {
 
   return (
     <>
-      {/* <div className='timeline-section'>
+      <div className='timeline-section pb-4 pt-4'>
         <div className='container'>
           <h2 className='text-center'>Company Timeline</h2>
           <div className='space10'></div>
@@ -17,9 +17,9 @@ export default function TimeLine() {
             <img src='/images/time-img.png' alt='' />
           </div>
         </div>
-      </div> */}
+      </div>
 
-      <div className='timeline-start'>
+      {/* <div className='timeline-start'>
          <h2 className='text-center'>Company Timeline</h2>
         <div className='container'>
           <div class="timeline">
@@ -100,7 +100,7 @@ export default function TimeLine() {
 
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 

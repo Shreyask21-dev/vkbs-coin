@@ -8,7 +8,7 @@ import { BASEPATH } from "@/config";
 export default function NewsEventIndex() {
   return (
     <>
-      <div className='section inner-hero-banner'>
+      <div className='section inner-hero-bannerEvents'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-8'>
@@ -42,10 +42,33 @@ export default function NewsEventIndex() {
 
                 <div className='col-lg-6'>
                   <div className='inner-event-right'>
-                    <img src='/images/event-2.png' alt='' />
+                    <img src='/images/URJAVARAN.png' alt='' />
                     <div className='space2'></div>
                     <span>22/10/2022</span>
-                    <h5>ACREX 2014</h5>
+                    <h5>URJAVARAN</h5>
+                    <p className='mt-4'>Lorem ipsum dolor sit amet consectetur. Arcu faucibus morbi aliquam non</p>
+                    <Link href='#' type="button" className="mt-3 btn btn-primary btn-job-carrer">Read More</Link>
+                  </div>
+                </div>
+
+                <div className='col-lg-6'>
+                  <div className='inner-event-right'>
+                    <img src='/images/ACRESERVE.png' alt='' />
+                    <div className='space2'></div>
+                    <span>22/10/2022</span>
+                    <h5>ACRESERVE '13, BANGALORE</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur. Arcu faucibus morbi aliquam non</p>
+                    <Link href='#' type="button" className="mt-2 btn btn-primary btn-job-carrer">Read More</Link>
+                  </div>
+                </div>
+
+
+                <div className='col-lg-6'>
+                  <div className='inner-event-right'>
+                    <img src='/images/INFRASTRUCTURE.png' alt='' />
+                    <div className='space2'></div>
+                    <span>22/10/2022</span>
+                    <h5>INFRASTRUCTURE PROJECT MANAGEMENT</h5>
                     <p>Lorem ipsum dolor sit amet consectetur. Arcu faucibus morbi aliquam non</p>
                     <Link href='#' type="button" className="mt-2 btn btn-primary btn-job-carrer">Read More</Link>
                   </div>
@@ -53,34 +76,11 @@ export default function NewsEventIndex() {
 
                 <div className='col-lg-6'>
                   <div className='inner-event-right'>
-                    <img src='/images/event-2.png' alt='' />
+                    <img src='/images/ACREX12.png' alt='' />
                     <div className='space2'></div>
                     <span>22/10/2022</span>
-                    <h5>ACREX 2014</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur. Arcu faucibus morbi aliquam non</p>
-                    <Link href='#' type="button" className="mt-2 btn btn-primary btn-job-carrer">Read More</Link>
-                  </div>
-                </div>
-
-
-                <div className='col-lg-6'>
-                  <div className='inner-event-right'>
-                    <img src='/images/event-2.png' alt='' />
-                    <div className='space2'></div>
-                    <span>22/10/2022</span>
-                    <h5>ACREX 2014</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur. Arcu faucibus morbi aliquam non</p>
-                    <Link href='#' type="button" className="mt-2 btn btn-primary btn-job-carrer">Read More</Link>
-                  </div>
-                </div>
-
-                <div className='col-lg-6'>
-                  <div className='inner-event-right'>
-                    <img src='/images/event-2.png' alt='' />
-                    <div className='space2'></div>
-                    <span>22/10/2022</span>
-                    <h5>ACREX 2014</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur. Arcu faucibus morbi aliquam non</p>
+                    <h5>ACREX '12, BANGALORE </h5>
+                    <p className="mt-4 pt-2">Lorem ipsum dolor sit amet consectetur. Arcu faucibus morbi aliquam non</p>
                     <Link href='#' type="button" className="mt-2 btn btn-primary btn-job-carrer">Read More</Link>
                   </div>
                 </div>
@@ -94,7 +94,6 @@ export default function NewsEventIndex() {
       {/* Our Accolades */}
 
       <div className='section accolades-slider'>
-        
         <div className='container'>
           <div className='inner-accolades-slider'>
             <h4>Accolades</h4>
@@ -121,42 +120,30 @@ export default function NewsEventIndex() {
               }}
               aria-label="customList">
 
-              <div className='d-flex justify-content-between'>
 
-                <div>
-                  <SplideSlide>
-                    <div className="item-accolades">
-                      <img src='/images/a1.png' alt='' />
-                    </div>
-                  </SplideSlide>
+              <SplideSlide>
+                <div className="item-accolades">
+                  <img src='/images/a1.png' alt='' />
                 </div>
+              </SplideSlide>
 
-                <div>
-
-                  <SplideSlide>
-                    <div className="item-accolades">
-                      <img src='/images/a2.png' alt='' />
-                    </div>
-                  </SplideSlide>
+              <SplideSlide>
+                <div className="item-accolades">
+                  <img src='/images/a2.png' alt='' />
                 </div>
+              </SplideSlide>
 
-                <div>
-                  <SplideSlide>
-                    <div className="item-accolades">
-                      <img src='/images/a3.png' alt='' />
-                    </div>
-                  </SplideSlide>
+              <SplideSlide>
+                <div className="item-accolades">
+                  <img src='/images/a3.png' alt='' />
                 </div>
+              </SplideSlide>
 
-                <div>
-                  <SplideSlide>
-                    <div className="item-accolades">
-                      <img src='/images/a4.png' alt='' />
-                    </div>
-                  </SplideSlide>
+              <SplideSlide>
+                <div className="item-accolades">
+                  <img src='/images/a4.png' alt='' />
                 </div>
-
-              </div>
+              </SplideSlide>
 
 
             </Splide>
@@ -174,20 +161,20 @@ export default function NewsEventIndex() {
                   <li>
                     <div className="inner-img d-flex ">
                       <img src='/images/news.png' alt='' />
-                      <span>VKBS awarded E&M Works of 15 stations for Ahmedabad Metro by GMRCL</span>
+                      <span style={{fontWeight:"700", fontSize:"16px", lineHeight:"18.75px"}}>VKBS awarded E&M Works of 15 stations for Ahmedabad Metro by GMRCL</span>
                     </div>
 
                   </li>
                   <li>
                     <div className="inner-img d-flex"><img src='/images/news.png' alt='' />
-                      <span>VKBS awarded E&M Works of 20 stations for Surat Metro by GMRCL</span>
+                      <span style={{fontWeight:"700", fontSize:"16px", lineHeight:"18.75px"}}>VKBS awarded E&M Works of 20 stations for Surat Metro by GMRCL</span>
                     </div>
 
                   </li>
                   <li>
                     <div className="inner-img d-flex">
                       <img src='/images/news.png' alt='' />
-                      <span>VKBS awarded MEP works for Sattva Horizon at Bengaluru</span>
+                      <span style={{fontWeight:"700", fontSize:"16px", lineHeight:"18.75px"}}>VKBS awarded MEP works for Sattva Horizon at Bengaluru</span>
                     </div>
 
                   </li>
@@ -202,19 +189,19 @@ export default function NewsEventIndex() {
                   <li>
                     <div className="inner-img d-flex">
                       <img src='/images/news.png' alt='' />
-                      <span>VKBS Awarded HVAC package for BAM Digital Realty Data Centre at Chennai</span>
+                      <span style={{fontWeight:"700", fontSize:"16px", lineHeight:"18.75px"}}>VKBS Awarded HVAC package for BAM Digital Realty Data Centre at Chennai</span>
                     </div>
                   </li>
                   <li>
                     <div className="inner-img d-flex">
                       <img src='/images/news.png' alt='' />
-                      <span>VKBS Awarded MEP package for Microsoft Central Kitchen at Hyderabad</span>
+                      <span style={{fontWeight:"700", fontSize:"16px", lineHeight:"18.75px"}}>VKBS Awarded MEP package for Microsoft Central Kitchen at Hyderabad</span>
                     </div>
                   </li>
                   <li>
                     <div className="inner-img d-flex">
                       <img src='/images/news.png' alt='' />
-                      <span>VKBS Awarded HVAC package for LSR Tudor Vantage at Hyderabad</span>
+                      <span style={{fontWeight:"700", fontSize:"16px", lineHeight:"18.75px"}}>VKBS Awarded HVAC package for LSR Tudor Vantage at Hyderabad</span>
                     </div>
                   </li>
                 </ul>

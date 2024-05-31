@@ -34,7 +34,7 @@ export default function ContactUs({ LocationData }) {
       </Head>
 
       {/* Hero banner design */}
-      <div className='section inner-hero-banner'>
+      <div className='section inner-hero-bannerContactUs'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-8'>
@@ -69,7 +69,7 @@ export default function ContactUs({ LocationData }) {
             <div className='space5'></div>
       <div className='location'>
         <div className='container'>
-          <h3>Branches</h3>
+          <h3 style={{fontSize:"50px", fontWeight:"700"}}>Branches</h3>
           <div className='space5'></div>
           <div className='row'>
             <div className="horizontal-tabs">
@@ -114,9 +114,15 @@ export default function ContactUs({ LocationData }) {
             <div className='col-lg-5'>
               <h6>Social Media</h6>
               <div className='social-media'>
-                <img src='/images/facebook.png' className='social-media-list' alt='facebook.png' />
-                <img src='/images/linkedin.png' className='social-media-list' alt='linkedin' />
-                <img src='/images/youtube.png' className='social-media-list' alt='youtube' />
+                <a href="https://www.facebook.com/VKBuildingServices">
+                  <img src='/images/facebook.png' className='social-media-list' alt='facebook.png' />
+                </a>
+                <a href="https://www.linkedin.com/company/vk-building-services-pvt-ltd-/">
+                  <img src='/images/linkedin.png' className='social-media-list' alt='linkedin' />
+                </a>
+                <a href="https://www.youtube.com/@vkbuildingservices6575">
+                  <img src='/images/youtube.png' className='social-media-list' alt='youtube' />
+                </a>
               </div>
             </div>
           </div>

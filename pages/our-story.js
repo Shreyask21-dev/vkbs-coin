@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import TimeLine from '@/components/TimeLine'
-import timeline from '../public/images/timeline.webp'
 export default function Companytimeline() {
 
   
@@ -84,7 +83,7 @@ export default function Companytimeline() {
   return (
     <>
      {/* Hero banner design */}
-      <div className='section inner-hero-banner'>
+      <div className='section inner-hero-bannerOurStory'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-8'>
@@ -126,15 +125,15 @@ export default function Companytimeline() {
             <div className='col-lg-6'>
               <div className='inner-two'>
                
-                <p>Established in 2005 by industry veterans and visionaries who believed India deserves better, VK Building Services was founded on the principles of engineering excellence, customer commitment, sustainable thinking and ethical conduct - tenets that continue to determine growth even today.</p>
-                <p>Over decades, 1000+ clients ranging from public sector giants to private majors have placed faith in VKBS to successfully manifest ambitious MEP engineering projects with demanding prerequisites including some of India's first platinum rated green campuses, rapid metro rail electrifications, remote smart city ecosystem rollouts and more.</p>
-               <p>But meaningful partnerships thrive not by catering to collective comfort but shared aspirations. And the vision driving VKBS remains far-reaching - to transform the potential of emerging infrastructure by raising benchmarks.</p>
-                <p>In all, we have successfully executed over 1000 innovated system rollouts, 50+ awards including Asia's Most Promising MEP Brand 2021, 1400+ workforce competency hours monthly, successful migration of 800+ outdated electrical substations, and verified PUE achievement of 1.32 across 4 Uptime Tier III certified facilities reinforce our commitment to pushing frontiers.</p>
+                <p style={{color:"#8B8E8f"}}>Established in 2005 by industry veterans and visionaries who believed India deserves better, VK Building Services was founded on the principles of engineering excellence, customer commitment, sustainable thinking and ethical conduct - tenets that continue to determine growth even today.</p>
+                <p style={{color:"#8B8E8f"}}>Over decades, 1000+ clients ranging from public sector giants to private majors have placed faith in VKBS to successfully manifest ambitious MEP engineering projects with demanding prerequisites including some of India's first platinum rated green campuses, rapid metro rail electrifications, remote smart city ecosystem rollouts and more.</p>
+               <p style={{color:"#8B8E8f"}}>But meaningful partnerships thrive not by catering to collective comfort but shared aspirations. And the vision driving VKBS remains far-reaching - to transform the potential of emerging infrastructure by raising benchmarks.</p>
+                <p style={{color:"#8B8E8f"}}>In all, we have successfully executed over 1000 innovated system rollouts, 50+ awards including Asia's Most Promising MEP Brand 2021, 1400+ workforce competency hours monthly, successful migration of 800+ outdated electrical substations, and verified PUE achievement of 1.32 across 4 Uptime Tier III certified facilities reinforce our commitment to pushing frontiers.</p>
                
               </div>
             </div>
             <div className='col-lg-6'>
-              <img src='/images/our-story-one.png' className='bg-exp-data' alt='' />
+              <img src='/images/timeline-industry.jpg' className='bg-exp-data' alt='' />
             </div>
           </div>
         </div>
@@ -182,7 +181,7 @@ export default function Companytimeline() {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6'>
-              <img src='/images/our-story-img.png' className='bg-exp-data' alt='' />
+              <img src='/images/guidline.jpg' className='bg-exp-data' alt='' />
             </div>
             <div className='col-lg-6'>
               <div className='inner-two'>
@@ -198,15 +197,7 @@ export default function Companytimeline() {
         </div>
  
          {/* TimeLine Component */}
-         {/* <TimeLine/> #F2F2F2 */}
-          <div className='container-fluid timelineContainer py-4'>
-            <div className=''>
-              <h2 className='text-center pt-4 mt-4'>Company Timeline</h2>
-            </div>
-            <div className='d-flex justify-content-center align-items-center my-4'>
-              <img src='/images/timeline.webp' alt="" width="77.5%" className='my-4'/>
-            </div>
-          </div>
+         <TimeLine/>
         
     </>
   )
