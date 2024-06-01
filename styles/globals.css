@@ -816,7 +816,8 @@ body .btn-job:hover{
     background-image: url('/images/Group.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    background-position: center center;
+    height: 475px;
 }
 
 .inner-hero-bannerContactUs{

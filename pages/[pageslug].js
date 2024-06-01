@@ -22,6 +22,7 @@ export default function SinglePage({ PageApiResult }) {
         style={{
           background: `url(${PageApiResult?.data?.page?.featuredImage?.node?.sourceUrl}) no-repeat center`,
           backgroundSize: `cover`,
+          height:`475px`
         }}
 
         >

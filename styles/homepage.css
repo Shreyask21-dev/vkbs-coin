@@ -10,7 +10,7 @@
 .inner-hero-banner {
    background-image: url('/images/Project.png');
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: cover !important;
    height: 700px;
 }
 
@@ -21,9 +21,13 @@
 .herobanner p{
    color: var(--whiteColor);
 }
+.sectionOurStory .inner-text{
+   padding-top: 20%;
+   color: var(--whiteColor);
+}  
 
 .section .inner-text {
-   padding-top: 20%;
+   padding-top: 10%;
    color: var(--whiteColor);
 }
 

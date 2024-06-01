@@ -115,7 +115,7 @@ export default function Companytimeline() {
   return (
     <>
      {/* Hero banner design */}
-      <div className='section inner-hero-bannerOurStory'>
+      <div className='sectionOurStory inner-hero-bannerOurStory'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-8'>
