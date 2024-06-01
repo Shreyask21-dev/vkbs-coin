@@ -79,37 +79,6 @@ export default function HomePage() {
       return () => clearInterval(intervalId); 
     }, []);
 
-    const myFunction = () => {
-      var dots = document.getElementById("dots");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
-  
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
-  
-    const myFunction2 = () => {
-      var dots = document.getElementById("dots2");
-      var moreText = document.getElementById("more2");
-      var btnText = document.getElementById("myBtn2");
-  
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
  
   
   return (
@@ -200,7 +169,7 @@ export default function HomePage() {
               <div className='inner-two'>
                 <h6>What We do</h6>
                 <h3>Turnkey MEP Solutions</h3>
-                <p>VK Building Services Pvt. Ltd. are the fastest growing MEP Contracting Company providing Turnkey solutions - from concept to commissioning in critical MEP Projects across key sectors. With a customer focused approach, an innovative culture and the ability to respond positively to challenging requirements, we have served over 1000+ satisfied clients. Sustainability and inclusive growth are embedded in our vision and strategic plans....</p>
+                <p>VK Building Services Pvt. Ltd. are the fastest growing MEP Contracting Company providing Turnkey solutions - from concept to commissioning in critical MEP Projects across key sectors. With a customer focused approach, an innovative culture and the ability to respond positively to challenging requirements, we have served over 1000+ satisfied clients. Sustainability and inclusive growth are embedded in our vision and strategic plans.</p>
               </div>
             </div>
           </div>
@@ -405,8 +374,7 @@ export default function HomePage() {
                 <h6>MEP Excellence With</h6>
                 <h3>Integrated Project Delivery</h3>
 
-                <p className='paragraph'>Our MEP services are powered by Centre of Excellence, Project Control Department, stringent 4-Level Monitoring governance, <span id="dots">...</span>
-                <span id="more" style={{display:"none"}}>and Transition Task Force, ensuring seamless integration across project lifecycles.This unified alignment of cross-functional expert teams results in optimized outcomes by collectively driving adherence to critical success benchmarks - safety, quality, timely delivery and perfection - across the entirety of Mechanical, Electrical and Plumbing solutions.</span> &nbsp;<span onClick={myFunction} id="myBtn">Read more</span></p>
+                <p className='paragraph'>Our MEP services are powered by Centre of Excellence, Project Control Department, stringent 4-Level Monitoring governance, and Transition Task Force, ensuring seamless integration across project lifecycles.This unified alignment of cross-functional expert teams results in optimized outcomes by collectively driving adherence to critical success benchmarks - safety, quality, timely delivery and perfection - across the entirety of Mechanical, Electrical and Plumbing solutions.</p>
 
                 <Link href='/mechanical/#m'
                   type="button"
@@ -435,8 +403,7 @@ export default function HomePage() {
             <div className='inner-two'>
                 <h6>why us</h6>
                 <h3 style={{fontWeight:"600", lineHeight:"50px"}}>Unwavering Commitment to Quality Delivery</h3>
-                <p className='paragraph'>With over 65 million square feet of MEP projects executed, 2 million square feet of EPC development encompassing 2000+ residential units, 6,00,000 square feet of<span id="dots2">...</span>
-                <span id="more2" style={{display:"none"}}> specialized fit-outs and delivery of 2,00,000+ square feet A-grade workspaces - VKBS offers unrivaled competencies spanning integrated design-build services, project management and quality-focused sustainable execution of complex mechanical, electrical and plumbing solutions pan-India, making us the industry's most trusted one-stop MEP services provider.</span> &nbsp;<span onClick={myFunction2} id="myBtn2">Read more</span>
+                <p className='paragraph'>With over 65 million square feet of MEP projects executed, 2 million square feet of EPC development encompassing 2000+ residential units, 6,00,000 square feet of specialized fit-outs and delivery of 2,00,000+ square feet A-grade workspaces - VKBS offers unrivaled competencies spanning integrated design-build services, project management and quality-focused sustainable execution of complex mechanical, electrical and plumbing solutions pan-India, making us the industry's most trusted one-stop MEP services provider.
                 </p>
           
                 <Link href='/contact-us'

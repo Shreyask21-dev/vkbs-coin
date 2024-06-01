@@ -76,14 +76,12 @@ export default function CareersIndex({carrersData}) {
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h3>Disrupt, Innovate & Grow</h3>
-                <p>Join VKBS and become part of a team that's dedicated to excellence, innovation, and sustainability. Here’s an opportunity to work on impactful MEP engineering projects that shape the future of infrastructure and construction. From sustainable buildings to cutting-edge technologies, your work will have a lasting impact on communities and industries worldwide. Get the privilege to work alongside talented & seasoned professionals who are passionate about making<span id="dots">...</span>
-                <span id="more" style={{display:"none"}}> a difference in the world of MEP engineering. Experience a rewarding work culture, challenging projects, and endless opportunities for growth and advancement.</span> &nbsp;<span onClick={myFunction} id="myBtn">Read more</span></p>
+                <p>Join VKBS and become part of a team that's dedicated to excellence, innovation, and sustainability. Here’s an opportunity to work on impactful MEP engineering projects that shape the future of infrastructure and construction. From sustainable buildings to cutting-edge technologies, your work will have a lasting impact on communities and industries worldwide. Get the privilege to work alongside talented & seasoned professionals who are passionate about making a difference in the world of MEP engineering. Experience a rewarding work culture, challenging projects, and endless opportunities for growth and advancement.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
 
       {/* slider for all  Job */}
 

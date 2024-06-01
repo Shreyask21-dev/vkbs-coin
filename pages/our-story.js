@@ -159,7 +159,7 @@ export default function Companytimeline() {
                
                 <p style={{color:"#8B8E8f"}}>Established in 2005 by industry veterans and visionaries who believed India deserves better, VK Building Services was founded on the principles of engineering excellence, customer commitment, sustainable thinking and ethical conduct - tenets that continue to determine growth even today.</p>
                 <p style={{color:"#8B8E8f"}}>Over decades, 1000+ clients ranging from public sector giants to private majors have placed faith in VKBS to successfully manifest ambitious MEP engineering projects with demanding prerequisites including some of India's first platinum rated green campuses, rapid metro rail electrifications, remote smart city ecosystem rollouts and more.</p>
-                <p>
+                <p  style={{color:"#8B8E8f"}}>
                 <span id="dots">...</span><span id="more" style={{display:"none"}}>
                   <p style={{color:"#8B8E8f"}}>But meaningful partnerships thrive not by catering to collective comfort but shared aspirations. And the vision driving VKBS remains far-reaching - to transform the potential of emerging infrastructure by raising benchmarks.</p>
 
@@ -225,12 +225,8 @@ export default function Companytimeline() {
                 <h3>Guiding Principles</h3>
                <p>Change starts from within. Thus our ethos embraces imbibing quality consciousness into work routines through training plus incentive frameworks focused on mindset evolution.</p>
                <p>We believe uplifting lives begins by mitigating risks - be it discontinued critical infrastructure operations or physiological threats. Hence preparedness and continuity planning feature prominently across system design.</p>
-               <p><span id="dots2">...</span>
-                <span id="more2" style={{display:"none"}}>
                 <p>By pioneering data-driven innovation to help infrastructure keep pace with the width of India's needs - be it rolling out rapid slum electrifications or monitoring the conduct of renewable assets, VKBS continuously expands its expertise to deliver differently.</p>
                 <p>Operational challenges can seem abstract unless visualized granularly. Our commitment stays to simplify complex interconnected engineering intricacies into understandable translated outcomes spanning the now and near future.</p>
-                </span> &nbsp;<span onClick={myFunction2} id="myBtn2">Read more</span>
-               </p>
               </div>
             </div>
           </div>
