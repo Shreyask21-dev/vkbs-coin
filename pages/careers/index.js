@@ -10,6 +10,22 @@ export default function CareersIndex({carrersData}) {
  
   const JobData = carrersData.nodes;
    const [jobList , setJobList] =useState(JobData)
+
+   const myFunction = () => {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
    
   return (
     <>
@@ -60,7 +76,8 @@ export default function CareersIndex({carrersData}) {
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h3>Disrupt, Innovate & Grow</h3>
-                <p>Join VKBS and become part of a team that's dedicated to excellence, innovation, and sustainability. Here’s an opportunity to work on impactful MEP engineering projects that shape the future of infrastructure and construction. From sustainable buildings to cutting-edge technologies, your work will have a lasting impact on communities and industries worldwide. Get the privilege to work alongside talented & seasoned professionals who are passionate about making a difference in the world of MEP engineering. Experience a rewarding work culture, challenging projects, and endless opportunities for growth and advancement.</p>
+                <p>Join VKBS and become part of a team that's dedicated to excellence, innovation, and sustainability. Here’s an opportunity to work on impactful MEP engineering projects that shape the future of infrastructure and construction. From sustainable buildings to cutting-edge technologies, your work will have a lasting impact on communities and industries worldwide. Get the privilege to work alongside talented & seasoned professionals who are passionate about making<span id="dots">...</span>
+                <span id="more" style={{display:"none"}}> a difference in the world of MEP engineering. Experience a rewarding work culture, challenging projects, and endless opportunities for growth and advancement.</span> &nbsp;<span onClick={myFunction} id="myBtn">Read more</span></p>
               </div>
             </div>
           </div>

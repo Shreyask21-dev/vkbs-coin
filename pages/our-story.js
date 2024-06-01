@@ -78,6 +78,38 @@ export default function Companytimeline() {
   
     return () => clearInterval(intervalId);
   }, [])
+
+  const myFunction = () => {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+
+  const myFunction2 = () => {
+    var dots = document.getElementById("dots2");
+    var moreText = document.getElementById("more2");
+    var btnText = document.getElementById("myBtn2");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
   
 
   return (
@@ -119,16 +151,21 @@ export default function Companytimeline() {
 
        <div className='section two-left'>
         <div className='container'>
-        <h3>Our Story</h3>
         <div className='space5'></div>
           <div className='row'>
             <div className='col-lg-6'>
+              <h3>Our Story</h3>
               <div className='inner-two'>
                
                 <p style={{color:"#8B8E8f"}}>Established in 2005 by industry veterans and visionaries who believed India deserves better, VK Building Services was founded on the principles of engineering excellence, customer commitment, sustainable thinking and ethical conduct - tenets that continue to determine growth even today.</p>
                 <p style={{color:"#8B8E8f"}}>Over decades, 1000+ clients ranging from public sector giants to private majors have placed faith in VKBS to successfully manifest ambitious MEP engineering projects with demanding prerequisites including some of India's first platinum rated green campuses, rapid metro rail electrifications, remote smart city ecosystem rollouts and more.</p>
-               <p style={{color:"#8B8E8f"}}>But meaningful partnerships thrive not by catering to collective comfort but shared aspirations. And the vision driving VKBS remains far-reaching - to transform the potential of emerging infrastructure by raising benchmarks.</p>
-                <p style={{color:"#8B8E8f"}}>In all, we have successfully executed over 1000 innovated system rollouts, 50+ awards including Asia's Most Promising MEP Brand 2021, 1400+ workforce competency hours monthly, successful migration of 800+ outdated electrical substations, and verified PUE achievement of 1.32 across 4 Uptime Tier III certified facilities reinforce our commitment to pushing frontiers.</p>
+                <p>
+                <span id="dots">...</span><span id="more" style={{display:"none"}}>
+                  <p style={{color:"#8B8E8f"}}>But meaningful partnerships thrive not by catering to collective comfort but shared aspirations. And the vision driving VKBS remains far-reaching - to transform the potential of emerging infrastructure by raising benchmarks.</p>
+
+                    <p style={{color:"#8B8E8f"}}>In all, we have successfully executed over 1000 innovated system rollouts, 50+ awards including Asia's Most Promising MEP Brand 2021, 1400+ workforce competency hours monthly, successful migration of 800+ outdated electrical substations, and verified PUE achievement of 1.32 across 4 Uptime Tier III certified facilities reinforce our commitment to pushing frontiers.</p>
+                  </span> &nbsp;<span onClick={myFunction} id="myBtn">Read more</span>
+                </p>
                
               </div>
             </div>
@@ -188,8 +225,12 @@ export default function Companytimeline() {
                 <h3>Guiding Principles</h3>
                <p>Change starts from within. Thus our ethos embraces imbibing quality consciousness into work routines through training plus incentive frameworks focused on mindset evolution.</p>
                <p>We believe uplifting lives begins by mitigating risks - be it discontinued critical infrastructure operations or physiological threats. Hence preparedness and continuity planning feature prominently across system design.</p>
-               <p>By pioneering data-driven innovation to help infrastructure keep pace with the width of India's needs - be it rolling out rapid slum electrifications or monitoring the conduct of renewable assets, VKBS continuously expands its expertise to deliver differently.</p>
-               <p>Operational challenges can seem abstract unless visualized granularly. Our commitment stays to simplify complex interconnected engineering intricacies into understandable translated outcomes spanning the now and near future.</p>
+               <p><span id="dots2">...</span>
+                <span id="more2" style={{display:"none"}}>
+                <p>By pioneering data-driven innovation to help infrastructure keep pace with the width of India's needs - be it rolling out rapid slum electrifications or monitoring the conduct of renewable assets, VKBS continuously expands its expertise to deliver differently.</p>
+                <p>Operational challenges can seem abstract unless visualized granularly. Our commitment stays to simplify complex interconnected engineering intricacies into understandable translated outcomes spanning the now and near future.</p>
+                </span> &nbsp;<span onClick={myFunction2} id="myBtn2">Read more</span>
+               </p>
               </div>
             </div>
           </div>
