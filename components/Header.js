@@ -52,7 +52,7 @@ export default function Header() {
               </Link>
               <ul className="dropdown-menu">
              
-                <li><Link className="dropdown-item " href="/mechanical/#m">MEP</Link></li>
+                <li><Link className="dropdown-item " href="/mechanical/">MEP</Link></li>
                 <li><Link className="dropdown-item " href="/after-sales/">After Sales</Link></li>
                 <li><Link className="dropdown-item " href="/prefabrication/">Prefab</Link></li>
                 <li><Link className="dropdown-item" href="/industries/">Industries</Link></li>
@@ -60,7 +60,7 @@ export default function Header() {
             </li>
 
             <li className="nav-item">
-              <Link className={`nav-link ${LiveUrl == '/project/category/commercial/#id' ? '' : ''}`} href="/project/category/commercial/#id">
+              <Link className={`nav-link ${LiveUrl == '/project/category/commercial/' ? '' : ''}`} href="/project/category/commercial/">
                 PROJECTS
               </Link>
             </li>

@@ -97,7 +97,7 @@ export default function HomePage() {
               <div className='inner-text'>
                 <h1>Welcome To India's <br /> leading MEP Engineering & Contracting Company</h1>
                 <p className='poppins'>Delivering Quality With Innovation Since 2005</p>
-                <Link href='/'
+                <Link href='/about-us'
                   type="button"
                   className="mt-2 btn btn-primary btn-rounded btn-lg">
                   Discover More
@@ -211,7 +211,7 @@ export default function HomePage() {
                                 <img src="/images/soution-icon-1.png" alt="partners_logo"
                                     className="img-responsive" />
                                     <div className='solu-heading-tag'>Our MEP Services</div>
-                                    <span className='readMore'><a href="/mechanical/#m">Read More → </a></span>
+                                    <span className='readMore'><a href="/mechanical">Read More → </a></span>
                             </div>
                         </SplideSlide>
                      
@@ -287,7 +287,7 @@ export default function HomePage() {
               <h3>See our expertise</h3>
             </div>
             <div className='col-lg-6 text-end'>
-              <Link href='/project/category/commercial/#id'
+              <Link href='/project/category/commercial'
                 type="button"
                 className="mt-2 btn btn-primary btn-rounded btn-lg">
                 View All Projects
@@ -376,7 +376,7 @@ export default function HomePage() {
 
                 <p className='paragraph'>Our MEP services are powered by Centre of Excellence, Project Control Department, stringent 4-Level Monitoring governance, and Transition Task Force, ensuring seamless integration across project lifecycles.This unified alignment of cross-functional expert teams results in optimized outcomes by collectively driving adherence to critical success benchmarks - safety, quality, timely delivery and perfection - across the entirety of Mechanical, Electrical and Plumbing solutions.</p>
 
-                <Link href='/mechanical/#m'
+                <Link href='/mechanical/'
                   type="button"
                   className="mt-2 btn btn-primary btn-rounded btn-lg">
                   Know More
