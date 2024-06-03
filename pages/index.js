@@ -300,10 +300,10 @@ export default function HomePage() {
           <div className='col-lg-3 '>
             <div className='bg-exp-data bg-exp-1'>
             <div className='inner-data-cont'>
-              <h6 className='headingProjectSub'>DATA Center</h6>
-              <h3 className='headingProjects'>Byte Datacentres (Mumbai) LLP</h3>
-              <p className='headingProjectSub'>Digha, New Mumbai</p>
-              <Link href='/project/byte-datacentres-mumbai-llp/'
+              <h6 className='headingProjectSub'>Commercial</h6>
+              <h3 className='headingProjects'>IMCC IT Park, Mumbai</h3>
+              <p className='headingProjectSub'>Ghansoli, New Mumbai</p>
+              <Link href='/project/imcc-it-park-mumbai/'
                 type="button"
                 className="mt-2 btn btn-primary-two  btn seeMore">
                 View More
@@ -315,10 +315,10 @@ export default function HomePage() {
            <div className='col-lg-3 '>
             <div className='bg-exp-data bg-exp-2'>
               <div className='inner-data-cont'>
-              <h6 className='headingProjectSub'>Infrastructure</h6>
-              <h3 className='headingProjects'>Pune Airport</h3>
-              <p className='headingProjectSub'>Pune</p>
-              <Link href='/project/pune-airport/'
+              <h6 className='headingProjectSub'>Commercial</h6>
+              <h3 className='headingProjects'>Phoenix Rise 2</h3>
+              <p className='headingProjectSub'>Mumbai</p>
+              <Link href='/project/phoenix-rise-2-mumbai/'
                 type="button"
                 className="mt-2 btn btn-primary-two  btn seeMore">
                 View More
@@ -331,9 +331,9 @@ export default function HomePage() {
             <div className='bg-exp-data bg-exp-3'>
             <div className='inner-data-cont'>
               <h6 className='headingProjectSub'>Infrastructure</h6>
-              <h3 className='headingProjects'>GMRCL Surat Metro</h3>
-              <p className='headingProjectSub'>Surat, Gujrat</p>
-              <Link href='/project/gmrcl-surat-metro/'
+              <h3 className='headingProjects'>Pune Airport</h3>
+              <p className='headingProjectSub'>Pune</p>
+              <Link href='/project/pune-airport/'
                 type="button"
                 className="mt-2 btn btn-primary-two btn seeMore">
                 View More
@@ -345,10 +345,10 @@ export default function HomePage() {
            <div className='col-lg-3 '>
             <div className='bg-exp-data bg-exp-4'>
             <div className='inner-data-cont'>
-              <h6 className='headingProjectSub'>Commercial</h6>
-              <h3 className='headingProjects'>IMCC IT Park, Mumbai</h3>
-              <p className='headingProjectSub'>Ghansoli, Navi Mumbai</p>
-              <Link href='/project/imcc-it-park-mumbai/'
+              <h6 className='headingProjectSub'>Infrastructure</h6>
+              <h3 className='headingProjects'>GMRCL Surat Metro</h3>
+              <p className='headingProjectSub'>Surat, Gujrat</p>
+              <Link href='/project/gmrcl-surat-metro/'
                 type="button"
                 className="mt-2 btn btn-primary-two btn seeMore">
                 View More

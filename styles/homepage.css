@@ -262,62 +262,74 @@ p.paragraph {
 }
 
 .bg-exp-1{
-   background-image: url('/images/ser.png');
+   /* background-image: url('/images/Rectangle15.jpeg'); */
+   background: -webkit-linear-gradient(#30303066, 
+    #30303066), url("/images/Rectangle15.jpeg");
    background-repeat: no-repeat;
    background-size: cover;
-
+   background-position: center center;
 }
 
 .bg-exp-1:hover {
     background: -webkit-linear-gradient(#5aa946b3, 
-    #5aa946b3), url("/images/ser.png");
+    #5aa946b3), url("/images/Rectangle15.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
  }
 
 
  .bg-exp-2{
-   background-image: url('/images/exp1.png');
+   /* background-image: url('/images/Rectangle17.jpeg'); */
+   background: -webkit-linear-gradient(#30303066, 
+    #30303066), url("/images/Rectangle17.jpeg");
    background-repeat: no-repeat;
    background-size: cover;
-
+   /* background-position: center center; */
 }
 
 .bg-exp-2:hover {
     background: -webkit-linear-gradient(#5aa946b3, 
-    #5aa946b3), url("/images/exp1.png");
+    #5aa946b3), url("/images/Rectangle17.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-position: center center; */
  }
 
 
  .bg-exp-3{
-   background-image: url('/images/exp2.png');
+   background: -webkit-linear-gradient(#30303066, 
+    #30303066), url("/images/Rectangle18.png");
+   /* background-image: url('/images/Rectangle18.png'); */
    background-repeat: no-repeat;
    background-size: cover;
-
+   background-position: center center;
 }
 
 .bg-exp-3:hover {
     background: -webkit-linear-gradient(#5aa946b3, 
-    #5aa946b3), url("/images/exp2.png");
+    #5aa946b3), url("/images/Rectangle18.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
  }
 
 
  .bg-exp-4{
-   background-image: url('/images/exp3.png');
+   background: -webkit-linear-gradient(#30303066, 
+    #30303066), url("/images/Rectangle19.png");
+   /* background-image: url('/images/Rectangle19.png'); */
    background-repeat: no-repeat;
    background-size: cover;
-
+   background-position: center center;
 }
 
 .bg-exp-4:hover {
     background: -webkit-linear-gradient(#5aa946b3, 
-    #5aa946b3), url("/images/exp3.png");
+    #5aa946b3), url("/images/Rectangle19.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
  }
 
  .inner-data-cont{
