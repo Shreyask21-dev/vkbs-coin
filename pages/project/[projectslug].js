@@ -28,7 +28,7 @@ export default function InnerProjectPage({ projectSingle }) {
                         <div className='row'>
                             <div className='col-lg-8'>
                                 <div className='inner-text'>
-                                    <h1>Projects</h1>
+                                    <h1 className='innerTwoH3'>Projects</h1>
                                     <p> Elevating environments showcasing our company's signature projects</p>
                                     <div className='line'></div>
                                 </div>
@@ -68,11 +68,11 @@ export default function InnerProjectPage({ projectSingle }) {
                                     <h6>Project Highlights :</h6>
                                
                                      <div className='d-flex'>
-                                        <div className='col-lg-6'><h5>Area : <strong>{projectSingle?.data?.project?.projectacflist?.area} </strong></h5></div>
-                                        <div className='col-lg-6'><h5>Equipment Capacity : <strong>{projectSingle?.data?.project?.projectacflist?.equipmentCapacity}</strong></h5></div>
+                                        <div className='col-sm-6'><h5>Area : <strong>{projectSingle?.data?.project?.projectacflist?.area} </strong></h5></div>
+                                        <div className='col-lg-6 '><h5>Equipment Capacity : <strong>{projectSingle?.data?.project?.projectacflist?.equipmentCapacity}</strong></h5></div>
                                     </div>
                                     <div className='d-flex'>
-                                        <div className='col-lg-6'><h5>Consultant : <strong>{projectSingle?.data?.project?.projectacflist?.consultant}</strong></h5></div>
+                                        <div className='col-lg-6 '><h5>Consultant : <strong>{projectSingle?.data?.project?.projectacflist?.consultant}</strong></h5></div>
                                         <div className='col-lg-6'><h5>Location : <strong>{projectSingle?.data?.project?.projectacflist?.location}</strong></h5></div>
                                         </div>
 

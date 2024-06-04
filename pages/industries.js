@@ -38,9 +38,9 @@ export default function Industries({ IndustryPage }) {
               <div className='inner-two'>
                 <h3>Overview</h3>
                 <br />
-                <p className='paragraph'>VK Building Services brings together 19 glorious years of technical expertise, stringent quality control protocols and a client-centric approach across every project milestone to manifest our position as India's most trusted, integrated MEP contracting company.</p>
-                <p className='paragraph'>Our project versatility spanning 65 million square feet of executed mechanical, electrical and plumbing works across industrial, government, residential and commercial verticals is a testament to our integrated competencies.</p>
-                <p className='paragraph'>Yet, while our forte lies in MEP technology & systems, our commitment goes beyond.</p>
+                <p className='paragraph justify'>VK Building Services brings together 19 glorious years of technical expertise, stringent quality control protocols and a client-centric approach across every project milestone to manifest our position as India's most trusted, integrated MEP contracting company.</p>
+                <p className='paragraph justify'>Our project versatility spanning 65 million square feet of executed mechanical, electrical and plumbing works across industrial, government, residential and commercial verticals is a testament to our integrated competencies.</p>
+                <p className='paragraph justify'>Yet, while our forte lies in MEP technology & systems, our commitment goes beyond.</p>
               </div>
             </div>
           </div>

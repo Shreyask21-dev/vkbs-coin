@@ -69,7 +69,7 @@ export default function ContactUs({ LocationData }) {
             <div className='space5'></div>
       <div className='location'>
         <div className='container'>
-          <h3 style={{fontSize:"50px", fontWeight:"700"}}>Branches</h3>
+          <h3 className='innerTwoH3' style={{fontSize:"50px", fontWeight:"700"}}>Branches</h3>
           <div className='space5'></div>
           <div className='row'>
             <div className="horizontal-tabs">
@@ -90,7 +90,7 @@ export default function ContactUs({ LocationData }) {
                     <div className='col-lg-4 added'>
                      <div className='inner-data-active' dangerouslySetInnerHTML={{ __html: LocationData[activeTab].content}} ></div>
                     </div>
-                    <div className='col-lg-4'>
+                    <div className='col-lg-4 mb-2'>
                       <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-1.png'/>
                     </div>
                     <div className='col-lg-4'>

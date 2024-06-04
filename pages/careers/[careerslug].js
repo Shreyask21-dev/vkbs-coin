@@ -28,7 +28,7 @@ export default function CareersJobPage({ JobSingle }) {
         <link rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${JobSingle?.data?.career?.careerId}.css`} media="all" />
       </Head>
 
-      <div className='section inner-hero-banner'>
+      <div className='section  inner-hero-bannerCareer'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-8'>
@@ -51,9 +51,9 @@ export default function CareersJobPage({ JobSingle }) {
           <div className='row'>
             <div className='col-lg-9'>
             <div className='space5'></div>
-              <strong>{JobSingle?.data?.career?.industryData?.location}</strong>
+              <strong className='ms-3'>{JobSingle?.data?.career?.industryData?.location}</strong>
               <div className='space5'></div>
-              <h1>{JobSingle.data?.career?.title}</h1>
+              <h1 className='spaceH1'>{JobSingle.data?.career?.title}</h1>
               <div className='year-class'>
                 <ul>
                   <li>{JobSingle?.data?.career?.industryData?.year}</li>
@@ -95,7 +95,7 @@ export default function CareersJobPage({ JobSingle }) {
           <div className="modal-content-box">
           <div className='model-head d-flex-model'>
           <h3>Please fill in details to proceed</h3>
-            <img src='/images/close.png' alt='close' onClick={handleCloseModal}/>
+            <img src='/images/close.png' className='closeIcon' alt='close' onClick={handleCloseModal}/>
           </div>
             <PopForm/>
           </div>

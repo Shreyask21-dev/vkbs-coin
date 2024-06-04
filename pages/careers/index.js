@@ -59,7 +59,7 @@ export default function CareersIndex({carrersData}) {
             </div>
             <div className='col-lg-6'>
               <div className='timeline-paragrap'>
-                <p>Explore exciting career opportunities at VKBS, from engineering and project management to sales and operations and be part of a dynamic team driving innovation in MEP engineering and consulting. Find your niche, grow your skills, unleash your potential & expand your horizons, in a supportive and collaborative environment.</p>
+                <p className='justify'>Explore exciting career opportunities at VKBS, from engineering and project management to sales and operations and be part of a dynamic team driving innovation in MEP engineering and consulting. Find your niche, grow your skills, unleash your potential & expand your horizons, in a supportive and collaborative environment.</p>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function CareersIndex({carrersData}) {
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h3>Disrupt, Innovate & Grow</h3>
-                <p>Join VKBS and become part of a team that's dedicated to excellence, innovation, and sustainability. Here’s an opportunity to work on impactful MEP engineering projects that shape the future of infrastructure and construction. From sustainable buildings to cutting-edge technologies, your work will have a lasting impact on communities and industries worldwide. Get the privilege to work alongside talented & seasoned professionals who are passionate about making a difference in the world of MEP engineering. Experience a rewarding work culture, challenging projects, and endless opportunities for growth and advancement.</p>
+                <p className='justify'>Join VKBS and become part of a team that's dedicated to excellence, innovation, and sustainability. Here’s an opportunity to work on impactful MEP engineering projects that shape the future of infrastructure and construction. From sustainable buildings to cutting-edge technologies, your work will have a lasting impact on communities and industries worldwide. Get the privilege to work alongside talented & seasoned professionals who are passionate about making a difference in the world of MEP engineering. Experience a rewarding work culture, challenging projects, and endless opportunities for growth and advancement.</p>
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ export default function CareersIndex({carrersData}) {
                             
                              <SplideSlide>
                              <div className="job-item">
-                                 <strong>{item?.industryData?.location}</strong>
+                                 <strong className=''>{item?.industryData?.location}</strong>
                                  <div className='job-title'>{item.title}</div>
                                  <div className='year-class'>
                                     <ul>
@@ -132,7 +132,7 @@ export default function CareersIndex({carrersData}) {
                                         <li>{item?.industryData.mep}</li>
                                     </ul>
                                  </div>
-                                 <div className='job-description' dangerouslySetInnerHTML={{__html: `${item.excerpt}`}}></div>
+                                 <div className='job-description justify' dangerouslySetInnerHTML={{__html: `${item.excerpt}`}}></div>
                                  <Link href={item.uri} type="button" className="mt-2 btn btn-primary btn-job"> Read More</Link>
                              </div>
                          </SplideSlide>

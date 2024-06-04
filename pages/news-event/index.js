@@ -24,7 +24,7 @@ export default function NewsEventIndex() {
 
       <div className='section-news news-event-section'>
         <div className='container'>
-          <h2>Events</h2>
+          <h2 className='innerTwoH3'>Events</h2>
           <div className='space5'></div>
           <div className='row'>
             <div className='col-lg-6'>
@@ -40,9 +40,9 @@ export default function NewsEventIndex() {
             <div className='col-lg-6'>
               <div className='row'>
 
-                <div className='col-lg-6'>
+                <div className='col-lg-6 my-4'>
                   <div className='inner-event-right'>
-                    <img src='/images/URJAVARAN.png' alt='' />
+                    <img src='/images/URJAVARAN.png' className='innerEventRight' alt='' />
                     <div className='space2'></div>
                     <span>22/10/2022</span>
                     <h5>URJAVARAN</h5>
@@ -51,9 +51,9 @@ export default function NewsEventIndex() {
                   </div>
                 </div>
 
-                <div className='col-lg-6'>
+                <div className='col-lg-6 my-4'>
                   <div className='inner-event-right'>
-                    <img src='/images/ACRESERVE.png' alt='' />
+                    <img src='/images/ACRESERVE.png' className='innerEventRight' alt='' />
                     <div className='space2'></div>
                     <span>22/10/2022</span>
                     <h5>ACRESERVE '13, BANGALORE</h5>
@@ -63,9 +63,9 @@ export default function NewsEventIndex() {
                 </div>
 
 
-                <div className='col-lg-6'>
+                <div className='col-lg-6 my-4'>
                   <div className='inner-event-right'>
-                    <img src='/images/INFRASTRUCTURE.png' alt='' />
+                    <img src='/images/INFRASTRUCTURE.png' className='innerEventRight' alt='' />
                     <div className='space2'></div>
                     <span>22/10/2022</span>
                     <h5>INFRASTRUCTURE PROJECT MANAGEMENT</h5>
@@ -74,9 +74,9 @@ export default function NewsEventIndex() {
                   </div>
                 </div>
 
-                <div className='col-lg-6'>
+                <div className='col-lg-6 my-4'>
                   <div className='inner-event-right'>
-                    <img src='/images/ACREX12.png' alt='' />
+                    <img src='/images/ACREX12.png' className='innerEventRight' alt='' />
                     <div className='space2'></div>
                     <span>22/10/2022</span>
                     <h5>ACREX '12, BANGALORE </h5>
@@ -153,7 +153,7 @@ export default function NewsEventIndex() {
       <div className='space5'></div>
       <div className='section news-list'>
         <div className='container'>
-          <h3>News</h3>
+          <h3 className='innerTwoH3' >News</h3>
           <div className='row'>
             <div className='col-lg-6'>
               <div className='news'>

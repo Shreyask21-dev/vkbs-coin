@@ -7,6 +7,15 @@
    height: 800px;
 }
 
+@media screen and (max-width: 420px) {
+   .herobanner {
+      background-image: url('/images/hero-banner.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 475px;
+   }
+ }
+
 .inner-hero-banner {
    background-image: url('/images/Project.png');
    background-repeat: no-repeat;
@@ -45,23 +54,99 @@
 
 @media screen and (max-width: 767px) {
    .section .inner-text {
-      padding-top: 30%;
+      padding-top: 5%;
       color: var(--whiteColor);
+      text-align: center;
    }
 
    .section .inner-text h1 {
       font-weight: 600;
       font-size: 30px;
+      /* text-align: center; */
    }
    .inner-two{
       padding-bottom: 20px;
    }
    .expertise .bg-exp-data {
-     
       height: 520px !important;
-  }
-}
+   }
+  /* shreyas */
+   .inner-text h1{
+      text-align: center !important;
+   }
+  .count-inner h2{
+   font-size: 25px !important;
+   padding-left: 10px !important;
+   color: var(--whiteColor);
+   }
+   .count-inner-4 h2{
+      font-size: 25px !important;
+      padding-left: 15px !important;
+      color: var(--whiteColor);
+   }
+   .count-inner{
+      border-right: none !important; 
+      margin-bottom: 20px;
+   }
+   .countImage{
+      width: 20px !important;
+      height: 25px !important;
+   }
+   .mt-n1{
+      font-size: 13px !important;
+      white-space: nowrap;
+   }
+   .section .bg-exp-data{
+      margin-top: 20px !important;
+      padding-left: 10px !important;
+      padding-bottom: 20px !important;
+   }
+   .inner-two h6{
+      margin-left: auto !important;
+      margin-right: auto !important;
+   }
+   .innerTwoH6{
+      text-align: center;
+   }
+   .projectsSection{
+      margin-top: 40px;
+      margin-bottom: 90px;
+   }
+   .float-end{
+      text-align: center !important;
+   }
+   .inner-two h3{
+      margin-left: auto !important;
+      margin-right: auto !important;
+      font-size: 30px !important;
+      line-height: 35px !important;
+   }
+   .headingProjectSub{
+      font-weight: 400;
+      font-size: 19px !important;
+      font-family: "poppins" !important;
+   }
+   .headingProjects{
+      font-size: 26px !important;
+   }
 
+   .bg-exp-data .bg-exp-4{
+      text-align: center;
+   }
+
+   .cont1{ 
+      padding-inline-end: 10px;
+      border-right: 5px solid #F2F2F2 !important;
+   }
+
+   .section-slider h6{
+      text-align: center;
+   }
+
+}
+.float-end{
+   text-align: end;
+}
 /* count design */
 .section-two{
    padding-top: 50px;
@@ -73,9 +158,13 @@
    line-height: 30px !important;
    color: #303030;
 }
+.countImage{
+   width: 40px;
+   height: 50px;
+}
 .headingProjectSub{
    font-weight: 400;
-   font-size: 13px !important;
+   font-size: 13px ;
    font-family: "poppins" !important;
 }
 .section h3{
@@ -253,7 +342,6 @@ p.paragraph {
    padding-right: 10px;
    padding-left: 40px;
    margin-top: 54px;
-
  }
  
  .bg-exp.bg-exp-data {
@@ -384,7 +472,7 @@ p.paragraph {
    text-align: center;
    font-size: 36px;
    font-weight: 700;
-   line-height: 20px;
+   line-height: 40px;
    padding-bottom: 50px;
    text-transform: uppercase;
 }

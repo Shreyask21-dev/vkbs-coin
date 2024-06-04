@@ -10,7 +10,7 @@ export default function Footer() {
             <div className='col-lg-3'>
               <img src="/images/vkbs-logo.png" width='132' height='55' alt="logo" />
               <div className='space5'></div>
-              <p>We are Indias leading turnkey MEP services providers, extending unmatched integrated mechanical, electrical and plumbing solutions for complex infrastructure needs. Powered by technical prowess of seasoned MEP contractors, we engineer and execute end-to-end, sustainable defect-free systems tailored to project vision across data centers, healthcare facilities, industries and residences.</p>
+              <p className='justify'>We are Indias leading turnkey MEP services providers, extending unmatched integrated mechanical, electrical and plumbing solutions for complex infrastructure needs. Powered by technical prowess of seasoned MEP contractors, we engineer and execute end-to-end, sustainable defect-free systems tailored to project vision across data centers, healthcare facilities, industries and residences.</p>
 
             </div>
             <div className='col-lg-2'>

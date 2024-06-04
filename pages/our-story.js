@@ -121,7 +121,7 @@ export default function Companytimeline() {
             <div className='col-lg-8'>
               <div className='inner-text'>
                 <h1>Building MEP Systems for a New Era of Possibilities</h1>
-                <p>Over 20 years of sustained partnerships with over 1000 clients, a testament to the customer-first ethos, unwavering integrity and transparency powering progress.</p>
+                <p className='justify'>Over 20 years of sustained partnerships with over 1000 clients, a testament to the customer-first ethos, unwavering integrity and transparency powering progress.</p>
                  <div className='line'></div>
               </div>
             </div>
@@ -140,7 +140,7 @@ export default function Companytimeline() {
             </div>
             <div className='col-lg-6'>
               <div className='timeline-paragrap'>
-                <p>Leveraging engineering expertise and industry leading quality benchmarks, we have delivered over 65 million sq ft of executed projects, spanning diverse infrastructure from data centers to residential spaces, VKBS translates evolving operational needs into cost-effective, sustainable MEP solutions generating long-term asset value through intelligent design.</p>
+                <p className='justify'>Leveraging engineering expertise and industry leading quality benchmarks, we have delivered over 65 million sq ft of executed projects, spanning diverse infrastructure from data centers to residential spaces, VKBS translates evolving operational needs into cost-effective, sustainable MEP solutions generating long-term asset value through intelligent design.</p>
               </div>
             </div>
           </div>
@@ -154,16 +154,16 @@ export default function Companytimeline() {
         <div className='space5'></div>
           <div className='row'>
             <div className='col-lg-6'>
-              <h3>Our Story</h3>
+              <h3 className='innerTwoH3'>Our Story</h3>
               <div className='inner-two'>
                
-                <p style={{color:"#8B8E8f"}}>Established in 2005 by industry veterans and visionaries who believed India deserves better, VK Building Services was founded on the principles of engineering excellence, customer commitment, sustainable thinking and ethical conduct - tenets that continue to determine growth even today.</p>
-                <p style={{color:"#8B8E8f"}}>Over decades, 1000+ clients ranging from public sector giants to private majors have placed faith in VKBS to successfully manifest ambitious MEP engineering projects with demanding prerequisites including some of India's first platinum rated green campuses, rapid metro rail electrifications, remote smart city ecosystem rollouts and more.</p>
+                <p style={{color:"#8B8E8f"}} className='justify'>Established in 2005 by industry veterans and visionaries who believed India deserves better, VK Building Services was founded on the principles of engineering excellence, customer commitment, sustainable thinking and ethical conduct - tenets that continue to determine growth even today.</p>
+                <p style={{color:"#8B8E8f"}} className='justify'>Over decades, 1000+ clients ranging from public sector giants to private majors have placed faith in VKBS to successfully manifest ambitious MEP engineering projects with demanding prerequisites including some of India's first platinum rated green campuses, rapid metro rail electrifications, remote smart city ecosystem rollouts and more.</p>
                 <p  style={{color:"#8B8E8f"}}>
                 <span id="dots">...</span><span id="more" style={{display:"none"}}>
-                  <p style={{color:"#8B8E8f"}}>But meaningful partnerships thrive not by catering to collective comfort but shared aspirations. And the vision driving VKBS remains far-reaching - to transform the potential of emerging infrastructure by raising benchmarks.</p>
+                  <p style={{color:"#8B8E8f"}} className='justify'>But meaningful partnerships thrive not by catering to collective comfort but shared aspirations. And the vision driving VKBS remains far-reaching - to transform the potential of emerging infrastructure by raising benchmarks.</p>
 
-                    <p style={{color:"#8B8E8f"}}>In all, we have successfully executed over 1000 innovated system rollouts, 50+ awards including Asia's Most Promising MEP Brand 2021, 1400+ workforce competency hours monthly, successful migration of 800+ outdated electrical substations, and verified PUE achievement of 1.32 across 4 Uptime Tier III certified facilities reinforce our commitment to pushing frontiers.</p>
+                    <p style={{color:"#8B8E8f"}} className='justify'>In all, we have successfully executed over 1000 innovated system rollouts, 50+ awards including Asia's Most Promising MEP Brand 2021, 1400+ workforce competency hours monthly, successful migration of 800+ outdated electrical substations, and verified PUE achievement of 1.32 across 4 Uptime Tier III certified facilities reinforce our commitment to pushing frontiers.</p>
                   </span> &nbsp;<span onClick={myFunction} id="myBtn">Read more</span>
                 </p>
                
@@ -182,7 +182,7 @@ export default function Companytimeline() {
         <div className='container text-center'>
           <div className='row'>
 
-            <div className='col-lg-3'>
+            <div className='col-lg-3 col-6'>
               <div className='count-inner '>
                   <h2>{Offices}</h2>
                
@@ -190,20 +190,20 @@ export default function Companytimeline() {
               </div>
             </div>
 
-            <div className='col-lg-3'>
+            <div className='col-lg-3 col-6'>
               <div className='count-inner'>
                   <h2>{ProjectState}</h2>
                 <p>State Project</p>
               </div>
             </div>
-            <div className='col-lg-3'>
+            <div className='col-lg-3 col-6'>
               <div className='count-inner'>
                   <h2>{ProjectsDelevred} Mn <span>Sq.Ft</span></h2>
                 <p>Projects delivered</p>
               </div>
             </div>
 
-            <div className='col-lg-3'>
+            <div className='col-lg-3 col-6'>
               <div className='count-inner-4'>  
                   <h2>$ {EmpPRojects}Mn</h2>
                 <p>MEP projects </p>
@@ -223,10 +223,10 @@ export default function Companytimeline() {
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h3>Guiding Principles</h3>
-               <p>Change starts from within. Thus our ethos embraces imbibing quality consciousness into work routines through training plus incentive frameworks focused on mindset evolution.</p>
-               <p>We believe uplifting lives begins by mitigating risks - be it discontinued critical infrastructure operations or physiological threats. Hence preparedness and continuity planning feature prominently across system design.</p>
-                <p>By pioneering data-driven innovation to help infrastructure keep pace with the width of India's needs - be it rolling out rapid slum electrifications or monitoring the conduct of renewable assets, VKBS continuously expands its expertise to deliver differently.</p>
-                <p>Operational challenges can seem abstract unless visualized granularly. Our commitment stays to simplify complex interconnected engineering intricacies into understandable translated outcomes spanning the now and near future.</p>
+               <p className='justify'>Change starts from within. Thus our ethos embraces imbibing quality consciousness into work routines through training plus incentive frameworks focused on mindset evolution.</p>
+               <p className='justify'>We believe uplifting lives begins by mitigating risks - be it discontinued critical infrastructure operations or physiological threats. Hence preparedness and continuity planning feature prominently across system design.</p>
+                <p className='justify'>By pioneering data-driven innovation to help infrastructure keep pace with the width of India's needs - be it rolling out rapid slum electrifications or monitoring the conduct of renewable assets, VKBS continuously expands its expertise to deliver differently.</p>
+                <p className='justify'>Operational challenges can seem abstract unless visualized granularly. Our commitment stays to simplify complex interconnected engineering intricacies into understandable translated outcomes spanning the now and near future.</p>
               </div>
             </div>
           </div>
