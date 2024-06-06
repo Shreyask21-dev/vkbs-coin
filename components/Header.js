@@ -7,7 +7,7 @@ export default function Header() {
   var LiveUrl = router.asPath;
     console.log("router->" , LiveUrl)
   return (
-    <nav className="head-footer-bg sticky-header  navbar navbar-expand-lg" id="customnavbar">
+    <nav className="navbar-dark head-footer-bg sticky-header  navbar navbar-expand-lg" id="customnavbar">
       <div className="container">
         <Link href='/' className="navbar-brand">
           <img src="/images/vkbs-logo.png" width='132' height='55' alt="logo" />

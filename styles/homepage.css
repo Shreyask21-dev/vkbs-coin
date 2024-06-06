@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 767px) {
    .section .inner-text {
-      padding-top: 5%;
+      padding-top: 20%;
       color: var(--whiteColor);
       text-align: center;
    }
@@ -66,6 +66,7 @@
    }
    .inner-two{
       padding-bottom: 20px;
+      justify-content: start !important;
    }
    .expertise .bg-exp-data {
       height: 520px !important;
@@ -97,7 +98,7 @@
       white-space: nowrap;
    }
    .section .bg-exp-data{
-      margin-top: 20px !important;
+      margin-top: 30px !important;
       padding-left: 10px !important;
       padding-bottom: 20px !important;
    }
@@ -141,6 +142,22 @@
 
    .section-slider h6{
       text-align: center;
+   }
+
+
+   /* 6-6-24 */
+   .solution-one {
+      background-image: url('/images/solution-one.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   .readMore{
+      visibility: visible !important;
+   }
+
+   .splide .splide__arrows{
+      bottom: 100% !important;
+      right: 140px !important;
    }
 
 }

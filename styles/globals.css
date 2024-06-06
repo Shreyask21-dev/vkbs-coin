@@ -78,7 +78,7 @@ h1 {
         margin-right: auto;
     }
     .center{
-        text-align: center;
+        text-align: center !important;
     }
     .innerEventRight{
         height: 180px !important;
@@ -87,6 +87,82 @@ h1 {
         width: 30px;
         height: 30px;
     }
+
+    /* 6-6-24 */
+    .section .section-slider .splide .splide__arrows{
+        left: 140px !important;
+    }
+
+    .section{
+        padding-bottom: 60px !important;
+        padding-top: 60px !important;
+    }
+
+    .IntegratedProjectDelivery{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .sectionOurStory .inner-text{
+        padding-top: 50% !important;
+        color: var(--whiteColor);
+     }
+     
+     .project-title h2{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center !important;
+      }
+
+      .project-url ul li a{
+        font-size: 16px !important;
+        font-weight: 200 !important;
+        }
+
+        .project-url {
+            display: inline-flex !important;
+            /* list-style: none;
+            margin-bottom: 25px; */
+            /* margin-left: 5px !important; */
+            padding-right: 5px;
+            margin-inline: 10px !important;
+        }
+
+        .project-url ul li .active{
+            padding-right: 5px !important;
+            border-top-right-radius: 10px !important;
+            border-bottom-right-radius: 10px !important;
+        }
+
+        .column{
+            flex-direction: column !important;
+        }
+
+        .inner-page-pr-data .thumb-img img{
+            width: 400px !important;
+            height: 200px !important;
+        }
+        
+        .inner-page-pr-data {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+
+        .projectHeaderText{
+            padding-top: 60% !important;
+        }
+
+        .social-media  {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .navbar-toggler:focus{
+            box-shadow: 0 0 0 1px;
+        }
+    
   }
 
 
@@ -124,6 +200,7 @@ img {
 p{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    line-height: 24px !important;
 }
 
 body a {

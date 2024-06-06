@@ -168,7 +168,7 @@ export default function HomePage() {
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h6>What We do</h6>
-                <h3>Turnkey MEP Solutions</h3>
+                <h3 className='IntegratedProjectDelivery'>Turnkey MEP Solutions</h3>
                 <p className='justify'>VK Building Services Pvt. Ltd. are the fastest growing MEP Contracting Company providing Turnkey solutions - from concept to commissioning in critical MEP Projects across key sectors. With a customer focused approach, an innovative culture and the ability to respond positively to challenging requirements, we have served over 1000+ satisfied clients. Sustainability and inclusive growth are embedded in our vision and strategic plans.</p>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function HomePage() {
         <div className='container'>
           <div className='section-slider'>
             <h6>what we do</h6>
-            <h5>Our Solutions</h5>
+            <h5 className='innerTwoH3 IntegratedProjectDelivery'>Our Solutions</h5>
             <div className='space5'></div>
             <Splide
                         options={{
@@ -372,7 +372,7 @@ export default function HomePage() {
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h6>MEP Excellence With</h6>
-                <h3>Integrated Project Delivery</h3>
+                <h3 className='IntegratedProjectDelivery'>Integrated Project Delivery</h3>
 
                 <p className='paragraph justify'>Our MEP services are powered by Centre of Excellence, Project Control Department, stringent 4-Level Monitoring governance, and Transition Task Force, ensuring seamless integration across project lifecycles.This unified alignment of cross-functional expert teams results in optimized outcomes by collectively driving adherence to critical success benchmarks - safety, quality, timely delivery and perfection - across the entirety of Mechanical, Electrical and Plumbing solutions.</p>
 
@@ -402,7 +402,7 @@ export default function HomePage() {
             <div className='col-lg-6'>
             <div className='inner-two'>
                 <h6 className='innerTwoH6'>why us</h6>
-                <h3 style={{fontWeight:"600", lineHeight:"50px"}}>Unwavering Commitment to Quality Delivery</h3>
+                <h3 style={{fontWeight:"600", lineHeight:"50px"}} className='IntegratedProjectDelivery' >Unwavering Commitment to Quality Delivery</h3>
                 <p className='paragraph justify'>With over 65 million square feet of MEP projects executed, 2 million square feet of EPC development encompassing 2000+ residential units, 6,00,000 square feet of specialized fit-outs and delivery of 2,00,000+ square feet A-grade workspaces - VKBS offers unrivaled competencies spanning integrated design-build services, project management and quality-focused sustainable execution of complex mechanical, electrical and plumbing solutions pan-India, making us the industry's most trusted one-stop MEP services provider.
                 </p>
                 <div className='center'>

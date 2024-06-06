@@ -112,7 +112,7 @@ export default function ContactUs({ LocationData }) {
               <EnquiryForm/>
             </div>
             <div className='col-lg-5'>
-              <h6>Social Media</h6>
+              <h6 className='innerTwoH3' >Social Media</h6>
               <div className='social-media'>
                 <a href="https://www.facebook.com/VKBuildingServices">
                   <img src='/images/facebook.png' className='social-media-list' alt='facebook.png' />
