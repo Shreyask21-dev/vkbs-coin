@@ -52,6 +52,13 @@
    padding-top: 10px;
 }
 
+@media screen and (min-width: 767px) {
+
+   .border {
+      border: none !important;
+   }
+}
+
 @media screen and (max-width: 767px) {
    .section .inner-text {
       padding-top: 20%;
@@ -88,6 +95,7 @@
    .count-inner{
       border-right: none !important; 
       margin-bottom: 20px;
+      /* margin-top: 20px; */
    }
    .countImage{
       width: 20px !important;
@@ -151,7 +159,11 @@
       background-repeat: no-repeat;
       background-size: cover;
    }
-   .readMore{
+   /* .readMore{
+      visibility: visible !important;
+   } */
+
+   .bg-exp-data .seeMore {
       visibility: visible !important;
    }
 
@@ -160,7 +172,55 @@
       right: 140px !important;
    }
 
+   /* 7-6-24 */
+   .bg-exp-1 {
+      /* background: -webkit-linear-gradient(#5aa946b3, 
+      #5aa946b3), url("/images/Rectangle15.jpeg") !important; */
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      background-position: center center !important;
+   }
+   .bg-exp-2 {
+      background: -webkit-linear-gradient(#5aa946b3, 
+      #5aa946b3), url("/images/Rectangle17.jpeg") !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      /* background-position: center center; */
+   }
+   .bg-exp-3 {
+      background: -webkit-linear-gradient(#5aa946b3, 
+      #5aa946b3), url("/images/Rectangle18.png") !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      background-position: center center !important;
+  }
+
+  .bg-exp-4 {
+   background: -webkit-linear-gradient(#5aa946b3, 
+   #5aa946b3), url("/images/Rectangle19.png") !important;
+   background-repeat: no-repeat !important;
+   background-size: cover !important;
+   background-position: center center !important;
+   }
+
+   .solution-one  .readMore{
+      visibility:visible;
+   }
+
+   .border{
+      border-right:  2px solid rgba(255, 255, 255, 0.5) !important;
+      border-top: none !important;
+      border-bottom: none !important;
+      border-left: none !important;
+   } 
+
+   .borderTop{
+      padding-top: 30px;
+      border-top:  2px solid rgba(255, 255, 255, 0.5) !important;
+   }
+
 }
+
 .float-end{
    text-align: end;
 }
@@ -367,9 +427,7 @@ p.paragraph {
 }
 
 .bg-exp-1{
-   /* background-image: url('/images/Rectangle15.jpeg'); */
-   background: -webkit-linear-gradient(#30303066, 
-    #30303066), url("/images/Rectangle15.jpeg");
+   /* background: -webkit-linear-gradient(#30303066,  #30303066), url("/images/Rectangle15.jpeg"); */
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
@@ -417,7 +475,7 @@ p.paragraph {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
- }
+}
 
 
  .bg-exp-4{

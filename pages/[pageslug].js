@@ -7,7 +7,9 @@ import { useRouter } from 'next/router'
 
 export default function SinglePage({ PageApiResult }) {
 
- 
+  const uniqueImageUrl = "https://vkbs.coinage.host/wp-content/uploads/2024/05/Rectangle-189.png"; 
+  // unique image URL
+
     
   console.log("PageApiResult", PageApiResult.data.page.slug)
   if (PageApiResult.data.page !== null) {
@@ -22,7 +24,8 @@ export default function SinglePage({ PageApiResult }) {
         style={{
           background: `url(${PageApiResult?.data?.page?.featuredImage?.node?.sourceUrl}) no-repeat center`,
           backgroundSize: `cover`,
-          height:`475px`
+          height:`475px`,
+          paddingRight: "25px",
         }}
 
         >
@@ -34,7 +37,7 @@ export default function SinglePage({ PageApiResult }) {
           <div className='container'>
             <div className='row'>
               <div className='col-lg-8'>
-                <div className='inner-text'>
+                <div className='inner-text inner-Text-Extra'>
                   <h1>{PageApiResult?.data?.page?.title}</h1>
                   <div className="description" dangerouslySetInnerHTML={{ __html: PageApiResult?.data?.page?.excerpt }}></div>
                   <div className='line'></div>

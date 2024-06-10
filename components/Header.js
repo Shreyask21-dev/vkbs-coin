@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 export default function Header() {
+  
   const router = useRouter();
   var LiveUrl = router.asPath;
-    console.log("router->" , LiveUrl)
+  console.log("router->" , LiveUrl)
+
+  useEffect(() => {
+    const navbarContent = document.getElementById('navbarSupportedContent');
+    if (navbarContent) {
+      if (navbarContent.classList.contains('show')) {
+        navbarContent.classList.remove('show');
+      }
+    }
+
+  }, [LiveUrl])
+
   return (
     <nav className="navbar-dark head-footer-bg sticky-header  navbar navbar-expand-lg" id="customnavbar">
       <div className="container">

@@ -45,13 +45,13 @@ export default function InnerProjectPage({ projectSingle }) {
 
 
                 
-                    <div className='container project-page-new'>
+                    <div className='container project-page-new padding'>
 
                         <div className='row project-bg'>
                             <div className='col-lg-3'>
                                 <ProjectComponent/>
                             </div>
-                            <div className='col-lg-9'>
+                            <div className='col-lg-9 padding'>
 
                                 <div className="inner-page-pr-data">
                                     <h3> {projectSingle?.data?.project?.title} </h3>

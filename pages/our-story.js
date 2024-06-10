@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import TimeLine from '@/components/TimeLine'
+import TimeLineMobile from '@/components/TimeLineMobile'
 export default function Companytimeline() {
 
   
@@ -180,9 +181,9 @@ export default function Companytimeline() {
       {/* count design */}
         <div className='section-two count-design'>
         <div className='container text-center'>
-          <div className='row'>
+          <div className='row px-2'>
 
-            <div className='col-lg-3 col-6'>
+            <div className='col-lg-3 col-6 border'>
               <div className='count-inner '>
                   <h2>{Offices}</h2>
                
@@ -196,14 +197,14 @@ export default function Companytimeline() {
                 <p>State Project</p>
               </div>
             </div>
-            <div className='col-lg-3 col-6'>
+            <div className='col-lg-3 col-6 border borderTop'>
               <div className='count-inner'>
                   <h2>{ProjectsDelevred} Mn <span>Sq.Ft</span></h2>
                 <p>Projects delivered</p>
               </div>
             </div>
 
-            <div className='col-lg-3 col-6'>
+            <div className='col-lg-3 col-6 borderTop'>
               <div className='count-inner-4'>  
                   <h2>$ {EmpPRojects}Mn</h2>
                 <p>MEP projects </p>
@@ -234,7 +235,12 @@ export default function Companytimeline() {
         </div>
  
          {/* TimeLine Component */}
-         <TimeLine/>
+         <div className="desktop-only">
+          <TimeLine />
+         </div>
+         <div className="mobile-only">
+          <TimeLineMobile />
+         </div>
         
     </>
   )
