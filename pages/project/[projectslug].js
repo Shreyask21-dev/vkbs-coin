@@ -58,6 +58,7 @@ export default function InnerProjectPage({ projectSingle }) {
                                       <div className='thumb-img'>
                                         <img src={projectSingle?.data?.project?.featuredImage?.node?.guid} />
                                       </div>
+                                      <h6>Project Highlights :</h6>
                                     {projectSingle?.data?.project?.content !== null && (
                                         <div
                                             dangerouslySetInnerHTML={{
@@ -65,8 +66,6 @@ export default function InnerProjectPage({ projectSingle }) {
                                             }}
                                         ></div>
                                     )}
-                                    <h6>Project Highlights :</h6>
-                               
                                      <div className='d-flex column'>
                                         <div className='col-sm-6 col-12'><h5>Area : <strong>{projectSingle?.data?.project?.projectacflist?.area} </strong></h5></div>
                                         <div className='col-lg-6 col-12'><h5>Equipment Capacity : <strong>{projectSingle?.data?.project?.projectacflist?.equipmentCapacity}</strong></h5></div>

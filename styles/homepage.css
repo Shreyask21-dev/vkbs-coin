@@ -170,6 +170,7 @@
    .splide .splide__arrows{
       bottom: 100% !important;
       right: 140px !important;
+      margin-bottom: 5px;
    }
 
    /* 7-6-24 */

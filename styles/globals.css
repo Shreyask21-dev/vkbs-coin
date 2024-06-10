@@ -99,6 +99,10 @@ h1 {
         left: 140px !important;
     }
 
+    .inner-accolades-slider h4{
+        text-align: center !important;
+    }
+
     .section{
         padding-bottom: 60px !important;
         padding-top: 60px !important;
@@ -174,6 +178,10 @@ h1 {
         }
         .section-news{
             background-image:none !important;
+        }
+
+        .news ul{
+            padding-left: 12px !important;
         }
   }
 
