@@ -18,8 +18,8 @@ export default function Industries({ IndustryPage }) {
           <div className='row'>
             <div className='col-lg-8'>
               <div className='inner-text'>
-                <h1>Industry</h1>
-                <p> Elevating environments showcasing our company's signature projects</p>
+                <h1>Our Portfolio of MEP Excellence</h1>
+                <p>Explore our extensive range of successfully completed projects across various industries, demonstrating our commitment to quality and innovation in MEP contracting services.</p>
                 <div className='line'></div>
               </div>
             </div>
