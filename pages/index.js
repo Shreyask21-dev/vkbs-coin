@@ -187,7 +187,8 @@ export default function HomePage() {
               <div className='inner-two'>
                 <h6>What We do</h6>
                 <h3 className='IntegratedProjectDelivery'>Turnkey MEP Solutions</h3>
-                <p className='justify'>VK Building Services Pvt. Ltd. are the fastest growing MEP Contracting Company providing Turnkey solutions - from concept to commissioning in critical MEP Projects across key sectors. With a customer focused approach, an innovative culture and the ability to respond positively to challenging requirements, we have served over 1000+ satisfied clients. Sustainability and inclusive growth are embedded in our vision and strategic plans.</p>
+                <p className='justify'>VK Building Services Pvt. Ltd. are the fastest growing MEP Contracting Company providing Turnkey solutions in the industry. We deliver design to commissioning in critical MEP Projects across key sectors like data centers, healthcare, hospitality, industrial, IT and more. With our strength and experience in engineering design, Project delivery, pre-fabrication and ability to seamlessly deliver complete turnkey solutions, we empower our clients to achieve success and growth.
+                </p>
               </div>
             </div>
           </div>
