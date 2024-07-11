@@ -38,9 +38,10 @@ export default function Industries({ IndustryPage }) {
               <div className='inner-two'>
                 <h3>Overview</h3>
                 <br />
-                <p className='paragraph justify'>VK Building Services brings together 19 glorious years of technical expertise, stringent quality control protocols and a client-centric approach across every project milestone to manifest our position as India's most trusted, integrated MEP contracting company.</p>
-                <p className='paragraph justify'>Our project versatility spanning 65 million square feet of executed mechanical, electrical and plumbing works across industrial, government, residential and commercial verticals is a testament to our integrated competencies.</p>
-                <p className='paragraph justify'>Yet, while our forte lies in MEP technology & systems, our commitment goes beyond.</p>
+                <p className='paragraph justify'>At VKBS, we take pride in our integrated approach to Mechanical, Electrical, and Plumbing (MEP) systems, where excellence meets sustainability. Our commitment lies in achieving a harmonious balance between intricate engineering and energy-efficient solutions, all while adhering to the latest industry codes and standards. With a diverse portfolio, VKBS has successfully completed projects involving specialized engineering systems, ranging from free cooling for data centres to once through seawater cooling for power plants.
+                </p>
+                <p className='paragraph justify'>As an MEP contractor, VKBS has consistently delivered projects that qualify for Platinum and Gold-rated green certifications, along with superior ratings under the Energy Conservation Building Code (ECBC)
+                </p>
               </div>
             </div>
           </div>

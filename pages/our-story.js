@@ -141,7 +141,8 @@ export default function Companytimeline() {
             </div>
             <div className='col-lg-6'>
               <div className='timeline-paragrap'>
-                <p className='justify'>Leveraging engineering expertise and industry leading quality benchmarks, we have delivered over 65 million sq ft of executed projects, spanning diverse infrastructure from data centers to residential spaces, VKBS translates evolving operational needs into cost-effective, sustainable MEP solutions generating long-term asset value through intelligent design.</p>
+                <p className='justify'>We are the leading provider of innovative and reliable MEP solutions, empowering our clients to achieve unparalleled success and growth. We strive to create sustainable and efficient systems that form the backbone of thriving businesses, ensuring their future prosperity and resilience in a rapidly evolving world.
+                </p>
               </div>
             </div>
           </div>
@@ -158,13 +159,16 @@ export default function Companytimeline() {
               <h3 className='innerTwoH3'>Our Story</h3>
               <div className='inner-two'>
                
-                <p style={{color:"#8B8E8f"}} className='justify'>Established in 2005 by industry veterans and visionaries who believed India deserves better, VK Building Services was founded on the principles of engineering excellence, customer commitment, sustainable thinking and ethical conduct - tenets that continue to determine growth even today.</p>
-                <p style={{color:"#8B8E8f"}} className='justify'>Over decades, 1000+ clients ranging from public sector giants to private majors have placed faith in VKBS to successfully manifest ambitious MEP engineering projects with demanding prerequisites including some of India's first platinum rated green campuses, rapid metro rail electrifications, remote smart city ecosystem rollouts and more.</p>
+                <p style={{color:"#8B8E8f"}} className='justify'>Established in 2005 by industry veterans and visionaries who believed India deserves better, VK Building Services was founded on the principles of engineering excellence, customer commitment, sustainable thinking and ethical conduct - tenets that continue to determine our growth even today.
+                </p>
+                <p style={{color:"#8B8E8f"}} className='justify'>Over the decades, customers ranging from public sector giants to private majors have placed faith in VKBS to successfully build ambitious MEP engineering projects with demanding prerequisites including some of India's first platinum rated green campuses, rapid metro rail electrifications, remote smart city ecosystem rollouts and more.
+                </p>
                 <p  style={{color:"#8B8E8f"}}>
                 <span id="dots">...</span><span id="more" style={{display:"none"}}>
-                  <p style={{color:"#8B8E8f"}} className='justify'>But meaningful partnerships thrive not by catering to collective comfort but shared aspirations. And the vision driving VKBS remains far-reaching - to transform the potential of emerging infrastructure by raising benchmarks.</p>
+                  <p style={{color:"#8B8E8f"}} className='justify'>We believe in fostering long-term relationships, evident through repeat orders from satisfied clients who acknowledge our sincere efforts in every project.                                                 
+                  </p>
 
-                    <p style={{color:"#8B8E8f"}} className='justify'>In all, we have successfully executed over 1000 innovated system rollouts, 50+ awards including Asia's Most Promising MEP Brand 2021, 1400+ workforce competency hours monthly, successful migration of 800+ outdated electrical substations, and verified PUE achievement of 1.32 across 4 Uptime Tier III certified facilities reinforce our commitment to pushing frontiers.</p>
+                    <p style={{color:"#8B8E8f"}} className='justify'>In our quest to stay ahead of the curve and meet the demands of the evolving industry landscape, we have executed over 1000 innovated system rollouts and pioneered MEP Prefab solutions to help our clients achieve better outcomes. The 50+ awards including Asia's Most Promising MEP Brand 2021, 1400+ workforce competency hours monthly, successful migration of 800+ outdated electrical substations, and verified PUE achievement of 1.32 across 4 Uptime Tier III certified facilities reinforce our commitment to pushing the frontiers.</p>
                   </span> &nbsp;<span onClick={myFunction} id="myBtn">Read more</span>
                 </p>
                
