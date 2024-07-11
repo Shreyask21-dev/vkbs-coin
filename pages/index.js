@@ -273,7 +273,8 @@ export default function HomePage() {
                 <div className='space5'></div>
                 <h3>Pre-Fabrication</h3>
                 <div className='space5'></div>
-                <p className='paragraph justify'>Reimagining onsite execution, VKBS revolutionizes MEP services by integrating manufacturing excellence through pre-fabrication for rapid assembly of defect-free modular components.. Our pioneering template-driven prefab techniques integrate innovation with quality and safety to fast-track projects and maximize customer delight.</p>
+                <p className='paragraph justify'>VKBS is revolutionising pre-fabrication solutions in the industry today through our strong DfMA expertise. We bring the most innovative, transformative and defect-free solutions to the industry through our integrated project delivery approach
+                </p>
                 <Link href='/prefabrication'
                   type="button"
                   className="mt-2 btn btn-primary btn-rounded btn-lg">
@@ -534,7 +535,8 @@ export default function HomePage() {
                 <h6>MEP Excellence With</h6>
                 <h3 className='IntegratedProjectDelivery'>Integrated Project Delivery</h3>
 
-                <p className='paragraph justify'>Our MEP services are powered by Centre of Excellence, Project Control Department, stringent 4-Level Monitoring governance, and Transition Task Force, ensuring seamless integration across project lifecycles.This unified alignment of cross-functional expert teams results in optimized outcomes by collectively driving adherence to critical success benchmarks - safety, quality, timely delivery and perfection - across the entirety of Mechanical, Electrical and Plumbing solutions.</p>
+                <p className='paragraph justify'>Customer Satisfaction is at the forefront of our Project Delivery mechanism. The 4 Pillars of our project delivery - Centre of Excellence, Project Control Department, stringent 4-Level Monitoring governance, and Transition Task Force, ensure seamless project deliveries to our esteemed clients. Dedicated task forces across every pillar, integrated through a streamlined project delivery mechanism powered by SAP S/4 HANNA ensure the highest quality and efficiency of project execution. 
+                </p>
 
                 <Link href='/mechanical/'
                   type="button"
@@ -564,6 +566,7 @@ export default function HomePage() {
                 <h6 className='innerTwoH6'>why us</h6>
                 <h3 style={{ fontWeight: "600", lineHeight: "50px" }} className='IntegratedProjectDelivery' >Unwavering Commitment to Quality Delivery</h3>
                 <p className='paragraph justify'>With over 65 million square feet of MEP projects executed, 2 million square feet of EPC development encompassing 2000+ residential units, 6,00,000 square feet of specialized fit-outs and delivery of 2,00,000+ square feet A-grade workspaces - VKBS offers unrivaled competencies spanning integrated design-build services, project management and quality-focused sustainable execution of complex mechanical, electrical and plumbing solutions pan-India, making us the industry's most trusted one-stop MEP services provider.
+
                 </p>
                 <div className='center'>
                   <Link href='/contact-us'
