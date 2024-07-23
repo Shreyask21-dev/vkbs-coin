@@ -44,7 +44,7 @@ export default function Header() {
               <ul className="dropdown-menu">
                 <li><Link className="dropdown-item " href="/about-us">About Company</Link></li>
                 <li><Link className="dropdown-item" href="/our-story/">Our Story</Link></li>
-                <li><Link className="dropdown-item" href="/infrastructure/">Infrastructure</Link></li>
+                {/* <li><Link className="dropdown-item" href="/infrastructure/">Infrastructure</Link></li> */}
                 <li><Link className="dropdown-item" href="/quality-assurance/">Quality Assurance</Link></li>
                 <li><Link className="dropdown-item" href="/team/">Team</Link></li>
                 <li><Link className="dropdown-item" href="/corporate-policies/">Corporate Policies</Link></li>
@@ -77,12 +77,12 @@ export default function Header() {
               </Link>
             </li>
 
-            <li className="nav-item">
             {/* LiveUrl */}
+            {/* <li className="nav-item">
               <Link className={`nav-link ${LiveUrl == '/sustainability/' ? 'active' : ''}`} href="/sustainability/">
                 SUSTAINABILITY
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link className={`nav-link ${LiveUrl == '/careers/' ? 'active' : ''}`} href="/careers/">
               CAREERS

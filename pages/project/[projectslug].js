@@ -67,12 +67,29 @@ export default function InnerProjectPage({ projectSingle }) {
                                         ></div>
                                     )}
                                      <div className='d-flex column'>
-                                        <div className='col-sm-6 col-12'><h5>Area : <strong>{projectSingle?.data?.project?.projectacflist?.area} </strong></h5></div>
-                                        <div className='col-lg-6 col-12'><h5>Equipment Capacity : <strong>{projectSingle?.data?.project?.projectacflist?.equipmentCapacity}</strong></h5></div>
+                                        {projectSingle?.data?.project?.projectacflist?.area !== null && (
+                                        <div className='col-sm-6 col-12'>
+                                                <h5>Area : <strong>{projectSingle?.data?.project?.projectacflist?.area} </strong></h5> 
+                                        </div>
+                                        )}
+                                        {projectSingle?.data?.project?.projectacflist?.equipmentCapacity && (
+                                        <div className='col-lg-6 col-12'>
+                                            <h5>Plant Capacity : <strong>{projectSingle?.data?.project?.projectacflist?.equipmentCapacity}</strong></h5> 
+                                        </div>
+                                        )}
                                     </div>
                                     <div className='d-flex column'>
-                                        <div className='col-lg-6 col-12'><h5>Consultant : <strong>{projectSingle?.data?.project?.projectacflist?.consultant}</strong></h5></div>
-                                        <div className='col-lg-6  col-12'><h5>Location : <strong>{projectSingle?.data?.project?.projectacflist?.location}</strong></h5></div>
+                                        {projectSingle?.data?.project?.projectacflist?.consultant && (
+                                        <div className='col-lg-6 col-12'>
+                                            
+                                                <h5>MEP System : <strong>{projectSingle?.data?.project?.projectacflist?.consultant}</strong></h5> 
+                                        </div>
+                                        )}
+                                        {projectSingle?.data?.project?.projectacflist?.location && (
+                                        <div className='col-lg-6  col-12'>
+                                                <h5>Location : <strong>{projectSingle?.data?.project?.projectacflist?.location}</strong></h5>
+                                            </div>
+                                        )}
                                         </div>
 
                             </div>
