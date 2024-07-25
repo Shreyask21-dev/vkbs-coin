@@ -226,6 +226,7 @@ export default function HomePage() {
               aria-label="customList">
               <SplideSlide>
                 <div className="solution-item solution-one solutionOne">
+                  <div className="overlay"></div>
                   <img src="/images/soution-icon-1.png" alt="partners_logo"
                     className="img-responsive" />
                   <div className='solu-heading-tag'>Our MEP Services</div>
@@ -234,6 +235,7 @@ export default function HomePage() {
               </SplideSlide>
               <SplideSlide>
                 <div className="solution-item solution-one solutionTwo">
+                <div className="overlay"></div>
                   <img src="/images/solution-Icon-2.png" alt="partners_logo"
                     className="img-responsive" />
                   <div className='solu-heading-tag'>Integrated MEP <br />Contracting</div>
@@ -242,6 +244,7 @@ export default function HomePage() {
               </SplideSlide>
               <SplideSlide>
                 <div className="solution-item solution-one solutionThree">
+                <div className="overlay"></div>
                   <img src="/images/solution-icon-three.png" alt="partners_logo"
                     className="img-responsive" />
                   <div className='solu-heading-tag'>Pre Fabrication</div>
@@ -250,6 +253,8 @@ export default function HomePage() {
               </SplideSlide>
               <SplideSlide>
                 <div className="solution-item solution-one solutionFour">
+                <div className="overlay"></div>
+
                   <img src="/images/solution-con-four.png" alt="partners_logo"
                     className="img-responsive" />
                   <div className='solu-heading-tag'>Retrofitting Services</div>

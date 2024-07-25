@@ -32,7 +32,7 @@ export default function Industries({ IndustryPage }) {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6'>
-              <img src='/images/over-view.jpg' className='bg-exp-data' alt='' />
+              <img src='/images/over-view.png' className='bg-exp-data' alt='' />
             </div>
             <div className='col-lg-6'>
               <div className='inner-two'>

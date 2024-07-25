@@ -1218,7 +1218,7 @@ body .btn-job:hover{
         padding-top: 25px;
         font-size: 25px;
         color: #59A946;
-        font-weight: 600;
+        font-weight: 500;
     }
     
 
@@ -1251,6 +1251,6 @@ body .btn-job:hover{
 
 .inner-page-pr-data h5 strong{
     color: #303030 !important;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
 }

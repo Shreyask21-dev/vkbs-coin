@@ -60,7 +60,7 @@ export default function InnerProjectPage({ projectSingle }) {
                                       </div>
                                       <h6>Project Highlights :</h6>
                                     {projectSingle?.data?.project?.content !== null && (
-                                        <div
+                                        <div style={{color:"#8B8E8F"}} 
                                             dangerouslySetInnerHTML={{
                                                 __html: `${projectSingle?.data?.project?.content}`,
                                             }}

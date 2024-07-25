@@ -562,7 +562,23 @@ p.paragraph {
 
 .solution-one:hover > .readMore{
    visibility:visible;
+   z-index: 2;
 }
+
+.overlay {
+   position: absolute;
+   top: 20;
+   left: 20;
+   width: 83%;
+   height: 83%;
+   background-color: rgba(0, 0, 0, 0.5); /* adjust the opacity value to your liking */
+   z-index: 1; /* make sure the overlay is on top of the image */
+   border-radius: 10px;
+ }
+ 
+ .solution-item:hover::before .overlay {
+   background-color: rgba(0, 0, 0, 0.2); /* change the opacity on hover */
+ }
 
 .solutionOne:hover {
    background-image: url('/images/OurSolutionsOne.jpg');
@@ -608,6 +624,7 @@ p.paragraph {
    padding-top: 15px;
    align-items: center;
    text-align: center;
+   z-index: 2;
 }
 
 .section .section-slider span{
