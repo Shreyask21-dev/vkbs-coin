@@ -1216,7 +1216,7 @@ body .btn-job:hover{
     }
     .inner-page-pr-data h5{
         padding-top: 25px;
-        font-size: 25px;
+        font-size: 20px;
         color: #59A946;
         font-weight: 500;
     }
@@ -1250,7 +1250,8 @@ body .btn-job:hover{
 
 
 .inner-page-pr-data h5 strong{
-    color: #303030 !important;
-    font-size: 20px;
+    color: #8b8e8f !important;
+    font-size: 15px;
     font-weight: 400;
+    font-family: 'roboto' !important;
 }
