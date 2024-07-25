@@ -529,7 +529,7 @@ p.paragraph {
    height: 100%;
    flex-direction: column;
    flex-wrap: nowrap;
-   padding-left: 25px;
+   padding-left: 12%;
    justify-content: center;
 }
 
@@ -564,8 +564,26 @@ p.paragraph {
    visibility:visible;
 }
 
-.solution-one:hover {
-   background-image: url('/images/solution-one.png');
+.solutionOne:hover {
+   background-image: url('/images/OurSolutionsOne.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.solutionTwo:hover{
+   background-image: url('/images/OurSolutionsTwo.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.solutionThree:hover{
+   background-image: url('/images/OurSolutionsThree.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.solutionFour:hover{
+   background-image: url('/images/OurSolutionFour.jpg');
    background-repeat: no-repeat;
    background-size: cover;
 }
