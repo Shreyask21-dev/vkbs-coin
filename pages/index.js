@@ -366,7 +366,7 @@ export default function HomePage() {
                           <p className='headingProjectSub'>{ items.acf.project_address }</p>
                           <Link href={items.acf.project_url}
                             type="button"
-                            className="mt-2 btn btn-primary-two  btn seeMore">
+                            className="mt-2 btn btn-primary  btn seeMore">
                             View More
                           </Link>
                         </div>
@@ -571,7 +571,7 @@ export default function HomePage() {
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h6 className='innerTwoH6'>why us</h6>
-                <h3 style={{ fontWeight: "600", lineHeight: "50px" }} className='IntegratedProjectDelivery' >Unwavering Commitment to Quality Delivery</h3>
+                <h3 style={{ fontWeight: "600" }} className='IntegratedProjectDelivery' >Unwavering Commitment to Quality Delivery</h3>
                 <p className='paragraph justify'>With over 65 million square feet of MEP projects executed, 2 million square feet of EPC development encompassing 2000+ residential units, 6,00,000 square feet of specialized fit-outs and delivery of 2,00,000+ square feet A-grade workspaces - VKBS offers unrivaled competencies spanning integrated design-build services, project management and quality-focused sustainable execution of complex mechanical, electrical and plumbing solutions pan-India, making us the industry's most trusted one-stop MEP services provider.
 
                 </p>

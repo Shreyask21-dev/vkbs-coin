@@ -90,12 +90,52 @@ export default function ContactUs({ LocationData }) {
                     <div className='col-lg-4 added'>
                      <div className='inner-data-active' dangerouslySetInnerHTML={{ __html: LocationData[activeTab].content}} ></div>
                     </div>
-                    <div className='col-lg-4 mb-2'>
-                      <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-1.png'/>
-                    </div>
-                    <div className='col-lg-4'>
-                      <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-3.png'/>
-                    </div>
+                    {LocationData[activeTab].title === 'Mumbai' ? (
+                      <>
+                        <div className='col-lg-4 mb-2'>
+                          <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-1.png'/>
+                        </div>
+                        <div className='col-lg-4'>
+                          <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-3.png'/>
+                        </div>
+                      </>
+                      ) : (<></>) }
+
+                      {LocationData[activeTab].title === 'Hyderabad' ? (
+                        <>
+                          <div className='col-lg-4 mb-2'>
+                            <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-1.png'/>
+                          </div>
+                          <div className='col-lg-4'>
+                            <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-3.png'/>
+                          </div>
+                        </>
+                        ) : (<></>) 
+                      }
+
+                      {LocationData[activeTab].title === 'Bengaluru' ? (
+                        <>
+                          <div className='col-lg-4 mb-2'>
+                            <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-1.png'/>
+                          </div>
+                          <div className='col-lg-4'>
+                            <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-3.png'/>
+                          </div>
+                        </>
+                        ) : (<></>) 
+                      }
+                      
+                      {LocationData[activeTab].title === 'Chennai' ? (
+                        <>
+                          <div className='col-lg-4 mb-2'>
+                            <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-1.png'/>
+                          </div>
+                          <div className='col-lg-4'>
+                            <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-3.png'/>
+                          </div>
+                        </>
+                        ) : (<></>) 
+                      }
                   </div>
                  </div>
               </div>
