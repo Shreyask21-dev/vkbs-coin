@@ -220,6 +220,7 @@ export default function HomePage() {
                 rewind: true,
                 autoplay: true,
                 interval: 6000,
+                arrows: false
                 // type: 'fade',
                 // speed: 2200
               }}
@@ -239,7 +240,7 @@ export default function HomePage() {
                   <img src="/images/solution-Icon-2.png" alt="partners_logo"
                     className="img-responsive" />
                   <div className='solu-heading-tag'>Integrated MEP <br />Contracting</div>
-                  <span className='readMore'><a href="/after-sales">Read More → </a></span>
+                  <span className='readMore'><a href="/quality-assurance/">Read More → </a></span>
                 </div>
               </SplideSlide>
               <SplideSlide>
@@ -258,7 +259,7 @@ export default function HomePage() {
                   <img src="/images/solution-con-four.png" alt="partners_logo"
                     className="img-responsive" />
                   <div className='solu-heading-tag'>Retrofitting Services</div>
-                  <span className='readMore'><a href="/industries">Read More → </a></span>
+                  <span className='readMore'><a href="/after-sales/">Read More → </a></span>
                 </div>
               </SplideSlide>
 
@@ -543,7 +544,7 @@ export default function HomePage() {
                 <p className='paragraph justify'>Customer Satisfaction is at the forefront of our Project Delivery mechanism. The 4 Pillars of our project delivery - Centre of Excellence, Project Control Department, stringent 4-Level Monitoring governance, and Transition Task Force, ensure seamless project deliveries to our esteemed clients. Dedicated task forces across every pillar, integrated through a streamlined project delivery mechanism powered by SAP S/4 HANNA ensure the highest quality and efficiency of project execution. 
                 </p>
 
-                <Link href='/mechanical/'
+                <Link href='/quality-assurance/'
                   type="button"
                   className="mt-2 btn btn-primary btn-rounded btn-lg">
                   Know More
@@ -564,7 +565,8 @@ export default function HomePage() {
         <div className='container'>
           <div className='row mt-4'>
             <div className='col-lg-6'>
-              <img src='/images/pipe.jpg' className='bg-exp-data' alt='' />
+            {/* className='img-bg-exp-data' */}
+              <img src='/images/pipe.webp' style={{borderRadius:"15px"}} alt='' />
             </div>
             <div className='col-lg-6'>
               <div className='inner-two'>

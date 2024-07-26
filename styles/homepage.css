@@ -581,25 +581,25 @@ p.paragraph {
  }
 
 .solutionOne:hover {
-   background-image: url('/images/OurSolutionsOne.jpg');
+   background-image: url('/images/OurSolutionsOne.webp');
    background-repeat: no-repeat;
    background-size: cover;
 }
 
 .solutionTwo:hover{
-   background-image: url('/images/OurSolutionsTwo.jpg');
+   background-image: url('/images/OurSolutionsTwo.webp');
    background-repeat: no-repeat;
    background-size: cover;
 }
 
 .solutionThree:hover{
-   background-image: url('/images/OurSolutionsThree.jpg');
+   background-image: url('/images/OurSolutionsThree.webp');
    background-repeat: no-repeat;
    background-size: cover;
 }
 
 .solutionFour:hover{
-   background-image: url('/images/OurSolutionFour.jpg');
+   background-image: url('/images/OurSolutionFour.webp');
    background-repeat: no-repeat;
    background-size: cover;
 }

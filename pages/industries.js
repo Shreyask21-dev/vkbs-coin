@@ -30,9 +30,10 @@ export default function Industries({ IndustryPage }) {
 
       <div className='section quality'>
         <div className='container'>
-          <div className='row'>
+          <div className='row' style={{display:"flex", alignItems:"center"}} >
             <div className='col-lg-6'>
-              <img src='/images/over-view.png' className='bg-exp-data' alt='' />
+            {/* className='bg-exp-data' */}
+              <img src='/images/over-view.webp' style={{borderRadius:"15px"}}   alt='' />
             </div>
             <div className='col-lg-6'>
               <div className='inner-two'>
