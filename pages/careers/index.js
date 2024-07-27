@@ -40,7 +40,7 @@ export default function CareersIndex({carrersData}) {
             <div className='col-lg-8'>
               <div className='inner-text'>
                 <h1>Careers</h1>
-                <p>Sub copy - Be a part of our story</p>
+                <p>Be a part of our story</p>
                 <div className='line'></div>
               </div>
             </div>
