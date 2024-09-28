@@ -29,7 +29,7 @@ export default function HomePage() {
   // Function to increment the value
   const incrementValue = () => {
     setValue(prevValue => {
-      if (prevValue < 346) {
+      if (prevValue < 80) {
         return prevValue + 1;
       } else {
         return prevValue;
@@ -52,7 +52,7 @@ export default function HomePage() {
   // Function to increment the price
   const incrementValue2 = () => {
     setprice(prevValue => {
-      if (prevValue < 300) {
+      if (prevValue < 2) {
         return prevValue + 1;
       } else {
         return prevValue;
@@ -69,7 +69,7 @@ export default function HomePage() {
   // Function to increment the price
   const incrementValue3 = () => {
     setteam(prevValue => {
-      if (prevValue < 6500) {
+      if (prevValue < 6000) {
         return prevValue + 1;
       } else {
         return prevValue;
@@ -86,7 +86,7 @@ export default function HomePage() {
   // Function to increment the price
   const incrementValue4 = () => {
     setStateList(prevValue => {
-      if (prevValue < 17) {
+      if (prevValue < 6) {
         return prevValue + 1;
       } else {
         return prevValue;
@@ -146,9 +146,9 @@ export default function HomePage() {
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   {/* <img src='/images/building.png' width='50' height='62' alt=''/> */}
-                  <h2>$ {price}Mn </h2>
+                  <h2> {price}Mn </h2>
                 </div>
-                <p className='mt-n1'>MEP Projects Completed</p>
+                <p className='mt-n1'>EPC Projects Completed</p>
               </div>
             </div>
 
@@ -157,9 +157,11 @@ export default function HomePage() {
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   <img src='/images/man.png' className='countImage' alt='' />
-                  <h2>{team}</h2>
+                  <h2>{team}+ </h2>
+                
                 </div>
-                <p className='mt-n1'>Team Strength</p>
+                
+                <p className='mt-n1'>Managed Staff</p>
               </div>
             </div>
 
@@ -167,9 +169,9 @@ export default function HomePage() {
               <div className='count-inner-4 counter-center'>
                 <div className='d-flex'>
                   <img src='/images/location.png' className='countImage' alt='' />
-                  <h2>{stateList} States</h2>
+                  <h2>{stateList} Lacs Sq.ft</h2>
                 </div>
-                <p className='mt-n1'>Ongoing & Completed Projects </p>
+                <p className='mt-n1'>Integrated solution with MEP services </p>
               </div>
             </div>
           </div>
@@ -187,7 +189,7 @@ export default function HomePage() {
               <div className='inner-two'>
                 <h6>What We do</h6>
                 <h3 className='IntegratedProjectDelivery'>Turnkey MEP Solutions</h3>
-                <p className='justify'>VK Building Services Pvt. Ltd. are the fastest growing MEP Contracting Company providing Turnkey solutions in the industry. We deliver design to commissioning in critical MEP Projects across key sectors like data centers, healthcare, hospitality, industrial, IT and more. With our strength and experience in engineering design, Project delivery, pre-fabrication and ability to seamlessly deliver complete turnkey solutions, we empower our clients to achieve success and growth.
+                <p className='justify'>VK Building Services Pvt. Ltd. are the fastest growing MEP Contracting Company providing Turnkey solutions in the industry. We deliver design to commissioning in critical MEP Projects across key sectors like pharma, data centers, healthcare, hospitality, industrial, IT and more. With our strength and experience in engineering design, Project delivery, pre-fabrication and ability to seamlessly deliver complete turnkey solutions, we empower our clients to achieve success and growth.
                 </p>
               </div>
             </div>

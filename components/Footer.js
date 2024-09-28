@@ -48,7 +48,7 @@ export default function Footer() {
               <ul className='footer-nav'>
                 <div className="row">
                   <div className="col-lg-12 col-6">
-                    <li><Link href="/contact-us/">New Delhi</Link></li>
+                    {/* <li><Link href="/contact-us/">New Delhi</Link></li> */}
                     <li><Link href="/contact-us/">Mumbai</Link></li>
                     <li><Link href="/contact-us/">Hyderabad</Link></li>
                   </div>
