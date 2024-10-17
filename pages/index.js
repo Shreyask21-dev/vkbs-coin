@@ -189,7 +189,7 @@ export default function HomePage() {
               <div className='inner-two'>
                 <h6>What We do</h6>
                 <h3 className='IntegratedProjectDelivery'>Turnkey MEP Solutions</h3>
-                <p className='justify'>VK Building Services Pvt. Ltd. are the fastest growing MEP Contracting Company providing Turnkey solutions in the industry. We deliver design to commissioning in critical MEP Projects across key sectors like pharma, data centers, healthcare, hospitality, industrial, IT and more. With our strength and experience in engineering design, Project delivery, pre-fabrication and ability to seamlessly deliver complete turnkey solutions, we empower our clients to achieve success and growth.
+                <p className='justify'>VK Building Services Pvt. Ltd. stands at the forefront of MEP contracting, delivering innovative turnkey solutions tailored to meet the unique demands of various industries. Our expertise spans the entire project lifecycle, from initial design through to commissioning, with a strong focus on critical sectors such as IT, data centres, healthcare, hospitality, industrial, pharmaceuticals etc.
                 </p>
               </div>
             </div>
@@ -281,7 +281,7 @@ export default function HomePage() {
                 <div className='space5'></div>
                 <h3>Pre-Fabrication</h3>
                 <div className='space5'></div>
-                <p className='paragraph justify'>VKBS is revolutionising pre-fabrication solutions in the industry today through our strong DfMA expertise. We bring the most innovative, transformative and defect-free solutions to the industry through our integrated project delivery approach
+                <p className='paragraph justify'>At VK Building Services Pvt. Ltd., we are transforming the industry with our cutting-edge pre-fabrication solutions. Leveraging our deep expertise in Design for Manufacturing and Assembly (DfMA), we deliver innovative, game-changing, and defect-free solutions. Our integrated project delivery approach ensures seamless execution from start to finish, setting new standards in efficiency and quality. Join us in leading the MEP revolution!
                 </p>
                 <Link href='/prefabrication'
                   type="button"
@@ -537,13 +537,20 @@ export default function HomePage() {
       {/* Delivery */}
       <div className='section two-left'>
         <div className='container'>
-          <div className='row'>
+          <div className='row' style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h6>MEP Excellence With</h6>
                 <h3 className='IntegratedProjectDelivery'>Integrated Project Delivery</h3>
 
-                <p className='paragraph justify'>Customer Satisfaction is at the forefront of our Project Delivery mechanism. The 4 Pillars of our project delivery - Centre of Excellence, Project Control Department, stringent 4-Level Monitoring governance, and Transition Task Force, ensure seamless project deliveries to our esteemed clients. Dedicated task forces across every pillar, integrated through a streamlined project delivery mechanism powered by SAP S/4 HANNA ensure the highest quality and efficiency of project execution. 
+                <p className='paragraph justify'>At VK Building Services Pvt. Ltd., customer satisfaction is at the heart of our project delivery approach. Our method is built on four key pillars:
+                  <ol style={{marginTop:"15px"}}>
+                    <li><b>Centre of Excellence:</b> A hub of expertise that drives innovation and best practices.</li>  
+                    <li><b>Project Control Department:</b> Focused oversight that ensures projects stay on track and within budget.</li>
+                    <li><b>Stringent 4-Level Monitoring:</b> A robust governance framework that guarantees transparency and accountability throughout the project completion period.</li>
+                    <li><b>Transition Task Force:</b> A dedicated team that ensures smooth handovers and ongoing support.</li>
+                  </ol> 
+                  Each pillar is supported by specialized task forces that work seamlessly together, all powered by SAP S/4HANA. This integrated delivery mechanism guarantees the highest quality and efficiency in project execution, ensuring we meet and exceed our clients' expectations.
                 </p>
 
                 <Link href='/quality-assurance/'
@@ -565,7 +572,7 @@ export default function HomePage() {
 
       <div className='section quality'>
         <div className='container'>
-          <div className='row mt-4'>
+          <div className='row mt-4' style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
             <div className='col-lg-6'>
             {/* className='img-bg-exp-data' */}
               <img src='/images/pipe.webp' style={{borderRadius:"15px"}} alt='' />
@@ -574,8 +581,10 @@ export default function HomePage() {
               <div className='inner-two'>
                 <h6 className='innerTwoH6'>why us</h6>
                 <h3 style={{ fontWeight: "600" }} className='IntegratedProjectDelivery' >Unwavering Commitment to Quality Delivery</h3>
-                <p className='paragraph justify'>With over 65 million square feet of MEP projects executed, 2 million square feet of EPC development encompassing 2000+ residential units, 6,00,000 square feet of specialized fit-outs and delivery of 2,00,000+ square feet A-grade workspaces - VKBS offers unrivaled competencies spanning integrated design-build services, project management and quality-focused sustainable execution of complex mechanical, electrical and plumbing solutions pan-India, making us the industry's most trusted one-stop MEP services provider.
-
+                <p className='paragraph justify'>With over 80 million square feet of MEP projects completed, including 2 million square feet of EPC development with more than 2,000 residential units, and 600,000 square feet of specialized fit-outs, VK Building Services Pvt. Ltd. stands out as a leader in the industry.
+                </p>
+                <p className='paragraph justify'>
+                We offer unmatched expertise in integrated design-build services, project management, and quality-driven sustainable execution of complex mechanical, electrical, and plumbing solutions across India. This commitment makes us the most trusted one-stop provider for MEP services in the industry.
                 </p>
                 <div className='center'>
                   <Link href='/contact-us'
@@ -597,7 +606,7 @@ export default function HomePage() {
 
       <div className='section customlist-section'>
         <div className='container'>
-          <h2 className='primary-text'>Trusted by more than <span>30,000</span> companies</h2>
+          <h2 className='primary-text'>Trusted by more than <span>300</span> companies</h2>
           <Splide
             options={{
               perPage: 5,

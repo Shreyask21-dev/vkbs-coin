@@ -38,8 +38,8 @@ export default function Footer() {
                 You can always contact with us via email  or phone. Get in touch with contact and get a quote form.
               </p>
               <ul className='footer-nav'>
-                <li><img src="/images/envelope.png" alt=''/><span> username@example.com</span></li>
-                <li><img src="/images/phone.png" alt=''/><span>0000-222-333</span></li>
+                <li><img src="/images/envelope.png" alt=''/><span> infoblr.vkbs.in</span></li>
+                {/* <li><img src="/images/phone.png" alt=''/><span>0000-222-333</span></li> */}
               </ul>
             </div>
 

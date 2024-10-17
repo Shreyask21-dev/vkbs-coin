@@ -54,12 +54,17 @@ export default function ContactUs({ LocationData }) {
           <div className='row'>
             <div className='col-lg-6'>
               <div className='timeline-sub-heading'>
-                <h2>Integrity Defining <br /> Every  Milestone</h2>
+                <h2>A Legacy of <br/>Partnerships</h2>
               </div>
             </div>
             <div className='col-lg-6'>
               <div className='timeline-paragrap'>
-                <p>Over 20 years of sustained partnerships with over 1000 clients, a testament to the customer-first ethos, unwavering integrity and transparency powering progress.</p>
+                <p>With over 20 years of sustained partnerships and collaborations with more than 300 clients, VK Building Services Pvt. Ltd. embodies a customer-first ethos built on unwavering integrity and transparency. These strong relationships are a testament to our commitment to driving progress and delivering exceptional value in every project we undertake.</p>
+              </div>
+              <div>
+                <img src='/images/oracle.png' style={{width:"30%"}}/>
+                <img src='/images/Philips.png' style={{width:"30%"}} />
+                <img src='/images/cognizant.png' style={{width:"30%"}} />
               </div>
             </div>
           </div>

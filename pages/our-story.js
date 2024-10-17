@@ -30,7 +30,7 @@ export default function Companytimeline() {
 
   const accountIncrement1 = ()=>{
     setProjectsDelevred(prevalue => {
-      if(prevalue < 65 ){
+      if(prevalue < 80 ){
         return prevalue + 1
       }
       else{
@@ -141,7 +141,7 @@ export default function Companytimeline() {
             </div>
             <div className='col-lg-6'>
               <div className='timeline-paragrap'>
-                <p className='justify'>We are the leading provider of innovative and reliable MEP solutions, empowering our clients to achieve unparalleled success and growth. We strive to create sustainable and efficient systems that form the backbone of thriving businesses, ensuring their future prosperity and resilience in a rapidly evolving world.
+                <p className='justify'>As a leading provider of innovative and reliable MEP solutions, VK Building Services Pvt. Ltd. empowers clients to achieve remarkable success and growth. Our mission is to design sustainable and efficient systems that serve as the backbone of thriving businesses. We are dedicated to ensuring their future prosperity and resilience in an ever-changing world. Together, we are co-shaping India’s infrastructure for a better tomorrow.
                 </p>
               </div>
             </div>
@@ -159,23 +159,23 @@ export default function Companytimeline() {
               <h3 className='innerTwoH3'>Our Story</h3>
               <div className='inner-two'>
                
-                <p style={{color:"#8B8E8f"}} className='justify'>Established in 2005 by industry veterans and visionaries who believed India deserves better, VK Building Services was founded on the principles of engineering excellence, customer commitment, sustainable thinking and ethical conduct - tenets that continue to determine our growth even today.
+                <p style={{color:"#8B8E8f"}} className='justify'>VK Building Services (VKBS) was founded with a mission to improve India's infrastructure through quality engineering, customer focus, sustainability, and ethical practices. These values have guided the company’s growth from the start and remain key to its success.
                 </p>
-                <p style={{color:"#8B8E8f"}} className='justify'>Over the decades, customers ranging from public sector giants to private majors have placed faith in VKBS to successfully build ambitious MEP engineering projects with demanding prerequisites including some of India's first platinum rated green campuses, rapid metro rail electrifications, remote smart city ecosystem rollouts and more.
+                <p style={{color:"#8B8E8f"}} className='justify'>Over the past two decades, VKBS has worked on major MEP (Mechanical, Electrical, and Plumbing) projects for both public and private clients, including green buildings and metro rail projects. The company has built strong, long-term relationships with clients who trust its dedication to delivering high-quality projects.
                 </p>
-                <p  style={{color:"#8B8E8f"}}>
+                {/* <p  style={{color:"#8B8E8f"}}>
                 <span id="dots">...</span><span id="more" style={{display:"none"}}>
                   <p style={{color:"#8B8E8f"}} className='justify'>We believe in fostering long-term relationships, evident through repeat orders from satisfied clients who acknowledge our sincere efforts in every project.                                                 
                   </p>
 
                     <p style={{color:"#8B8E8f"}} className='justify'>In our quest to stay ahead of the curve and meet the demands of the evolving industry landscape, we have executed over 1000 innovated system rollouts and pioneered MEP Prefab solutions to help our clients achieve better outcomes. The 50+ awards including Asia's Most Promising MEP Brand 2021, 1400+ workforce competency hours monthly, successful migration of 800+ outdated electrical substations, and verified PUE achievement of 1.32 across 4 Uptime Tier III certified facilities reinforce our commitment to pushing the frontiers.</p>
                   </span> &nbsp;<span onClick={myFunction} id="myBtn">Read more</span>
-                </p>
+                </p> */}
                
               </div>
             </div>
             <div className='col-lg-6'>
-              <img src='/images/timeline-industry.jpg' className='bg-exp-data' alt='' />
+              <img src='/images/vkbs-logo.png' className='bg-exp-data' alt='' />
             </div>
           </div>
         </div>
@@ -228,10 +228,8 @@ export default function Companytimeline() {
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h3>Guiding Principles</h3>
-               <p className='justify'>Change starts from within. Thus our ethos embraces imbibing quality consciousness into work routines through training plus incentive frameworks focused on mindset evolution.</p>
-               <p className='justify'>We believe uplifting lives begins by mitigating risks - be it discontinued critical infrastructure operations or physiological threats. Hence preparedness and continuity planning feature prominently across system design.</p>
-                <p className='justify'>By pioneering data-driven innovation to help infrastructure keep pace with the width of India's needs - be it rolling out rapid slum electrifications or monitoring the conduct of renewable assets, VKBS continuously expands its expertise to deliver differently.</p>
-                <p className='justify'>Operational challenges can seem abstract unless visualized granularly. Our commitment stays to simplify complex interconnected engineering intricacies into understandable translated outcomes spanning the now and near future.</p>
+               <p className='justify' style={{fontSize:"18px"}}><b style={{fontSize:"25px"}}>Vision : </b>Pioneering MEP Excellence With World Class Engineering & Design</p>
+               <p className='justify' style={{fontSize:"18px", marginTop:"10px"}}><b style={{fontSize:"25px"}}>Mission : </b>Progress Through Innovation, Transparency, Safety, Sustainability, Growth, and Respect</p>
               </div>
             </div>
           </div>

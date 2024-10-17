@@ -30,7 +30,7 @@ export default function Companytimeline() {
             </div>
             <div className='col-lg-6'>
               <div className='timeline-paragrap'>
-                <p>Leveraging engineering expertise and industry leading quality benchmarks, we have delivered over 65 million sq ft of executed projects, spanning diverse infrastructure from data centers to residential spaces, VKBS translates evolving operational needs into cost-effective, sustainable MEP solutions generating long-term asset value through intelligent design.</p>
+                <p>As a leading provider of innovative and reliable MEP solutions, VK Building Services Pvt. Ltd. empowers clients to achieve remarkable success and growth. Our mission is to design sustainable and efficient systems that serve as the backbone of thriving businesses. We are dedicated to ensuring their future prosperity and resilience in an ever-changing world. Together, we are co-shaping India’s infrastructure for a better tomorrow.</p>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Companytimeline() {
             </div>
             <div className='col-lg-3'>
               <div className='count-inner'>
-                  <h2>65 Mn <span>Sq.Ft</span></h2>
+                  <h2>90 Mn <span>Sq.Ft</span></h2>
                 <p>Projects delivered</p>
               </div>
             </div>

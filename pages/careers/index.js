@@ -76,7 +76,9 @@ export default function CareersIndex({carrersData}) {
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h3>Disrupt, Innovate & Grow</h3>
-                <p className='justify'>Join VKBS and become part of a team that's dedicated to excellence, innovation, and sustainability. Here’s an opportunity to work on impactful MEP engineering projects that shape the future of infrastructure and construction. From sustainable buildings to cutting-edge technologies, your work will have a lasting impact on communities and industries worldwide. Get the privilege to work alongside talented & seasoned professionals who are passionate about making a difference in the world of MEP engineering. Experience a rewarding work culture, challenging projects, and endless opportunities for growth and advancement.</p>
+                <p className='justify'>Join VKBS and become part of a dynamic team dedicated to excellence, innovation, and sustainability. Here’s your opportunity to engage in transformative MEP engineering projects that redefine infrastructure and construction. From eco-friendly buildings to state-of-the-art technologies, your work will leave a lasting impact on communities and industries across the globe.<br/><br/>
+                Collaborate with skilled professionals who share a passion for making a difference in the MEP engineering landscape. Enjoy a vibrant work culture filled with challenging projects and abundant opportunities for personal and professional growth. Together, let’s disrupt the status quo, innovate solutions, and drive the future of our industry forward!
+                </p>
               </div>
             </div>
           </div>
