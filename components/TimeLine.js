@@ -14,7 +14,7 @@ export default function TimeLine() {
           <h2 className='text-center' style={{fontSize:"50px !important"}}>VKBS Through the Years: A Timeline of Success</h2>
           <div className='space10'></div>
           <div className='time-line'>
-            <img src='/images/time-img.png' alt='' />
+            <img src='/images/timelineUpdated.png' alt='' />
           </div>
         </div>
       </div>
