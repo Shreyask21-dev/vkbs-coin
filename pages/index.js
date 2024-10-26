@@ -169,7 +169,7 @@ export default function HomePage() {
               <div className='count-inner-4 counter-center'>
                 <div className='d-flex'>
                   <img src='/images/location.png' className='countImage' alt='' />
-                  <h2>{stateList} Lacs <span style={{fontSize:"15px"}}>Sq.ft</span></h2>
+                  <h2>{stateList} Lakhs <span style={{fontSize:"15px"}}>Sq.ft</span></h2>
                 </div>
                 <p className='mt-n1'>Integrated solution with MEP services </p>
               </div>

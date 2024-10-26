@@ -228,8 +228,10 @@ export default function Companytimeline() {
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h3>Guiding Principles</h3>
-               <p className='justify' style={{fontSize:"18px"}}><b style={{fontSize:"25px"}}>Vision : </b>Pioneering MEP Excellence With World Class Engineering & Design</p>
-               <p className='justify' style={{fontSize:"18px", marginTop:"10px"}}><b style={{fontSize:"25px"}}>Mission : </b>Progress Through Innovation, Transparency, Safety, Sustainability, Growth, and Respect</p>
+               <p className='justify' style={{fontSize:"18px"}}><b style={{ fontSize: "35px",
+    fontWeight: "700", lineHeight: "60px", color: "#303030"}}>Vision : </b>Pioneering MEP Excellence With World Class Engineering & Design</p>
+               <p className='justify' style={{fontSize:"18px", marginTop:"10px"}}><b style={{ fontSize: "35px",
+    fontWeight: "700", lineHeight: "60px", color: "#303030"}}>Mission : </b>Progress Through Innovation, Transparency, Safety, Sustainability, Growth, and Respect</p>
               </div>
             </div>
           </div>
