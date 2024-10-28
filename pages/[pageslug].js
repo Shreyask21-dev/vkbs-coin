@@ -26,6 +26,7 @@ export default function SinglePage({ PageApiResult }) {
           backgroundSize: `cover`,
           height:`475px`,
           paddingRight: "25px",
+          marginTop: PageApiResult?.data?.page?.title === "After Sales" ? "4.5%" : "0px",
         }}
 
         >
