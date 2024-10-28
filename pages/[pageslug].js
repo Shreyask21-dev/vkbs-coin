@@ -38,9 +38,15 @@ export default function SinglePage({ PageApiResult }) {
             <div className='row'>
               <div className='col-lg-8'>
                 <div className='inner-text inner-Text-Extra'>
-                  <h1>{PageApiResult?.data?.page?.title}</h1>
-                  <div className="description" dangerouslySetInnerHTML={{ __html: PageApiResult?.data?.page?.excerpt }}></div>
-                  <div className='line'></div>
+
+
+                {PageApiResult?.data?.page?.title == 'After Sales' ? <h1></h1>: <h1>{PageApiResult?.data?.page?.title}</h1>}
+
+
+                {PageApiResult?.data?.page?.title == 'After Sales' ? <div className="description" ></div> : <div className="description" dangerouslySetInnerHTML={{ __html: PageApiResult?.data?.page?.excerpt }}></div> }
+
+
+                {PageApiResult?.data?.page?.title == 'After Sales' ? <div ></div>: <div className='line'></div>}
                 </div>
               </div>
             </div>
