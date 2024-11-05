@@ -203,14 +203,14 @@ export default function Companytimeline() {
             </div>
             <div className='col-lg-3 col-6 border borderTop'>
               <div className='count-inner'>
-                  <h2>{ProjectsDelevred} Mn <span>Sq.Ft</span></h2>
+                  <h2>{ProjectsDelevred} <span>Million Sq.Ft</span></h2>
                 <p>Projects delivered</p>
               </div>
             </div>
 
             <div className='col-lg-3 col-6 borderTop'>
               <div className='count-inner-4'>  
-                  <h2>$ {EmpPRojects}Mn</h2>
+                  <h2>$ {EmpPRojects} <span style={{fontSize:"15px"}}>Million</span> </h2>
                 <p>MEP projects </p>
               </div>
             </div>

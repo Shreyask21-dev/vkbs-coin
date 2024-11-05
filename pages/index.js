@@ -136,7 +136,7 @@ export default function HomePage() {
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   <img src='/images/building.png' className='countImage' alt='' />
-                  <h2>{value}Mn <span>Sq.Ft</span></h2>
+                  <h2>{value} <span>Million Sq.Ft</span></h2>
                 </div>
                 <p className='mt-n1'>MEP Projects Delivered</p>
               </div>
@@ -146,7 +146,7 @@ export default function HomePage() {
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   {/* <img src='/images/building.png' width='50' height='62' alt=''/> */}
-                  <h2> {price}Mn </h2>
+                  <h2> {price} <span>Million</span> </h2>
                 </div>
                 <p className='mt-n1'>EPC Projects Completed</p>
               </div>
