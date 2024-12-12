@@ -61,12 +61,12 @@ export default function ContactUs({ LocationData }) {
               <div className='timeline-paragrap'>
                 <p>With over 20 years of sustained partnerships and collaborations with more than 300 clients, VK Building Services Pvt. Ltd. embodies a customer-first ethos built on unwavering integrity and transparency. These strong relationships are a testament to our commitment to driving progress and delivering exceptional value in every project we undertake.</p>
               </div>
-              <div>
+              {/* <div>
                 <img src='/images/oracle.png' style={{width:"25%"}}/>
                 <img src='/images/Philips.png' style={{width:"25%"}} />
                 <img src='/images/cognizant.png' style={{width:"25%", marginRight:"15px"}} />
                 <img src='/images/bamdigitalagency.jpg' style={{width:"10%"}} />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

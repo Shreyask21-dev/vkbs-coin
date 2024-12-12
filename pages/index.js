@@ -136,7 +136,7 @@ export default function HomePage() {
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   <img src='/images/building.png' className='countImage' alt='' />
-                  <h2>{value} <span>Million Sq.Ft</span></h2>
+                  <h2>{value} <span>million sq.ft</span></h2>
                 </div>
                 <p className='mt-n1'>MEP Projects Delivered</p>
               </div>
@@ -146,7 +146,7 @@ export default function HomePage() {
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   {/* <img src='/images/building.png' width='50' height='62' alt=''/> */}
-                  <h2> {price} <span>Million</span> </h2>
+                  <h2> {price} <span>million sq.ft</span> </h2>
                 </div>
                 <p className='mt-n1'>EPC Projects Completed</p>
               </div>
@@ -169,7 +169,7 @@ export default function HomePage() {
               <div className='count-inner-4 counter-center'>
                 <div className='d-flex'>
                   <img src='/images/location.png' className='countImage' alt='' />
-                  <h2>{stateList} Lakhs <span style={{fontSize:"15px"}}>Sq.ft</span></h2>
+                  <h2>{stateList} <span style={{fontSize:"15px"}}>lakhs sq.ft</span></h2>
                 </div>
                 <p className='mt-n1'>Integrated solution with MEP services </p>
               </div>
@@ -202,7 +202,7 @@ export default function HomePage() {
       <div className='section solution-slider'>
         <div className='container'>
           <div className='section-slider'>
-            <h6>what we do</h6>
+            {/* <h6>what we do</h6> */}
             <h5 className='innerTwoH3 IntegratedProjectDelivery'>Our Solutions</h5>
             <div className='space5'></div>
             <Splide
@@ -237,15 +237,6 @@ export default function HomePage() {
                 </div>
               </SplideSlide>
               <SplideSlide>
-                <div className="solution-item solution-one solutionTwo">
-                <div className="overlay"></div>
-                  <img src="/images/solution-Icon-2.png" alt="partners_logo"
-                    className="img-responsive" />
-                  <div className='solu-heading-tag'>Integrated MEP <br />Contracting</div>
-                  <span className='readMore'><a href="/quality-assurance/">Read More → </a></span>
-                </div>
-              </SplideSlide>
-              <SplideSlide>
                 <div className="solution-item solution-one solutionThree">
                 <div className="overlay"></div>
                   <img src="/images/solution-icon-three.png" alt="partners_logo"
@@ -254,17 +245,29 @@ export default function HomePage() {
                   <span className='readMore'><a href="/prefabrication">Read More → </a></span>
                 </div>
               </SplideSlide>
+
               <SplideSlide>
                 <div className="solution-item solution-one solutionFour">
                 <div className="overlay"></div>
 
                   <img src="/images/solution-con-four.png" alt="partners_logo"
                     className="img-responsive" />
-                  <div className='solu-heading-tag'>Retrofitting Services</div>
+                  <div className='solu-heading-tag'>Maintenance Services</div>
                   <span className='readMore'><a href="/after-sales/">Read More → </a></span>
                 </div>
               </SplideSlide>
 
+              <SplideSlide>
+                <div className="solution-item solution-one solutionTwo">
+                <div className="overlay"></div>
+                  <img src="/images/solution-Icon-2.png" alt="partners_logo"
+                    className="img-responsive" />
+                  <div className='solu-heading-tag'>Our Projects</div>
+                  <span className='readMore'><a href="/project/category/commercial/">Read More → </a></span>
+                </div>
+              </SplideSlide>
+             
+            
             </Splide>
           </div>
         </div>

@@ -1255,3 +1255,12 @@ body .btn-job:hover{
     font-weight: 400;
     font-family: 'roboto' !important;
 }
+
+#subnav{
+    scroll-margin-top: 80px !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none; /* Optional: Removes the outline */
+}

@@ -10,7 +10,7 @@ export default function Footer() {
             <div className='col-lg-3'>
               <img src="/images/vkbs-logo.png" width='132' height='55' alt="logo" />
               <div className='space5'></div>
-              <p className='justify pb-4'>We are Indias leading turnkey MEP services providers, extending unmatched integrated mechanical, electrical and plumbing solutions for complex infrastructure needs.</p>
+              <p className='justify pb-4'>We are India's leading turnkey MEP services providers, extending unmatched integrated mechanical, electrical and plumbing solutions for complex infrastructure needs.</p>
 
             </div>
             <div className='col-lg-2 col-6 '>
@@ -35,7 +35,7 @@ export default function Footer() {
             <div className='col-lg-3'>
               <h5>Contact Info</h5>
               <p>
-                You can always contact with us via email  or phone. Get in touch with contact and get a quote form.
+                Get in touch with us at infoblr.vkbs.in or fill out the <Link href="/contact-us/" >enquiry form</Link>.
               </p>
               <ul className='footer-nav'>
                 <li><img src="/images/envelope.png" alt=''/><span> infoblr.vkbs.in</span></li>

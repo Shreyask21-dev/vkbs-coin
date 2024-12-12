@@ -18,6 +18,16 @@ export default function CareersJobPage({ JobSingle }) {
     setShowModal(false);
   };
 
+  const handleCopyToClipboard = () => {
+    const currentUrl = window.location.href; // Get the current page URL
+    navigator.clipboard.writeText(currentUrl).then(() => {
+      alert("Current page URL copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy: ", err);
+      alert("Failed to copy the URL. Please try again.");
+    });
+  };
+
 
   console.log("JobSingle->" , JobSingle)
   
@@ -81,7 +91,7 @@ export default function CareersJobPage({ JobSingle }) {
         <div className='container'>
           <div className='apply-option d-flex'>
           <button onClick={handleOpenModal} className="mt-2 btn btn-primary btn-job-carrer"> Apply Now</button>
-            <div className='share-link'>
+            <div className='share-link' onClick={handleCopyToClipboard} style={{cursor:"pointer"}}>
                <img src='/images/share.png' height='45' width='45' alt=''/>
             </div>
          </div>

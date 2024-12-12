@@ -84,7 +84,7 @@ export default function Companytimeline() {
             </div>
             <div className='col-lg-3'>
               <div className='count-inner'>
-                  <h2>90 Mn <span>Sq.Ft</span></h2>
+                  <h2>90 Mn <span>sq.ft</span></h2>
                 <p>Projects delivered</p>
               </div>
             </div>

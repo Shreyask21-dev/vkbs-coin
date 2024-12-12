@@ -9,7 +9,6 @@ export default function PopForm() {
   return (
     <div>
 
-
       <div className="enq-form">
         <div className="container ">
           <h4>Enquiry form</h4>
@@ -18,66 +17,30 @@ export default function PopForm() {
           <form>
             <div className="row">
 
-            <div className="col-lg-6 mb-3 ">
-                <p>Segments:</p>
+              <div className="col-lg-6 mb-3 ">
+                <p>First Name:</p>
                 <input
                   type="text"
                   class="form-control custom-selecfirst"
-                  placeholder="Segments"
+                  placeholder=""
                 />
               </div>
 
               <div className="col-lg-6 mb-3 ">
-                <p>Services:</p>
+                <p>Last Name:</p>
                 <input
                   type="text"
                   class="form-control custom-selecfirst"
-                  placeholder="Services"
+                  placeholder=""
                 />
               </div>
-
-              <div className="col-lg-6 mb-3 ">
-                <p>Company Name:</p>
-                <input
-                  type="text"
-                  class="form-control custom-selecfirst"
-                  placeholder="Company Name"
-                />
-              </div>
-              <div className="col-lg-6 mb-3 classn">
-                <p>Name of contact person</p>
-                <input
-                  type="text"
-                  class="form-control custom-selecfirst"
-                  placeholder="Name of contact person"
-                />
-              </div>
-
 
               <div class="col-lg-6  mb-3">
-                <p>Designation :</p>
-                <input
-                  type="text"
-                  class="form-control custom-selecee"
-                  placeholder="Enter Designation"
-                />
-              </div>
-              <div class="col-lg-6 mb-3">
-                <p>Address</p>
-                <input
-                  type="text"
-                  class="form-control custom-selecpp"
-                  placeholder="Enter Address"
-                />
-              </div>
-
-
-              <div class="col-lg-6  mb-3">
-                <p>Contact No:</p>
+                <p>Phone:</p>
                 <input
                   type="text"
                   class="form-control custom-selecdd"
-                  placeholder="Contact No"
+                  placeholder=""
                 />
               </div>
 
@@ -86,22 +49,30 @@ export default function PopForm() {
                 <input
                   type="text"
                   class="form-control custom-selecbuild"
-                  placeholder="Email"
+                  placeholder=""
                 />
               </div>
-              
+
+              <div className="col-lg-12 mb-3 ">
+                <p>Company Name:</p>
+                <input
+                  type="text"
+                  class="form-control custom-selecfirst"
+                  placeholder=""
+                />
+              </div>
 
               <div class="col-lg-12 mb-3">
                 <p>Your Message</p>
                 <textarea
                   type="text"
                   class="form-control custom-selecaddress"
-                  placeholder="Your Message"
+                  placeholder=""
                 />
               </div>
 
               <div className="btn-classes d-flex">
-              <button
+                <button
                   type="button"
                   className="mt-2 btn btn-primary btn-rounded btn-lg">
                   Apply Now

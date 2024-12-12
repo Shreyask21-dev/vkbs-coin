@@ -64,10 +64,10 @@ export default function Header() {
               </Link>
               <ul className="dropdown-menu">
              
-                <li><Link className="dropdown-item " href="/mechanical/">MEP</Link></li>
+                <li><Link className="dropdown-item " href="/mechanical/#subnav">Integrated MEP Solutions</Link></li>
                 <li><Link className="dropdown-item " href="/after-sales/">After Sales</Link></li>
                 <li><Link className="dropdown-item " href="/prefabrication/">Prefab</Link></li>
-                <li><Link className="dropdown-item" href="/industries/">Industries</Link></li>
+                {/* <li><Link className="dropdown-item" href="/industries/">Industries</Link></li> */}
               </ul>
             </li>
 
