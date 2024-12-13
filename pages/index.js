@@ -171,7 +171,7 @@ export default function HomePage() {
                   <img src='/images/location.png' className='countImage' alt='' />
                   <h2>{stateList} <span style={{fontSize:"15px"}}>lakhs sq.ft</span></h2>
                 </div>
-                <p className='mt-n1'>Integrated solution with MEP services </p>
+                <p className='mt-n1'>Integrated solution with <br /> MEP services </p>
               </div>
             </div>
           </div>

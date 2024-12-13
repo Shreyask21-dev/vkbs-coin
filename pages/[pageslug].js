@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import { BASEPATH } from "@/config";
@@ -7,8 +7,27 @@ import { useRouter } from 'next/router'
 
 export default function SinglePage({ PageApiResult }) {
 
+  const [isMobile, setIsMobile] = useState(false);
+
   const uniqueImageUrl = "https://vkbs.coinage.host/wp-content/uploads/2024/05/Rectangle-189.png"; 
   // unique image URL
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Set the initial state
+    handleResize();
+
+    // Add event listener to update state on window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
     
   console.log("PageApiResult", PageApiResult.data.page.slug)
@@ -22,11 +41,14 @@ export default function SinglePage({ PageApiResult }) {
         {/* Hero banner design */}
         <div className={`section inner-hero-banner ${PageApiResult.data.page.slug == 'team' && 'hide-team'}`}
         style={{
-          background: `url(${PageApiResult?.data?.page?.featuredImage?.node?.sourceUrl}) no-repeat center`,
-          backgroundSize: `cover`,
-          height:`475px`,
+          background:
+            PageApiResult?.data?.page?.title === "After Sales" && isMobile
+              ? "url('/images/afterSalesMobile.jpg') no-repeat center"
+              : `url(${PageApiResult?.data?.page?.featuredImage?.node?.sourceUrl}) no-repeat center`,          backgroundSize: `cover`,
+              backgroundSize: `cover`,
+              height:`475px`,
           paddingRight: "25px",
-          marginTop: PageApiResult?.data?.page?.title === "After Sales" ? "4.5%" : "0px",
+          marginTop: PageApiResult?.data?.page?.title === "After Sales" ? "5.5%" : "0px",
         }}
 
         >
