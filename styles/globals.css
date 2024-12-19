@@ -1264,3 +1264,7 @@ body .btn-job:hover{
     box-shadow: none;
     outline: none; /* Optional: Removes the outline */
 }
+
+#tabs{
+    scroll-margin-top: 100px !important;
+}

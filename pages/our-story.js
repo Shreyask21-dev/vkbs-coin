@@ -175,7 +175,7 @@ export default function Companytimeline() {
               </div>
             </div>
             <div className='col-lg-6'>
-              <img src='/images/vkbs-logo.png' className='bg-exp-data' alt='' />
+              <img src='/images/VKBS-logo-update.png' className='bg-exp-data' alt='' />
             </div>
           </div>
         </div>

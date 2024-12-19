@@ -49,12 +49,12 @@ export default function Footer() {
                 <div className="row">
                   <div className="col-lg-12 col-6">
                     {/* <li><Link href="/contact-us/">New Delhi</Link></li> */}
-                    <li><Link href="/contact-us/">Mumbai</Link></li>
-                    <li><Link href="/contact-us/">Hyderabad</Link></li>
+                    <li><Link href="/contact-us/#tabs">Mumbai</Link></li>
+                    <li><Link href="/contact-us/#tabs">Hyderabad</Link></li>
                   </div>
                   <div className="col-lg-12 col-6">
-                    <li><Link href="/contact-us/">Bangalore</Link></li>
-                    <li><Link href="/contact-us/">Chennai</Link></li>
+                    <li><Link href="/contact-us/#tabs">Bangalore</Link></li>
+                    <li><Link href="/contact-us/#tabs">Chennai</Link></li>
                   </div>
                 </div>
               </ul>

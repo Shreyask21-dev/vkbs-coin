@@ -74,18 +74,17 @@ export default function ContactUs({ LocationData }) {
             <div className='space5'></div>
             <div className='space5'></div>
       <div className='location'>
-        <div className='container'>
+        <div className='container' id='tabs'>
           <h3 className='innerTwoH3' style={{fontSize:"50px", fontWeight:"700"}}>Branches</h3>
           <div className='space5'></div>
           <div className='row'>
-            <div className="horizontal-tabs">
+            <div className="horizontal-tabs" id='tabs'>
               <div className='tab-bg'>
               <div className="tab-buttons">
                 {
                   LocationData.map((tab, index) => (
                     <button key={index} className={index === activeTab ? 'active' : ''}
                       onClick={() => handleTabClick(index)}> {tab.title}</button>))
-
                 }
                 </div>
               </div>

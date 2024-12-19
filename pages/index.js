@@ -158,9 +158,9 @@ export default function HomePage() {
                 <div className='d-flex'>
                   <img src='/images/man.png' className='countImage' alt='' />
                   <h2>{team}+ </h2>
-                
+
                 </div>
-                
+
                 <p className='mt-n1'>Managed Staff</p>
               </div>
             </div>
@@ -169,7 +169,7 @@ export default function HomePage() {
               <div className='count-inner-4 counter-center'>
                 <div className='d-flex'>
                   <img src='/images/location.png' className='countImage' alt='' />
-                  <h2>{stateList} <span style={{fontSize:"15px"}}>lakhs sq.ft</span></h2>
+                  <h2>{stateList} <span style={{ fontSize: "15px" }}>lakhs sq.ft</span></h2>
                 </div>
                 <p className='mt-n1'>Integrated solution with <br /> MEP services </p>
               </div>
@@ -238,7 +238,7 @@ export default function HomePage() {
               </SplideSlide>
               <SplideSlide>
                 <div className="solution-item solution-one solutionThree">
-                <div className="overlay"></div>
+                  <div className="overlay"></div>
                   <img src="/images/solution-icon-three.png" alt="partners_logo"
                     className="img-responsive" />
                   <div className='solu-heading-tag'>Pre Fabrication</div>
@@ -248,7 +248,7 @@ export default function HomePage() {
 
               <SplideSlide>
                 <div className="solution-item solution-one solutionFour">
-                <div className="overlay"></div>
+                  <div className="overlay"></div>
 
                   <img src="/images/solution-con-four.png" alt="partners_logo"
                     className="img-responsive" />
@@ -259,22 +259,54 @@ export default function HomePage() {
 
               <SplideSlide>
                 <div className="solution-item solution-one solutionTwo">
-                <div className="overlay"></div>
+                  <div className="overlay"></div>
                   <img src="/images/solution-Icon-2.png" alt="partners_logo"
                     className="img-responsive" />
                   <div className='solu-heading-tag'>Our Projects</div>
                   <span className='readMore'><a href="/project/category/commercial/">Read More → </a></span>
                 </div>
               </SplideSlide>
-             
-            
+
+
             </Splide>
           </div>
         </div>
       </div>
 
-      {/* {Fabrication} */}
+      {/* Delivery */}
+      <div className='section two-left'>
+        <div className='container'>
+          <div className='row' style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div className='col-lg-6'>
+              <div className='inner-two'>
+                <h6>MEP Excellence With</h6>
+                <h3 className='IntegratedProjectDelivery'>Integrated Project Delivery</h3>
 
+                <p className='paragraph justify'>At VK Building Services Pvt. Ltd., customer satisfaction is at the heart of our project delivery approach. Our method is built on four key pillars:
+                  <ol style={{ marginTop: "15px" }}>
+                    <li><b>Centre of Excellence:</b> A hub of expertise that drives innovation and best practices.</li>
+                    <li><b>Project Control Department:</b> Focused oversight that ensures projects stay on track and within budget.</li>
+                    <li><b>Stringent 4-Level Monitoring:</b> A robust governance framework that guarantees transparency and accountability throughout the project completion period.</li>
+                    <li><b>Transition Task Force:</b> A dedicated team that ensures smooth handovers and ongoing support.</li>
+                  </ol>
+                  Each pillar is supported by specialized task forces that work seamlessly together, all powered by SAP S/4HANA. This integrated delivery mechanism guarantees the highest quality and efficiency in project execution, ensuring we meet and exceed our clients' expectations.
+                </p>
+
+                <Link href='/quality-assurance/'
+                  type="button"
+                  className="mt-2 btn btn-primary btn-rounded btn-lg">
+                  Know More
+                </Link>
+              </div>
+            </div>
+            <div className='col-lg-6'>
+              <img src='/images/grop-vkbs.png' className='bg-exp-data' alt='' />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* {Fabrication} */}
       <div className='section two-left'>
         <div className='container'>
           <div className='row'>
@@ -295,6 +327,37 @@ export default function HomePage() {
             </div>
             <div className='col-lg-6'>
               <img src='/images/left.jpg' className='bg-exp-data' alt='' />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Quality */}
+      <div className='section quality'>
+        <div className='container'>
+          <div className='row mt-4' style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div className='col-lg-6'>
+              {/* className='img-bg-exp-data' */}
+              <img src='/images/pipe.webp' style={{ borderRadius: "15px" }} alt='' />
+            </div>
+            <div className='col-lg-6'>
+              <div className='inner-two'>
+                <h6 className='innerTwoH6'>why us</h6>
+                <h3 style={{ fontWeight: "600" }} className='IntegratedProjectDelivery' >Unwavering Commitment to Quality Delivery</h3>
+                <p className='paragraph justify'>With over 80 million square feet of MEP projects completed, including 2 million square feet of EPC development with more than 2,000 residential units, and 600,000 square feet of specialized fit-outs, VK Building Services Pvt. Ltd. stands out as a leader in the industry.
+                </p>
+                <p className='paragraph justify'>
+                  We offer unmatched expertise in integrated design-build services, project management, and quality-driven sustainable execution of complex mechanical, electrical, and plumbing solutions across India. This commitment makes us the most trusted one-stop provider for MEP services in the industry.
+                </p>
+                <div className='center'>
+                  <Link href='/contact-us'
+                    type="button"
+                    className="mt-2 btn btn-primary btn-rounded btn">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -341,16 +404,16 @@ export default function HomePage() {
             }}
               aria-label="customList">
 
-              
-                {newData.map(items => (
 
-                  // <p>{ items.acf.project_name }</p>
-                  <SplideSlide className='px-2'>
-                    <div className='projectsSection' style={{ height: "400px" }}>
+              {newData.map(items => (
+
+                // <p>{ items.acf.project_name }</p>
+                <SplideSlide className='px-2'>
+                  <div className='projectsSection' style={{ height: "400px" }}>
 
 
-                      <div className='bg-exp-data bg-exp-1'
-                      
+                    <div className='bg-exp-data bg-exp-1'
+
                       style={{
                         background: `-webkit-linear-gradient(#30303066,  #30303066), url("${items._embedded['wp:featuredmedia'][0].source_url}")`,
                         backgroundRepeat: 'no-repeat',
@@ -361,26 +424,26 @@ export default function HomePage() {
                           background: `-webkit-linear-gradient(#5aa946b3,  #5aa946b3), url("${items._embedded['wp:featuredmedia'][0].source_url}") !important`
                         }
                       }}
-                      
-                      >
+
+                    >
 
 
-                        <div className='inner-data-cont'>
-                          <h6 className='headingProjectSub'>{ items.acf.project_category }</h6>
-                          <h3 className='headingProjects'>{ items.acf.project_name }</h3>
-                          <p className='headingProjectSub'>{ items.acf.project_address }</p>
-                          <Link href={items.acf.project_url}
-                            type="button"
-                            className="mt-2 btn btn-primary  btn seeMore">
-                            View More
-                          </Link>
-                        </div>
+                      <div className='inner-data-cont'>
+                        <h6 className='headingProjectSub'>{items.acf.project_category}</h6>
+                        <h3 className='headingProjects'>{items.acf.project_name}</h3>
+                        <p className='headingProjectSub'>{items.acf.project_address}</p>
+                        <Link href={items.acf.project_url}
+                          type="button"
+                          className="mt-2 btn btn-primary  btn seeMore">
+                          View More
+                        </Link>
                       </div>
                     </div>
-                  </SplideSlide>
+                  </div>
+                </SplideSlide>
 
-                ))}
-              
+              ))}
+
 
               {/* <SplideSlide className='px-2'>
                 <div className=' projectsSection'  style={{ height: "400px" }}>
@@ -532,73 +595,6 @@ export default function HomePage() {
               </div>
             </div> */}
 
-          </div>
-        </div>
-      </div>
-
-
-      {/* Delivery */}
-      <div className='section two-left'>
-        <div className='container'>
-          <div className='row' style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-            <div className='col-lg-6'>
-              <div className='inner-two'>
-                <h6>MEP Excellence With</h6>
-                <h3 className='IntegratedProjectDelivery'>Integrated Project Delivery</h3>
-
-                <p className='paragraph justify'>At VK Building Services Pvt. Ltd., customer satisfaction is at the heart of our project delivery approach. Our method is built on four key pillars:
-                  <ol style={{marginTop:"15px"}}>
-                    <li><b>Centre of Excellence:</b> A hub of expertise that drives innovation and best practices.</li>  
-                    <li><b>Project Control Department:</b> Focused oversight that ensures projects stay on track and within budget.</li>
-                    <li><b>Stringent 4-Level Monitoring:</b> A robust governance framework that guarantees transparency and accountability throughout the project completion period.</li>
-                    <li><b>Transition Task Force:</b> A dedicated team that ensures smooth handovers and ongoing support.</li>
-                  </ol> 
-                  Each pillar is supported by specialized task forces that work seamlessly together, all powered by SAP S/4HANA. This integrated delivery mechanism guarantees the highest quality and efficiency in project execution, ensuring we meet and exceed our clients' expectations.
-                </p>
-
-                <Link href='/quality-assurance/'
-                  type="button"
-                  className="mt-2 btn btn-primary btn-rounded btn-lg">
-                  Know More
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-6'>
-              <img src='/images/grop-vkbs.png' className='bg-exp-data' alt='' />
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      {/* Quality */}
-
-      <div className='section quality'>
-        <div className='container'>
-          <div className='row mt-4' style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-            <div className='col-lg-6'>
-            {/* className='img-bg-exp-data' */}
-              <img src='/images/pipe.webp' style={{borderRadius:"15px"}} alt='' />
-            </div>
-            <div className='col-lg-6'>
-              <div className='inner-two'>
-                <h6 className='innerTwoH6'>why us</h6>
-                <h3 style={{ fontWeight: "600" }} className='IntegratedProjectDelivery' >Unwavering Commitment to Quality Delivery</h3>
-                <p className='paragraph justify'>With over 80 million square feet of MEP projects completed, including 2 million square feet of EPC development with more than 2,000 residential units, and 600,000 square feet of specialized fit-outs, VK Building Services Pvt. Ltd. stands out as a leader in the industry.
-                </p>
-                <p className='paragraph justify'>
-                We offer unmatched expertise in integrated design-build services, project management, and quality-driven sustainable execution of complex mechanical, electrical, and plumbing solutions across India. This commitment makes us the most trusted one-stop provider for MEP services in the industry.
-                </p>
-                <div className='center'>
-                  <Link href='/contact-us'
-                    type="button"
-                    className="mt-2 btn btn-primary btn-rounded btn">
-                    Contact Us
-                  </Link>
-                </div>
-              </div>
-
-            </div>
           </div>
         </div>
       </div>
