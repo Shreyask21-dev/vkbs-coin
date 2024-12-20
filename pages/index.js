@@ -247,7 +247,7 @@ export default function HomePage() {
               </SplideSlide>
 
               <SplideSlide>
-                <div className="solution-item solution-one solutionFour">
+                <div className="solution-item solution-one solutionTwo">
                   <div className="overlay"></div>
 
                   <img src="/images/solution-con-four.png" alt="partners_logo"
@@ -258,7 +258,7 @@ export default function HomePage() {
               </SplideSlide>
 
               <SplideSlide>
-                <div className="solution-item solution-one solutionTwo">
+                <div className="solution-item solution-one solutionFour">
                   <div className="overlay"></div>
                   <img src="/images/solution-Icon-2.png" alt="partners_logo"
                     className="img-responsive" />
