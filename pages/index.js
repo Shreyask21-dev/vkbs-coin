@@ -307,7 +307,7 @@ export default function HomePage() {
       </div>
 
       {/* {Fabrication} */}
-      <div className='section two-left'>
+      <div className='section quality'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6'>
@@ -332,8 +332,9 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* two-left */}
       {/* Quality */}
-      <div className='section quality'>
+      <div className='section two-left'>
         <div className='container'>
           <div className='row mt-4' style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div className='col-lg-6'>
