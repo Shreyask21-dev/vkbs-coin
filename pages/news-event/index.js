@@ -201,7 +201,7 @@ export default function NewsEventIndex() {
                   <li>
                     <div className="inner-img d-flex">
                       <img src='/images/news.png' alt='' />
-                      <span style={{fontWeight:"700", fontSize:"16px", lineHeight:"18.75px"}}>VKBS Awarded HVAC package for LSR Tudor Vantage at Hyderabad</span>
+                      <span style={{fontWeight:"700", fontSize:"16px", lineHeight:"18.75px"}}>VKBS Awarded MEP package for ITC Bangalore</span>
                     </div>
                   </li>
                 </ul>
