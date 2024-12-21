@@ -3,36 +3,18 @@ import EnquiryForm from '@/components/EnquiryForm'
 import Link from 'next/link'
 import Head from 'next/head'
 import { BASEPATH } from "@/config";
-import { useRouter } from 'next/router';
 
-import { useState, useEffect ,useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 
 export default function ContactUs({ LocationData }) {
-  const router = useRouter();
-  
-  const { location } = router.query;
+
+  console.log("LocationData", LocationData)
+
+ 
   const [activeTab, setActiveTab] = useState(0);
-  const contentRef = useRef(null);
 
-
-
-  useEffect(() => {
-    if (location) {
-      setActiveTab(location);
-      if (contentRef.current) {
-        contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-
-      // Handle tab click logic if required
-      const handleTabClick = (location) => {
-        setActiveTab(location);
-      };
-    }
-  }, [location]); // Dependency ensures this runs only when 'location' changes
-
-  const handleTabClick = (index ) => {
-    console.log("index---value" ,index )
+  const handleTabClick = (index) => {
     setActiveTab(index);
   };
 
@@ -79,28 +61,30 @@ export default function ContactUs({ LocationData }) {
               <div className='timeline-paragrap'>
                 <p>With over 20 years of sustained partnerships and collaborations with more than 300 clients, VK Building Services Pvt. Ltd. embodies a customer-first ethos built on unwavering integrity and transparency. These strong relationships are a testament to our commitment to driving progress and delivering exceptional value in every project we undertake.</p>
               </div>
-            
+              {/* <div>
+                <img src='/images/oracle.png' style={{width:"25%"}}/>
+                <img src='/images/Philips.png' style={{width:"25%"}} />
+                <img src='/images/cognizant.png' style={{width:"25%", marginRight:"15px"}} />
+                <img src='/images/bamdigitalagency.jpg' style={{width:"10%"}} />
+              </div> */}
             </div>
           </div>
         </div>
       </div>
-
-
             <div className='space5'></div>
             <div className='space5'></div>
-
-      <div className='location' ref={contentRef}>
+      <div className='location'>
         <div className='container' id='tabs'>
           <h3 className='innerTwoH3' style={{fontSize:"50px", fontWeight:"700"}}>Branches</h3>
           <div className='space5'></div>
           <div className='row'>
             <div className="horizontal-tabs" id='tabs'>
-                <div className='tab-bg'>
+              <div className='tab-bg'>
               <div className="tab-buttons">
                 {
                   LocationData.map((tab, index) => (
-                    <button key={index} className={index === activeTab  ? 'active' : ''}
-                      onClick={() => handleTabClick(index , tab)}> {tab.title}</button>))
+                    <button key={index} className={index === activeTab ? 'active' : ''}
+                      onClick={() => handleTabClick(index)}> {tab.title}</button>))
                 }
                 </div>
               </div>
@@ -108,10 +92,55 @@ export default function ContactUs({ LocationData }) {
               <div className="tab-content tab-css">
                  <div className='conatiner'>
                   <div className='row'>
-                    <div className='col-lg-4 added' >
-                        <div className='inner-data-active' dangerouslySetInnerHTML={{ __html: LocationData[activeTab]?.content}} ></div>
+                    <div className='col-lg-4 added'>
+                     <div className='inner-data-active' dangerouslySetInnerHTML={{ __html: LocationData[activeTab].content}} ></div>
                     </div>
-                   
+                    {/* {LocationData[activeTab].title === 'Mumbai' ? (
+                      <>
+                        <div className='col-lg-4 mb-2'>
+                          <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-1.png'/>
+                        </div>
+                        <div className='col-lg-4'>
+                          <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-3.png'/>
+                        </div>
+                      </>
+                      ) : (<></>) } */}
+
+                      {/* {LocationData[activeTab].title === 'Hyderabad' ? (
+                        <>
+                          <div className='col-lg-4 mb-2'>
+                            <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-1.png'/>
+                          </div>
+                          <div className='col-lg-4'>
+                            <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-3.png'/>
+                          </div>
+                        </>
+                        ) : (<></>) 
+                      } */}
+
+                      {/* {LocationData[activeTab].title === 'Bengaluru' ? (
+                        <>
+                          <div className='col-lg-4 mb-2'>
+                            <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-1.png'/>
+                          </div>
+                          <div className='col-lg-4'>
+                            <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-3.png'/>
+                          </div>
+                        </>
+                        ) : (<></>) 
+                      }
+                      
+                      {LocationData[activeTab].title === 'Chennai' ? (
+                        <>
+                          <div className='col-lg-4 mb-2'>
+                            <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-1.png'/>
+                          </div>
+                          <div className='col-lg-4'>
+                            <img src='https://vkbs.coinage.host/wp-content/uploads/2024/03/cont-3.png'/>
+                          </div>
+                        </>
+                        ) : (<></>) 
+                      } */}
                   </div>
                  </div>
               </div>
@@ -120,9 +149,6 @@ export default function ContactUs({ LocationData }) {
           </div>
         </div>
       </div>
-
-
-
 
       <div className='section enquiry'>
         <div className='container'>
