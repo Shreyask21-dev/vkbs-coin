@@ -1,13 +1,24 @@
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
+  // Enable CORS
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  // Handle preflight request
+  if (req.method === 'OPTIONS') {
+    res.status(200).end();
+    return;
+  }
+
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
 
     try {
       // Create a transporter
       const transporter = nodemailer.createTransport({
-        service: 'Gmail', // Use your email service (e.g., Gmail, Outlook, etc.)
+        service: 'Gmail', // Use your email service
         auth: {
           user: process.env.EMAIL_USER, // Your email address
           pass: process.env.EMAIL_PASS, // Your email password or app-specific password
@@ -23,12 +34,13 @@ export default async function handler(req, res) {
       };
 
       // Send the email
-      await transporter.sendMail(mailOptions);
+      const info = await transporter.sendMail(mailOptions);
+      console.log('Email sent:', info.response);
 
       res.status(200).json({ message: 'Email sent successfully!' });
     } catch (error) {
-      console.error(error);
-      res.status(500).json({ message: 'Error sending email.' });
+      console.error('Error sending email:', error);
+      res.status(500).json({ message: 'Error sending email.', error: error.toString() });
     }
   } else {
     res.status(405).json({ message: 'Method not allowed' });
