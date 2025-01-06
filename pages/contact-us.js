@@ -5,12 +5,12 @@ import Head from 'next/head'
 import { BASEPATH } from "@/config";
 import { useRouter } from 'next/router';
 
-import { useState, useEffect ,useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 
 export default function ContactUs({ LocationData }) {
   const router = useRouter();
-  
+
   const { location } = router.query;
   const [activeTab, setActiveTab] = useState(0);
   const contentRef = useRef(null);
@@ -19,7 +19,7 @@ export default function ContactUs({ LocationData }) {
 
   useEffect(() => {
     if (location) {
-      setActiveTab(location);
+      setActiveTab(parseInt(location));
       if (contentRef.current) {
         contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
@@ -31,8 +31,8 @@ export default function ContactUs({ LocationData }) {
     }
   }, [location]); // Dependency ensures this runs only when 'location' changes
 
-  const handleTabClick = (index ) => {
-    console.log("index---value" ,index )
+  const handleTabClick = (index) => {
+    console.log("index---value", index)
     setActiveTab(index);
   };
 
@@ -41,11 +41,11 @@ export default function ContactUs({ LocationData }) {
   return (
     <>
       <Head>
-        
+
         {
-          LocationData.map((item , index)=>(
+          LocationData.map((item, index) => (
             <>
-            <link rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${item.ourlocationId}.css`} media="all" />
+              <link rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${item.ourlocationId}.css`} media="all" />
             </>
           ))
         }
@@ -72,48 +72,70 @@ export default function ContactUs({ LocationData }) {
           <div className='row'>
             <div className='col-lg-6'>
               <div className='timeline-sub-heading'>
-                <h2>A Legacy of <br/>Partnerships</h2>
+                <h2>A Legacy of <br />Partnerships</h2>
               </div>
             </div>
             <div className='col-lg-6'>
               <div className='timeline-paragrap'>
                 <p>With over 20 years of sustained partnerships and collaborations with more than 300 clients, VK Building Services Pvt. Ltd. embodies a customer-first ethos built on unwavering integrity and transparency. These strong relationships are a testament to our commitment to driving progress and delivering exceptional value in every project we undertake.</p>
               </div>
-            
+
             </div>
           </div>
         </div>
       </div>
 
 
-            <div className='space5'></div>
-            <div className='space5'></div>
+      <div className='space5'></div>
+      <div className='space5'></div>
 
       <div className='location' ref={contentRef}>
         <div className='container' id='tabs'>
-          <h3 className='innerTwoH3' style={{fontSize:"50px", fontWeight:"700"}}>Branches</h3>
+          <h3 className='innerTwoH3' style={{ fontSize: "50px", fontWeight: "700" }}>Branches</h3>
           <div className='space5'></div>
           <div className='row'>
             <div className="horizontal-tabs" id='tabs'>
-                <div className='tab-bg'>
-              <div className="tab-buttons">
-                {
-                  LocationData.map((tab, index) => (
-                    <button key={index} className={index === activeTab  ? 'active' : ''}
-                      onClick={() => handleTabClick(index , tab)}> {tab.title}</button>))
-                }
+              <div className='tab-bg'>
+                <div className="tab-buttons">
+                  {
+                    LocationData.map((tab, index) => (
+                      <button key={index} className={index === activeTab ? 'active' : ''}
+                        onClick={() => handleTabClick(index, tab)}> {tab.title}</button>))
+                  }
                 </div>
               </div>
               {/* <div className="tab-content tab-css" dangerouslySetInnerHTML={{ __html: LocationData[activeTab].content}}></div> */}
               <div className="tab-content tab-css">
-                 <div className='conatiner'>
+                <div className='conatiner'>
                   <div className='row'>
                     <div className='col-lg-4 added' >
-                        <div className='inner-data-active' dangerouslySetInnerHTML={{ __html: LocationData[activeTab]?.content}} ></div>
+                      <div className='inner-data-active' dangerouslySetInnerHTML={{ __html: LocationData[activeTab]?.content }} ></div>
                     </div>
-                   
+
+                    <div className='col-lg-8'>
+                      {/* <p>lorem ipsum</p> */}
+
+                      {(() => {
+                        switch (activeTab) {
+                          case 0:
+                            return <p>Mumbai</p>;
+                          case 1:
+                            return <p>Hyderabad</p>;
+                          case 2:
+                            return <p>Bengaluru</p>;
+                          case 3:
+                            return <p>Chennai</p>;
+                          default:
+                            return <p>Select a city</p>;
+                        }
+                      })()}
+
+                      {/* map be here */}
+
+                    </div>
+
                   </div>
-                 </div>
+                </div>
               </div>
             </div>
 
@@ -128,7 +150,7 @@ export default function ContactUs({ LocationData }) {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-7'>
-              <EnquiryForm/>
+              <EnquiryForm />
             </div>
             <div className='col-lg-5'>
               <h6 className='innerTwoH3' >Social Media</h6>

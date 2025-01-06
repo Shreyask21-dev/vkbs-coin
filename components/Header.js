@@ -92,7 +92,7 @@ export default function Header() {
            
             
 
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" href="/mechanical/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               EVENTS
               </Link>
@@ -100,7 +100,7 @@ export default function Header() {
                 <li><Link className="dropdown-item " href="/news-event/">NEWS EVENT</Link></li>
                 <li><Link className="dropdown-item " href="/blog/">BLOG</Link></li>
               </ul>
-            </li>
+            </li> */}
 
 
             <li className="nav-item">
