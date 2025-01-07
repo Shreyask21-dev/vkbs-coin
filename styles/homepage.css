@@ -146,9 +146,11 @@
       line-height: 25px !important;
    }
 
-   .margin{
-      margin-left: auto !important;
-      margin-right: auto !important;
+   .marginCenter{
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
    }
 
    .projectsSection{

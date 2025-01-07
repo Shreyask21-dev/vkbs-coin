@@ -38,7 +38,7 @@ export default function Footer() {
                 Get in touch with us at infoblr.vkbs.in or fill out the <Link href="/contact-us/" >enquiry form</Link>.
               </p>
               <ul className='footer-nav'>
-                <li><img src="/images/envelope.png" alt=''/><span> infoblr.vkbs.in</span></li>
+                <li><img src="/images/envelope.png" alt=''/><span> infoblr@vkbs.in</span></li>
                 {/* <li><img src="/images/phone.png" alt=''/><span>0000-222-333</span></li> */}
               </ul>
             </div>

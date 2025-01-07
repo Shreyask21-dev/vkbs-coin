@@ -292,11 +292,14 @@ export default function HomePage() {
                   Each pillar is supported by specialized task forces that work seamlessly together, all powered by SAP S/4HANA. This integrated delivery mechanism guarantees the highest quality and efficiency in project execution, ensuring we meet and exceed our clients' expectations.
                 </p>
 
+              <div className='marginCenter'>
+
                 <Link href='/quality-assurance/'
                   type="button"
-                  className="mt-2 btn btn-primary btn-rounded btn-lg margin">
+                  className="mt-2 btn btn-primary btn-rounded btn-lg ">
                   Know More
                 </Link>
+              </div>
               </div>
             </div>
             <div className='col-lg-6'>
@@ -318,7 +321,7 @@ export default function HomePage() {
                 <div className='space5'></div>
                 <p className='paragraph justify'>At VK Building Services Pvt. Ltd., we are transforming the industry with our cutting-edge pre-fabrication solutions. Leveraging our deep expertise in Design for Manufacturing and Assembly (DfMA), we deliver innovative, game-changing, and defect-free solutions. Our integrated project delivery approach ensures seamless execution from start to finish, setting new standards in efficiency and quality. Join us in leading the MEP revolution!
                 </p>
-                <div className='margin'>
+                <div className='marginCenter'>
                   <Link href='/prefabrication'
                     type="button"
                     className="mt-2 btn btn-primary btn-rounded btn-lg ">
@@ -328,7 +331,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className='col-lg-6'>
-              <img src='/images/left.jpeg' style={{borderRadius: "15px"}} alt='' />
+              <img src='/images/left.jpeg' style={{borderRadius: "15px", marginTop:"20px"}} alt='' />
             </div>
           </div>
         </div>
@@ -341,7 +344,7 @@ export default function HomePage() {
           <div className='row mt-4' style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div className='col-lg-6'>
               {/* className='img-bg-exp-data' */}
-              <img src='/images/pipe.webp' style={{ borderRadius: "15px" }} alt='' />
+              <img src='/images/pipe.webp' style={{ borderRadius: "15px", marginBottom:"20px" }} alt='' />
             </div>
             <div className='col-lg-6'>
               <div className='inner-two'>
@@ -352,7 +355,7 @@ export default function HomePage() {
                 <p className='paragraph justify'>
                   We offer unmatched expertise in integrated design-build services, project management, and quality-driven sustainable execution of complex mechanical, electrical, and plumbing solutions across India. This commitment makes us the most trusted one-stop provider for MEP services in the industry.
                 </p>
-                <div className='margin'>
+                <div className='marginCenter'>
                   <Link href='/contact-us'
                     type="button"
                     className="mt-2 btn btn-primary btn-rounded btn ">
