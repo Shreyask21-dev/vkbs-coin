@@ -29,7 +29,7 @@ export default async function handler(req, res) {
     const mailOptions = {
         
         from: `VKBS Enquiry infoblr@vkbs.in`,
-        to: 'devshreyas21@gmail.com', // List of receivers
+        to: 'infoblr@vkbs.in', // List of receivers
         subject: "New Enqiry From vkbs.in", // Subject line
         text: text, // Plain text bodPrasad.a@coinage.in
         html: `
