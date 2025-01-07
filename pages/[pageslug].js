@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import { BASEPATH } from "@/config";
@@ -9,7 +9,7 @@ export default function SinglePage({ PageApiResult }) {
 
   const [isMobile, setIsMobile] = useState(false);
 
-  const uniqueImageUrl = "https://vkbs.coinage.host/wp-content/uploads/2024/05/Rectangle-189.png"; 
+  const uniqueImageUrl = "https://vkbs.coinage.host/wp-content/uploads/2024/05/Rectangle-189.png";
   // unique image URL
 
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function SinglePage({ PageApiResult }) {
     };
   }, []);
 
-    
+
   console.log("PageApiResult", PageApiResult.data.page.slug)
   if (PageApiResult.data.page !== null) {
     return (
@@ -40,16 +40,20 @@ export default function SinglePage({ PageApiResult }) {
         </Head>
         {/* Hero banner design */}
         <div className={`section inner-hero-banner ${PageApiResult.data.page.slug == 'team' && 'hide-team'}`}
-        style={{
-          background:
-            PageApiResult?.data?.page?.title === "After Sales" && isMobile
-              ? "url('/images/afterSalesMobile.jpg') no-repeat center"
-              : `url(${PageApiResult?.data?.page?.featuredImage?.node?.sourceUrl}) no-repeat center`,          backgroundSize: `cover`,
-              backgroundSize: `cover`,
-              height:`475px`,
-          paddingRight: "25px",
-          marginTop: PageApiResult?.data?.page?.title === "After Sales" ? "5.5%" : "0px",
-        }}
+          style={{
+            background:
+              PageApiResult?.data?.page?.title === "After Sales" && isMobile
+                ? "url('/images/afterSalesMobile.jpg') no-repeat center"
+                : `url(${PageApiResult?.data?.page?.featuredImage?.node?.sourceUrl}) no-repeat center`, backgroundSize: `cover`,
+            backgroundSize: `cover`,
+            height: isMobile
+              ? "50vh"
+              : PageApiResult?.data?.page?.title === "After Sales"
+                ? "95vh"
+                : "475px",
+            paddingRight: "25px",
+            marginTop: PageApiResult?.data?.page?.title === "After Sales" ? "2%" : "0px",
+          }}
 
         >
           {/* {
@@ -63,13 +67,13 @@ export default function SinglePage({ PageApiResult }) {
                 <div className='inner-text inner-Text-Extra'>
 
 
-                {PageApiResult?.data?.page?.title == 'After Sales' ? <h1></h1>: <h1>{PageApiResult?.data?.page?.title}</h1>}
+                  {PageApiResult?.data?.page?.title == 'After Sales' ? <h1></h1> : <h1>{PageApiResult?.data?.page?.title}</h1>}
 
 
-                {PageApiResult?.data?.page?.title == 'After Sales' ? <div className="description" ></div> : <div className="description" dangerouslySetInnerHTML={{ __html: PageApiResult?.data?.page?.excerpt }}></div> }
+                  {PageApiResult?.data?.page?.title == 'After Sales' ? <div className="description" ></div> : <div className="description" dangerouslySetInnerHTML={{ __html: PageApiResult?.data?.page?.excerpt }}></div>}
 
 
-                {PageApiResult?.data?.page?.title == 'After Sales' ? <div ></div>: <div className='line'></div>}
+                  {PageApiResult?.data?.page?.title == 'After Sales' ? <div ></div> : <div className='line'></div>}
                 </div>
               </div>
             </div>
@@ -88,7 +92,7 @@ export default function SinglePage({ PageApiResult }) {
         </div>
 
 
-             
+
       </>
     )
   }

@@ -232,7 +232,7 @@ export default function Companytimeline() {
 
                 <div className="accordion" id="accordionExample">
                   <div className='row py-4 ' style={{ backgroundColor: "#59AA47" }}>
-                    <div className='ms-4'>
+                    <div className='ps-4'>
                       <span style={{
                         color: "#FFFFFF ",
                         fontFamily: "Poppins, Sans-serif",
@@ -273,7 +273,7 @@ export default function Companytimeline() {
                   </div>
 
                   <div className='row py-4'>
-                    <div className='ms-4'>
+                    <div className='ps-4'>
                       <span style={{
                         color: "#8B8E8F ",
                         fontFamily: "Poppins, Sans-serif",
