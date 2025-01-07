@@ -9,13 +9,12 @@ import { useState, useEffect, useRef } from 'react';
 
 
 export default function ContactUs({ LocationData }) {
+  
   const router = useRouter();
 
   const { location } = router.query;
   const [activeTab, setActiveTab] = useState(0);
   const contentRef = useRef(null);
-
-
 
   useEffect(() => {
     if (location) {
