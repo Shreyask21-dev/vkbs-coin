@@ -107,7 +107,7 @@ export default function CareersJobPage({ JobSingle }) {
           <h3>Please fill in details to proceed</h3>
             <img src='/images/close.png' className='closeIcon' alt='close' onClick={handleCloseModal}/>
           </div>
-            <PopForm/>
+            <PopForm close={handleCloseModal}/>
           </div>
         </div>
         </div>

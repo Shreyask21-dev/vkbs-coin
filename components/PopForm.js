@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Link from "next/link";
 
 
-export default function PopForm() {
+export default function PopForm({close}) {
 
   const [Loader, setLoader] = useState(false)
 
@@ -42,6 +42,7 @@ export default function PopForm() {
       if (result.success) {
         // alert("Form submitted successfully!");
         setLoader("Form submited")
+        close()
       } else {
         setLoader(result.message)
         // alert("Error submitting form: " + result.message);
