@@ -112,19 +112,35 @@ export default function ContactUs({ LocationData }) {
                       <div className='inner-data-active' dangerouslySetInnerHTML={{ __html: LocationData[activeTab]?.content }} ></div>
                     </div>
 
-                    <div className='col-lg-8'>
+                    <div className='col-lg-8' >
                       {/* <p>lorem ipsum</p> */}
 
                       {(() => {
                         switch (activeTab) {
                           case 0:
-                            return <p>Mumbai</p>;
+                            return <>
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.953257765024!2d72.91306349999999!3d19.0921761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7d139c45dc5%3A0xefad90eddb83effb!2sVK%20Building%20Service%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1736228120753!5m2!1sen!2sin"  style={{border:"0", width:"100%", height:"400px"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            </>;
                           case 1:
-                            return <p>Hyderabad</p>;
+                            return <>
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.4133690665276!2d78.3871427!3d17.442400499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9144c254fb5b%3A0xdd98b22345eeab6a!2sVK%20Building%20services%20Pvt%20Limited!5e0!3m2!1sen!2sin!4v1736228068037!5m2!1sen!2sin" style={{border:"0", width:"100%", height:"400px"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            
+                            </>;
                           case 2:
-                            return <p>Bengaluru</p>;
+                            return <>
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.973134707339!2d77.640907!3d12.9735701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a63fad96f3%3A0x850e858af7e296ac!2sVK%20Building%20service%20pvt%20ltd!5e0!3m2!1sen!2sin!4v1736228005403!5m2!1sen!2sin" style={{border:"0", width:"100%", height:"400px"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            </>;
                           case 3:
-                            return <p>Chennai</p>;
+                            return <>
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3072.4695933045136!2d80.20736529999999!3d13.009671100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526740ff3cf767%3A0xb18d85009a201bf7!2sVK%20Building%20services!5e0!3m2!1sen!2sin!4v1736228168428!5m2!1sen!2sin" style={{border:"0", width:"100%", height:"400px"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            </>;
                           default:
                             return <p>Select a city</p>;
                         }

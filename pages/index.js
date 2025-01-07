@@ -309,7 +309,7 @@ export default function HomePage() {
       {/* {Fabrication} */}
       <div className='section quality'>
         <div className='container'>
-          <div className='row'>
+          <div className='row d-flex justify-content-center align-items-center'>
             <div className='col-lg-6'>
               <div className='inner-two'>
                 <h6>unleashing MEP Revolution with</h6>
@@ -326,7 +326,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className='col-lg-6'>
-              <img src='/images/left.jpg' className='bg-exp-data' alt='' />
+              <img src='/images/left.jpeg' style={{borderRadius: "15px"}} alt='' />
             </div>
           </div>
         </div>
