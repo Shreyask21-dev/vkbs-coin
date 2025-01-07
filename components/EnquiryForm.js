@@ -23,7 +23,7 @@ export default function PopForm() {
     setIsSubmitting(true);
 
     try {
-      const res = await fetch("http://localhost:3000/api/mailForm", {
+      const res = await fetch("https://vkbs.in/api/mailForm", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
