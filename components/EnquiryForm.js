@@ -9,6 +9,7 @@ export default function PopForm() {
   const [description, setDescription] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [messageColor, setMessageColor] = useState("");
 
   // Handle form submission
   const handleSubmit = async (e) => {
@@ -20,7 +21,16 @@ export default function PopForm() {
       return;
     }
 
+    // Validate phone number
+    const phoneRegex = /^\d{10,15}$/;
+    if (!phoneRegex.test(phone)) {
+      setMessage("Phone number must be between 10 to 15 digits and contain only numbers.");
+      return;
+    }
+
     setIsSubmitting(true);
+    setMessage("");
+    setMessageColor("");
 
     try {
       const res = await fetch("/api/mailForm", {
@@ -41,10 +51,13 @@ export default function PopForm() {
 
       if (data.success) {
         // Clear the form fields if submission was successful
+        setMessage("Message sent successfully!");
+        setMessageColor("green");
         resetForm();
       }
     } catch (error) {
       setMessage("An error occurred.");
+      setMessageColor("red");
     }
 
     setIsSubmitting(false);
@@ -161,7 +174,10 @@ export default function PopForm() {
             </div>
           </form>
 
-          {message && <p className="form-message">{message}</p>}
+          {/* {message && <p className="form-message">{message}</p>} */}
+          {message && (
+            <p style={{ color: messageColor, marginTop: "10px" }}>{message}</p>
+          )}
         </div>
       </div>
     </div>

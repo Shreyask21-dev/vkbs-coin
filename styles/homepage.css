@@ -111,12 +111,46 @@
       padding-bottom: 20px !important;
    }
    .inner-two h6{
+      text-align: center !important;
       margin-left: auto !important;
       margin-right: auto !important;
    }
    .innerTwoH6{
+      margin-top: 25px !important;
       text-align: center;
    }
+
+   .inner-two .space5{
+      display: none !important;
+   }
+
+   .two-right h3{
+      padding-bottom: 20px !important;
+   }
+
+
+   .inner-two h3{
+      text-align: center !important;
+      margin-top: 25px !important;
+      margin-bottom: 25px !important;
+   }
+
+   .innerTwoH3{
+      text-align: center !important;
+      margin-top: 25px !important;
+      margin-bottom: 25px !important;
+   }
+
+   .section h3{
+      font-size: 30px !important;
+      line-height: 25px !important;
+   }
+
+   .margin{
+      margin-left: auto !important;
+      margin-right: auto !important;
+   }
+
    .projectsSection{
       margin-top: 40px;
       margin-bottom: 90px;
@@ -169,7 +203,7 @@
 
    .splide .splide__arrows{
       bottom: 100% !important;
-      right: 140px !important;
+      right: 38% !important;
       margin-bottom: 5px;
    }
 

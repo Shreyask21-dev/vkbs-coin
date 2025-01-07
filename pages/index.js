@@ -294,7 +294,7 @@ export default function HomePage() {
 
                 <Link href='/quality-assurance/'
                   type="button"
-                  className="mt-2 btn btn-primary btn-rounded btn-lg">
+                  className="mt-2 btn btn-primary btn-rounded btn-lg margin">
                   Know More
                 </Link>
               </div>
@@ -318,11 +318,13 @@ export default function HomePage() {
                 <div className='space5'></div>
                 <p className='paragraph justify'>At VK Building Services Pvt. Ltd., we are transforming the industry with our cutting-edge pre-fabrication solutions. Leveraging our deep expertise in Design for Manufacturing and Assembly (DfMA), we deliver innovative, game-changing, and defect-free solutions. Our integrated project delivery approach ensures seamless execution from start to finish, setting new standards in efficiency and quality. Join us in leading the MEP revolution!
                 </p>
-                <Link href='/prefabrication'
-                  type="button"
-                  className="mt-2 btn btn-primary btn-rounded btn-lg">
-                  Know More
-                </Link>
+                <div className='margin'>
+                  <Link href='/prefabrication'
+                    type="button"
+                    className="mt-2 btn btn-primary btn-rounded btn-lg ">
+                    Know More
+                  </Link>
+                </div>
               </div>
             </div>
             <div className='col-lg-6'>
@@ -350,10 +352,10 @@ export default function HomePage() {
                 <p className='paragraph justify'>
                   We offer unmatched expertise in integrated design-build services, project management, and quality-driven sustainable execution of complex mechanical, electrical, and plumbing solutions across India. This commitment makes us the most trusted one-stop provider for MEP services in the industry.
                 </p>
-                <div className='center'>
+                <div className='margin'>
                   <Link href='/contact-us'
                     type="button"
-                    className="mt-2 btn btn-primary btn-rounded btn">
+                    className="mt-2 btn btn-primary btn-rounded btn ">
                     Contact Us
                   </Link>
                 </div>
@@ -445,156 +447,7 @@ export default function HomePage() {
 
               ))}
 
-
-              {/* <SplideSlide className='px-2'>
-                <div className=' projectsSection'  style={{ height: "400px" }}>
-                  <div className='bg-exp-data bg-exp-1'>
-                    <div className='inner-data-cont'>
-                      <h6 className='headingProjectSub'>Commercial</h6>
-                      <h3 className='headingProjects'>IMCC IT Park, Mumbai</h3>
-                      <p className='headingProjectSub'>Ghansoli, New Mumbai</p>
-                      <Link href='/project/imcc-it-park-mumbai/'
-                        type="button"
-                        className="mt-2 btn btn-primary-two  btn seeMore">
-                        View More
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </SplideSlide> */}
-
-
-
-              {/* <SplideSlide className='px-2'>
-                <div className='projectsSection' style={{ height: "400px" }}>
-                  <div className='bg-exp-data bg-exp-2'>
-                    <div className='inner-data-cont'>
-                      <h6 className='headingProjectSub'>Commercial</h6>
-                      <h3 className='headingProjects'>Phoenix Rise 2</h3>
-                      <p className='headingProjectSub'>Mumbai</p>
-                      <Link href='/project/phoenix-rise-2-mumbai/'
-                        type="button"
-                        className="mt-2 btn btn-primary-two  btn seeMore">
-                        View More
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </SplideSlide> */}
-
-              {/* <SplideSlide className='px-2'>
-                <div className='projectsSection ' style={{ height: "400px" }}>
-                  <div className='bg-exp-data bg-exp-3'>
-                    <div className='inner-data-cont'>
-                      <h6 className='headingProjectSub'>Infrastructure</h6>
-                      <h3 className='headingProjects'>Pune Airport</h3>
-                      <p className='headingProjectSub'>Pune</p>
-                      <Link href='/project/pune-airport/'
-                        type="button"
-                        className="mt-2 btn btn-primary-two btn seeMore">
-                        View More
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </SplideSlide> */}
-
-              {/* <SplideSlide className='px-2'>
-                <div className=' projectsSection ' style={{ height: "400px" }}>
-                  <div className='bg-exp-data bg-exp-4'>
-                    <div className='inner-data-cont'>
-                      <h6 className='headingProjectSub'>Infrastructure</h6>
-                      <h3 className='headingProjects'>GMRCL Surat Metro</h3>
-                      <p className='headingProjectSub'>Surat, Gujrat</p>
-                      <Link href='/project/gmrcl-surat-metro/'
-                        type="button"
-                        className="mt-2 btn btn-primary-two btn seeMore">
-                        View More
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </SplideSlide> */}
-
-              {/* <SplideSlide className='px-2'>
-                <div className=' projectsSection ' style={{ height: "400px" }}>
-                  <div className='bg-exp-data bg-exp-4'>
-                    <div className='inner-data-cont'>
-                      <h6 className='headingProjectSub'>Infrastructure</h6>
-                      <h3 className='headingProjects'>GMRCL Surat Metro</h3>
-                      <p className='headingProjectSub'>Surat, Gujrat</p>
-                      <Link href='/project/gmrcl-surat-metro/'
-                        type="button"
-                        className="mt-2 btn btn-primary-two btn seeMore">
-                        View More
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </SplideSlide> */}
-
             </Splide>
-
-            {/* <div className='col-lg-3 projectsSection'>
-              <div className='bg-exp-data bg-exp-1'>
-                <div className='inner-data-cont'>
-                  <h6 className='headingProjectSub'>Commercial</h6>
-                  <h3 className='headingProjects'>IMCC IT Park, Mumbai</h3>
-                  <p className='headingProjectSub'>Ghansoli, New Mumbai</p>
-                  <Link href='/project/imcc-it-park-mumbai/'
-                    type="button"
-                    className="mt-2 btn btn-primary-two  btn seeMore">
-                    View More
-                  </Link>
-                </div>
-              </div>
-            </div> */}
-
-
-            {/* <div className='col-lg-3 projectsSection '>
-              <div className='bg-exp-data bg-exp-2'>
-                <div className='inner-data-cont'>
-                  <h6 className='headingProjectSub'>Commercial</h6>
-                  <h3 className='headingProjects'>Phoenix Rise 2</h3>
-                  <p className='headingProjectSub'>Mumbai</p>
-                  <Link href='/project/phoenix-rise-2-mumbai/'
-                    type="button"
-                    className="mt-2 btn btn-primary-two  btn seeMore">
-                    View More
-                  </Link>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className='col-lg-3 projectsSection '>
-              <div className='bg-exp-data bg-exp-3'>
-                <div className='inner-data-cont'>
-                  <h6 className='headingProjectSub'>Infrastructure</h6>
-                  <h3 className='headingProjects'>Pune Airport</h3>
-                  <p className='headingProjectSub'>Pune</p>
-                  <Link href='/project/pune-airport/'
-                    type="button"
-                    className="mt-2 btn btn-primary-two btn seeMore">
-                    View More
-                  </Link>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className='col-lg-3 projectsSection '>
-              <div className='bg-exp-data bg-exp-4'>
-                <div className='inner-data-cont'>
-                  <h6 className='headingProjectSub'>Infrastructure</h6>
-                  <h3 className='headingProjects'>GMRCL Surat Metro</h3>
-                  <p className='headingProjectSub'>Surat, Gujrat</p>
-                  <Link href='/project/gmrcl-surat-metro/'
-                    type="button"
-                    className="mt-2 btn btn-primary-two btn seeMore">
-                    View More
-                  </Link>
-                </div>
-              </div>
-            </div> */}
 
           </div>
         </div>

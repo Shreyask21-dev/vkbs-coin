@@ -2,7 +2,9 @@ import React, { useRef, useState } from "react";
 import Link from "next/link";
 
 
-export default function PopForm({close}) {
+export default function PopForm({ close }) {
+
+  const [messageColor, setMessageColor] = useState("");
 
   const [Loader, setLoader] = useState(false)
 
@@ -28,6 +30,33 @@ export default function PopForm({close}) {
 
     e.preventDefault();
 
+    // Check for empty fields
+    for (let field in formData) {
+      if (!formData[field]) {
+        setLoader("Please fill out all required fields.");
+        setMessageColor("red");
+        return;
+      }
+    }
+
+    // Validate phone number
+    const phoneRegex = /^\d{10,15}$/;
+    if (!phoneRegex.test(formData.phone)) {
+      setLoader("Phone number must be between 10 to 15 digits and contain only numbers.");
+      setMessageColor("red");
+      return;
+    }
+
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setLoader("Please enter a valid email address.");
+      setMessageColor("red");
+      return;
+    }
+
+    setLoader("Loading");
+
     try {
       const response = await fetch("/api/submit-form", {
         method: "POST",
@@ -42,17 +71,22 @@ export default function PopForm({close}) {
       if (result.success) {
         // alert("Form submitted successfully!");
         setLoader("Form submited")
+        setMessageColor("green");
         close()
       } else {
         setLoader(result.message)
+        setMessageColor("red");
         // alert("Error submitting form: " + result.message);
       }
     } catch (error) {
       alert("An error occurred: " + error.message);
+      setMessageColor("red");
     }
+
+    setLoader(false);
   };
 
-  
+
 
   return (
     <div>
@@ -158,10 +192,10 @@ export default function PopForm({close}) {
                     <button
                       type="submit"
                       className="mt-2 btn btn-primary btn-rounded btn-lg">
-                       Apply Now
-                     </button>
+                      Apply Now
+                    </button>
                     <button
-                   
+
                       type="button"
                       className="mt-2 btn btn-lg"
                       onClick={() => setFormData({
@@ -174,14 +208,16 @@ export default function PopForm({close}) {
                         pinCode: "",
                         address: "",
                       })}
-                      >
+                    >
                       Clear
                     </button>
 
-                    {Loader}
-                    
+
                   </div>
 
+                    {Loader && (
+                      <p style={{ color: messageColor, marginTop: "10px" }}>{Loader}</p>
+                    )}
 
                 </div>
               </form>
