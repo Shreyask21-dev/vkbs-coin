@@ -25,7 +25,7 @@ export default async function handler(req, res) {
 
     const mailOptions = {
         from: 'VKBS Careers Enquiry <infoblr@vkbs.in>',
-        to: 'devshreyas21@gmail.com',
+        to: 'careers@vkbs.in',
         subject: 'New Enquiry from VKBS',
         html: `
             <h2>New Enquiry from VKBS</h2>
