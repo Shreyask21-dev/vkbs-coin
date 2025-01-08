@@ -30,7 +30,9 @@ export default function CareersIndex({carrersData}) {
   return (
     <>
       <Head>
-        <title>careers</title>
+      <title>MEP Job - Explore VKBS Career Opportunity for Growth</title>
+        <meta name="description" content="Exciting MEP job opportunities at VKBS. Join our team & advance your career in innovative engineering, project management, & sustainable solutions" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
        
       </Head>
 

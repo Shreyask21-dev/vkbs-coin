@@ -104,7 +104,14 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>VKBS</title>
+        
+        <title>India's Leading MEP Services & Consultants| VK Building Services</title>
+        <meta name="description" content="Explore VK Building Services, India's top MEP consultants. Offering turnkey MEP services for IT, healthcare, data centers, and more with innovation & expertise." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="canonical"
+            href="https://vkbs.in/"
+          />
       </Head>
 
 
@@ -565,6 +572,30 @@ export default function HomePage() {
             </SplideSlide>
             <SplideSlide>
               <div className="clientlogo-item">
+                <img src="/images/logo/citco.png"  alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/hal.png"  alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/bharatElectronics.png"  alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/myHomeGroup.png" style={{width:"50%"}} alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
                 <img src="/images/cisco-logo.png" alt="partners_logo"
                   className="img-responsive" />
               </div>
@@ -597,12 +628,12 @@ export default function HomePage() {
               </div>
             </SplideSlide>
 
-            <SplideSlide>
+            {/* <SplideSlide>
               <div className="clientlogo-item">
                 <img src="/images/hp.png" alt="partners_logo"
                   className="img-responsive" />
               </div>
-            </SplideSlide>
+            </SplideSlide> */}
 
           </Splide>
         </div>

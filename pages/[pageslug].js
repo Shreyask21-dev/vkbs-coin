@@ -30,12 +30,19 @@ export default function SinglePage({ PageApiResult }) {
   }, []);
 
 
-  console.log("PageApiResult", PageApiResult.data.page.slug)
+  // console.log("PageApiResult", PageApiResult.data.page)
+  console.log("title", PageApiResult?.data?.page?.seo?.title)
   if (PageApiResult.data.page !== null) {
     return (
       <>
         <Head>
-          <title>{PageApiResult?.data?.page?.title}</title>
+          <title>{PageApiResult?.data?.page?.seo?.title}</title>
+          <meta name="description" content={PageApiResult?.data?.page?.seo?.metaDesc} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="canonical"
+            href={`https://vkbs.in/${PageApiResult?.data?.page?.slug}/`}
+          />
           {/* <link rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${PageApiResult?.data?.page?.pageId}.css?ver=1736312194`} media="all" /> */}
         </Head>
         {/* Hero banner design */}
@@ -142,6 +149,10 @@ export async function getStaticProps({ params }) {
               pageId
               slug
               title
+              seo {
+                title
+                metaDesc
+              }
               content
               excerpt
               featuredImage {

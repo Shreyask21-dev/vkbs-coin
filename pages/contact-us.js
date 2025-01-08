@@ -41,6 +41,10 @@ export default function ContactUs({ LocationData }) {
     <>
       <Head>
 
+      <title>Contact VKBS - Connect with Us for Expert MEP Solutions</title>
+        <meta name="description" content="Reach out to VK Building Services for MEP solutions. Fill out the form or contact our branches in Mumbai, Hyderabad, Bengaluru, or Chennai for inquiries." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         {
           LocationData.map((item, index) => (
             <>

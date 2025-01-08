@@ -4,6 +4,7 @@ import nodemailer from 'nodemailer';
 export default async function handler(req, res) {
 
     require('dotenv').config()
+
     // Ensure the request method is POST
     if (req.method !== 'POST') {
         return res.status(405).json({ message: 'Method not allowed' });
@@ -17,8 +18,8 @@ export default async function handler(req, res) {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'vatsalyasagar8@gmail.com', // Your Outlook email address
-            pass: 'snbx ljdp zzst gbsk', // 
+            user: 'email@vkbs.in', // Your Outlook email address
+            pass:process.env.password
         },
         tls: {
             rejectUnauthorized: false, // Allow self-signed certificates

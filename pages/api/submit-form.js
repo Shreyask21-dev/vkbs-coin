@@ -15,8 +15,8 @@ export default async function handler(req, res) {
         port: 587,
         secure: false,
         auth: {
-            user: "vatsalyasagar8@gmail.com", // Your email
-            pass: "snbx ljdp zzst gbsk", // Your email password or app password
+            user: "email@vkbs.in", // Your email
+            pass:process.env.password
         },
         tls: {
             rejectUnauthorized: false,
@@ -26,7 +26,7 @@ export default async function handler(req, res) {
     const mailOptions = {
         from: 'VKBS Careers Enquiry <infoblr@vkbs.in>',
         to: 'careers@vkbs.in',
-        subject: 'New Enquiry from VKBS',
+        subject: 'New Careers Enquiry from VKBS',
         html: `
             <h2>New Enquiry from VKBS</h2>
             <p><strong>Name:</strong> ${firstName} ${lastName}</p>

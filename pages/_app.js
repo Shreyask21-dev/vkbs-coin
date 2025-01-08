@@ -86,13 +86,28 @@ export default function App({ Component, pageProps }) {
     <>
 
       <Head>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              "name": "www.vkbs.in",
+              "url": "https://www.vkbs.in/",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.vkbs.in/{search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+
+
+
         {getPageId && getPageId.map((pageID, index) => (
-          // <link
-          //   key={index}
-          //   rel="stylesheet"
-          //   href={`${BASEPATH}wp-content/uploads/elementor/css/post-${pageID}.css`}
-          // />
-          <link  key={index} rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${pageID}.css?ver=1736312194`} media="all" />
+          <link key={index} rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${pageID}.css?ver=1736312194`} media="all" />
         ))}
       </Head>
 
