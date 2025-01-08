@@ -69,11 +69,11 @@ export default function CareersIndex({carrersData}) {
         {/* Turnkey MEP Solutions */}
         <div className='section two-right'>
         <div className='container'>
-          <div className='row'>
-            <div className='col-lg-6'>
+          <div className='row d-flex justify-content-center align-items-center'>
+            <div className='col-lg-6 mt-3'>
               <img src='/images/careers.png' className='bg-exp-data' alt='' />
             </div>
-            <div className='col-lg-6'>
+            <div className='col-lg-6 mt-3'>
               <div className='inner-two'>
                 <h3>Disrupt, Innovate & Grow</h3>
                 <p className='justify'>Join VKBS and become part of a dynamic team dedicated to excellence, innovation, and sustainability. Here’s your opportunity to engage in transformative MEP engineering projects that redefine infrastructure and construction. From eco-friendly buildings to state-of-the-art technologies, your work will leave a lasting impact on communities and industries across the globe.<br/><br/>

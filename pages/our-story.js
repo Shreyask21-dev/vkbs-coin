@@ -154,7 +154,7 @@ export default function Companytimeline() {
       <div className='section two-left'>
         <div className='container'>
           {/* <div className='space5'></div> */}
-          <div className='row'>
+          <div className='row d-flex justify-content-center align-items-center'>
             <div className='col-lg-6'>
               <h3 className='innerTwoH3'>Our Story</h3>
               <div className='inner-two'>
@@ -222,10 +222,10 @@ export default function Companytimeline() {
       <div className='section two-right'>
         <div className='container'>
           <div className='row d-flex align-items-center'>
-            <div className='col-lg-6'>
+            <div className='col-lg-6 mt-3'>
               <img src='/images/guidline.jpg' className='bg-exp-data' alt='' />
             </div>
-            <div className='col-lg-6 d-flex align-items-center'>
+            <div className='col-lg-6 d-flex align-items-center mt-3'>
               <div>
                 <h3>Guiding Principles</h3>
 

@@ -6,9 +6,9 @@ export default function Document() {
       <Head>
         <link rel="icon" href='/images/favicon.png' sizes="40x40" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" crossOrigin="anonymous" />
-    
-       {/* elementor links start */}
-       <link rel='stylesheet' id='elementor-frontend-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.24.1' media='all' />
+
+        {/* elementor links start */}
+        {/* <link rel='stylesheet' id='elementor-frontend-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.24.1' media='all' />
        <link rel='stylesheet' id='swiper-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
        <link rel='stylesheet' id='e-swiper-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.24.1' media='all' />
        <link rel='stylesheet' id='eihe-front-style-css' href='https://vkbs.coinage.host/wp-content/plugins/image-hover-effects-addon-for-elementor/assets/style.min.css?ver=1.4.4' media='all' />
@@ -17,8 +17,21 @@ export default function Document() {
        <link rel='stylesheet' id='widget-text-editor-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.24.1' media='all' />
        <link rel='stylesheet' id='widget-icon-list-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.1' media='all' />
        <link rel='stylesheet' id='widget-image-box-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/css/widget-image-box.min.css?ver=3.24.1' media='all' />
-       <link rel='stylesheet' id='vkbs-style-css' href='https://vkbs.coinage.host/wp-content/themes/vkbs/style.css' media='all' />
+       <link rel='stylesheet' id='vkbs-style-css' href='https://vkbs.coinage.host/wp-content/themes/vkbs/style.css' media='all' /> */}
         {/* elementor links end */}
+
+
+        <link rel='stylesheet' id='elementor-frontend-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/css/frontend.min.css' media='all' />
+        <link rel='stylesheet' id='swiper-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css' media='all' />
+        <link rel='stylesheet' id='e-swiper-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css' media='all' />
+        <link rel='stylesheet' id='elementor-post-6-css' href='https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-6.css' media='all' />
+        <link rel='stylesheet' id='eihe-front-style-css' href='https://vkbs.coinage.host/wp-content/plugins/image-hover-effects-addon-for-elementor/assets/style.min.css' media='all' />
+        <link rel='stylesheet' id='widget-heading-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/css/widget-heading.min.css' media='all' />
+        <link rel='stylesheet' id='widget-text-editor-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css' media='all' />
+        <link rel='stylesheet' id='widget-icon-list-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css' media='all' />
+        <link rel='stylesheet' id='widget-image-box-css' href='https://vkbs.coinage.host/wp-content/plugins/elementor/assets/css/widget-image-box.min.css' media='all' />
+        <link rel='stylesheet' id='elementor-post-1301-css' href='https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-1301.css' media='all' />
+        <link rel='stylesheet' id='vkbs-style-css' href='https://vkbs.coinage.host/wp-content/themes/vkbs/style.css' media='all' />
 
         <meta httpEquiv="cache-control" content="no-cache" />
         <meta httpEquiv="expires" content="0" />

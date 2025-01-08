@@ -132,7 +132,7 @@ export default function HomePage() {
         <div className='container'>
           <div className='row px-2'>
 
-            <div className='col-lg-3 col-6 border'>
+            <div className='col-xl-3 col-lg-6 col-6 border'>
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   <img src='/images/building.png' className='countImage' alt='' />
@@ -142,7 +142,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className='col-lg-3 col-6'>
+            <div className='col-xl-3 col-lg-6 col-6'>
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   {/* <img src='/images/building.png' width='50' height='62' alt=''/> */}
@@ -153,7 +153,7 @@ export default function HomePage() {
             </div>
 
 
-            <div className='col-lg-3 col-6 border borderTop'>
+            <div className='col-xl-3 col-lg-6 col-6 border borderTop'>
               <div className='count-inner counter-center'>
                 <div className='d-flex'>
                   <img src='/images/man.png' className='countImage' alt='' />
@@ -165,7 +165,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className='col-lg-3 col-6 borderTop ps-4'>
+            <div className='col-xl-3 col-lg-6 col-6 borderTop ps-4'>
               <div className='count-inner-4 counter-center'>
                 <div className='d-flex'>
                   <img src='/images/location.png' className='countImage' alt='' />
@@ -181,11 +181,11 @@ export default function HomePage() {
       {/* Turnkey MEP Solutions */}
       <div className='section two-right'>
         <div className='container'>
-          <div className='row'>
-            <div className='col-lg-6'>
+          <div className='row d-flex justify-content-center align-items-center'>
+            <div className='col-lg-6 mt-3'>
               <img src='/images/building.jpg' className='bg-exp-data' alt='' />
             </div>
-            <div className='col-lg-6'>
+            <div className='col-lg-6 mt-3'>
               <div className='inner-two'>
                 <h6>What We do</h6>
                 <h3 className='IntegratedProjectDelivery'>Turnkey MEP Solutions</h3>
@@ -292,14 +292,14 @@ export default function HomePage() {
                   Each pillar is supported by specialized task forces that work seamlessly together, all powered by SAP S/4HANA. This integrated delivery mechanism guarantees the highest quality and efficiency in project execution, ensuring we meet and exceed our clients' expectations.
                 </p>
 
-              <div className='marginCenter'>
+                <div className='marginCenter'>
 
-                <Link href='/quality-assurance/'
-                  type="button"
-                  className="mt-2 btn btn-primary btn-rounded btn-lg ">
-                  Know More
-                </Link>
-              </div>
+                  <Link href='/quality-assurance/'
+                    type="button"
+                    className="mt-2 btn btn-primary btn-rounded btn-lg ">
+                    Know More
+                  </Link>
+                </div>
               </div>
             </div>
             <div className='col-lg-6'>
@@ -331,7 +331,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className='col-lg-6'>
-              <img src='/images/left.jpeg' style={{borderRadius: "15px", marginTop:"20px"}} alt='' />
+              <img src='/images/left.jpeg' style={{ borderRadius: "15px", marginTop: "20px" }} alt='' />
             </div>
           </div>
         </div>
@@ -344,7 +344,7 @@ export default function HomePage() {
           <div className='row mt-4' style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div className='col-lg-6'>
               {/* className='img-bg-exp-data' */}
-              <img src='/images/pipe.webp' style={{ borderRadius: "15px", marginBottom:"20px" }} alt='' />
+              <img src='/images/pipe.webp' style={{ borderRadius: "15px", marginBottom: "20px" }} alt='' />
             </div>
             <div className='col-lg-6'>
               <div className='inner-two'>
@@ -484,6 +484,85 @@ export default function HomePage() {
               // speed: 2200
             }}
             aria-label="customList">
+
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/amazon.png" alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/Nvidia.png" style={{width:"50%"}} alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/oracle.png" alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/isro.png" style={{width:"50%"}} alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/microsoft.png" alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/philips-logo.png" alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/tcs.png" style={{width:"50%"}} alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/taj.png" style={{width:"50%"}} alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/sattvalogo.png" style={{width:"50%"}} alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/manipal.png" alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/oberoi.png" alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/itc.png" style={{width:"50%"}} alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="clientlogo-item">
+                <img src="/images/logo/hpcl.png" style={{width:"50%"}} alt="partners_logo"
+                  className="img-responsive" />
+              </div>
+            </SplideSlide>
             <SplideSlide>
               <div className="clientlogo-item">
                 <img src="/images/cisco-logo.png" alt="partners_logo"

@@ -36,7 +36,7 @@ export default function SinglePage({ PageApiResult }) {
       <>
         <Head>
           <title>{PageApiResult?.data?.page?.title}</title>
-          <link rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${PageApiResult?.data?.page?.pageId}.css`} media="all" />
+          {/* <link rel="stylesheet" href={`https://vkbs.coinage.host/wp-content/uploads/elementor/css/post-${PageApiResult?.data?.page?.pageId}.css?ver=1736312194`} media="all" /> */}
         </Head>
         {/* Hero banner design */}
         <div className={`section inner-hero-banner ${PageApiResult.data.page.slug == 'team' && 'hide-team'}`}

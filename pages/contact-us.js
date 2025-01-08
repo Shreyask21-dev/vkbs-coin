@@ -158,16 +158,13 @@ export default function ContactUs({ LocationData }) {
         </div>
       </div>
 
-
-
-
       <div className='section enquiry'>
         <div className='container'>
           <div className='row'>
-            <div className='col-lg-7'>
+            <div className='col-lg-7 mt-3'>
               <EnquiryForm />
             </div>
-            <div className='col-lg-5'>
+            <div className='col-lg-5 mt-3'>
               <h6 className='innerTwoH3' >Social Media</h6>
               <div className='social-media'>
                 <a href="https://www.facebook.com/VKBuildingServices">
