@@ -505,7 +505,7 @@ export default function HomePage() {
             </SplideSlide>
             <SplideSlide>
               <div className="clientlogo-item">
-                <img src="/images/logo/isro.png" style={{width:"50%"}} alt="partners_logo"
+                <img src="/images/logo/ISRO.png" style={{width:"50%"}} alt="partners_logo"
                   className="img-responsive" />
               </div>
             </SplideSlide>
@@ -523,13 +523,13 @@ export default function HomePage() {
             </SplideSlide>
             <SplideSlide>
               <div className="clientlogo-item">
-                <img src="/images/logo/tcs.png" style={{width:"50%"}} alt="partners_logo"
+                <img src="/images/logo/TCS.png" style={{width:"50%"}} alt="partners_logo"
                   className="img-responsive" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="clientlogo-item">
-                <img src="/images/logo/taj.png" style={{width:"50%"}} alt="partners_logo"
+                <img src="/images/logo/Taj.png" style={{width:"50%"}} alt="partners_logo"
                   className="img-responsive" />
               </div>
             </SplideSlide>
@@ -541,25 +541,25 @@ export default function HomePage() {
             </SplideSlide>
             <SplideSlide>
               <div className="clientlogo-item">
-                <img src="/images/logo/manipal.png" alt="partners_logo"
+                <img src="/images/logo/Manipal.png" alt="partners_logo"
                   className="img-responsive" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="clientlogo-item">
-                <img src="/images/logo/oberoi.png" alt="partners_logo"
+                <img src="/images/logo/Oberoi.png" alt="partners_logo"
                   className="img-responsive" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="clientlogo-item">
-                <img src="/images/logo/itc.png" style={{width:"50%"}} alt="partners_logo"
+                <img src="/images/logo/ITC.png" style={{width:"50%"}} alt="partners_logo"
                   className="img-responsive" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="clientlogo-item">
-                <img src="/images/logo/hpcl.png" style={{width:"50%"}} alt="partners_logo"
+                <img src="/images/logo/HPCL.png" style={{width:"50%"}} alt="partners_logo"
                   className="img-responsive" />
               </div>
             </SplideSlide>
