@@ -486,7 +486,7 @@ export default function HomePage() {
               },
               rewind: true,
               autoplay: true,
-              interval: 6000,
+              interval: 2250,
               // type: 'fade',
               // speed: 2200
             }}
