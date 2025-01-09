@@ -578,7 +578,7 @@ export default function HomePage() {
             </SplideSlide>
             <SplideSlide>
               <div className="clientlogo-item">
-                <img src="/images/logo/hal.png"  alt="partners_logo"
+                <img src="/images/logo/HAL.png"  alt="partners_logo"
                   className="img-responsive" />
               </div>
             </SplideSlide>
