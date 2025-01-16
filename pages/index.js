@@ -105,8 +105,8 @@ export default function HomePage() {
     <>
       <Head>
         
-        <title>India's Leading MEP Services & Consultants| VK Building Services</title>
-        <meta name="description" content="Explore VK Building Services, India's top MEP consultants. Offering turnkey MEP services for IT, healthcare, data centers, and more with innovation & expertise." />
+        <title>India's Leading MEP Services & Contracting| VK Building Services</title>
+        <meta name="description" content="Explore VK Building Services, India's top MEP contracting. Offering turnkey MEP services for IT, healthcare, data centers, and more with innovation & expertise." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
             rel="canonical"

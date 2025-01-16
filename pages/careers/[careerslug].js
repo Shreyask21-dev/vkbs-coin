@@ -28,6 +28,12 @@ export default function CareersJobPage({ JobSingle }) {
     });
   };
 
+  const objectForm = {
+    location: JobSingle?.data?.career?.industryData?.location,
+    experience : JobSingle?.data?.career?.industryData?.year
+  }
+ 
+
 
   console.log("JobSingle->" , JobSingle)
   
@@ -107,7 +113,7 @@ export default function CareersJobPage({ JobSingle }) {
           <h3>Please fill in details to proceed</h3>
             <img src='/images/close.png' className='closeIcon' alt='close' onClick={handleCloseModal}/>
           </div>
-            <PopForm close={handleCloseModal}/>
+            <PopForm close={handleCloseModal} location={objectForm}/>
           </div>
         </div>
         </div>

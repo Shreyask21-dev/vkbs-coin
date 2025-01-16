@@ -2,13 +2,16 @@
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
+
+    console.log(req.body)
+    
     require('dotenv').config();
 
     if (req.method !== 'POST') {
         return res.status(405).json({ message: 'Method not allowed' });
     }
 
-    const { firstName, lastName, email, phone, country, city, pinCode, address } = req.body;
+    const { firstName, lastName, email, phone, country, city, pinCode, address, location, experience } = req.body;
 
     const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
@@ -28,7 +31,7 @@ export default async function handler(req, res) {
         to: 'careers@vkbs.in',
         subject: 'New Careers Enquiry from VKBS',
         html: `
-            <h2>New Enquiry from VKBS</h2>
+            <h2>New Careers Enquiry from VKBS</h2>
             <p><strong>Name:</strong> ${firstName} ${lastName}</p>
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Phone:</strong> ${phone}</p>
@@ -36,6 +39,8 @@ export default async function handler(req, res) {
             <p><strong>City:</strong> ${city}</p>
             <p><strong>Pin Code:</strong> ${pinCode}</p>
             <p><strong>Address:</strong> ${address}</p>
+            <p><strong>Location:</strong> ${location}</p>
+            <p><strong>Experience:</strong> ${experience}</p>
         `,
     };
 

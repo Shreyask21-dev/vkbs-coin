@@ -1,8 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 
-export default function PopForm({ close }) {
+export default function PopForm({ close, location }) {
+
+  useEffect(() => {
+    console.log(location)
+  }, [])
+  
 
   const [messageColor, setMessageColor] = useState("");
 
@@ -57,13 +62,16 @@ export default function PopForm({ close }) {
 
     setLoader("Loading");
 
+    // Merge formData with location fields
+    const submissionData = { ...formData, ...location };
+
     try {
       const response = await fetch("/api/submit-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(submissionData),
       });
 
       const result = await response.json();
