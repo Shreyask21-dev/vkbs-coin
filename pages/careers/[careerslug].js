@@ -30,7 +30,8 @@ export default function CareersJobPage({ JobSingle }) {
 
   const objectForm = {
     location: JobSingle?.data?.career?.industryData?.location,
-    experience : JobSingle?.data?.career?.industryData?.year
+    experience : JobSingle?.data?.career?.industryData?.year,
+    role :  JobSingle.data?.career?.title
   }
  
 
@@ -72,8 +73,8 @@ export default function CareersJobPage({ JobSingle }) {
               <h1 className='spaceH1'>{JobSingle.data?.career?.title}</h1>
               <div className='year-class'>
                 <ul>
-                  <li>{JobSingle?.data?.career?.industryData?.year}</li>
-                  <li>{JobSingle?.data?.career?.industryData?.mep}</li>
+                  <li>Exp : {JobSingle?.data?.career?.industryData?.year}</li>
+                  {/* <li>{JobSingle?.data?.career?.industryData?.mep}</li> */}
                 </ul>
               </div>
             </div>
