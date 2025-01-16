@@ -132,8 +132,8 @@ export default function CareersIndex({carrersData}) {
                                  <div className='job-title'>{item.title}</div>
                                  <div className='year-class'>
                                     <ul>
-                                        <li>{item?.industryData?.year}</li>
-                                        <li>{item?.industryData.mep}</li>
+                                        <li>Exp : {item?.industryData?.year}</li>
+                                        {/* <li>{item?.industryData.mep}</li> */}
                                     </ul>
                                  </div>
                                  <div className='job-description justify' dangerouslySetInnerHTML={{__html: `${item.excerpt}`}}></div>
