@@ -1,9 +1,8 @@
-// pages/api/submit-form.js
 import nodemailer from 'nodemailer';
+import path from 'path'; // Ensure path module is imported
 
 export default async function handler(req, res) {
-
-    console.log(req.body)
+    console.log(req.body);
 
     require('dotenv').config();
 
@@ -11,7 +10,25 @@ export default async function handler(req, res) {
         return res.status(405).json({ message: 'Method not allowed' });
     }
 
-    const { firstName, lastName, email, phone, country, city, pinCode, address, location, experience, role } = req.body;
+    // Extract filePath from the request body
+    const {
+        firstName,
+        lastName,
+        email,
+        phone,
+        country,
+        city,
+        pinCode,
+        address,
+        location,
+        experience,
+        role,
+        filePath, // Extracted filePath
+    } = req.body;
+
+    if (!filePath) {
+        return res.status(400).json({ success: false, message: 'File path is required.' });
+    }
 
     const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
@@ -19,7 +36,7 @@ export default async function handler(req, res) {
         secure: false,
         auth: {
             user: "email@vkbs.in", // Your email
-            pass: process.env.password
+            pass: process.env.password,
         },
         tls: {
             rejectUnauthorized: false,
@@ -28,10 +45,10 @@ export default async function handler(req, res) {
 
     const mailOptions = {
         from: 'VKBS Careers Enquiry <infoblr@vkbs.in>',
-        to: 'careers@vkbs.in',
+        to: 'shreyas.k@coinage.in',
         subject: 'New Job Enquiry from VKBS Website',
         html: `
-        <div>New Job Enquiry for role <strong>${role} </strong> at location <strong>${location}</strong> with experience between <strong>${experience}</strong> years </div>
+        <div>New Job Enquiry for role <strong>${location.role} </strong> at location <strong>${location.location}</strong> with experience between <strong>${location.experience}</strong> years </div>
         <table style="border-collapse: collapse; width: 100%; margin-top: 20px;">
             <tr>
                 <th style="text-align: left; padding: 8px; border: 1px solid #ddd;">Field</th>
@@ -67,12 +84,19 @@ export default async function handler(req, res) {
             </tr>
         </table>
     `,
+        attachments: [
+            {
+                filename: path.basename(filePath), // Extract the file name
+                path: path.resolve('public', filePath.replace(/^\/+/, '')), // Construct absolute path
+            },
+        ],
     };
 
     try {
         const info = await transporter.sendMail(mailOptions);
         return res.status(200).json({ success: true, message: 'Email sent successfully', info: info.response });
     } catch (error) {
+        console.error('Error sending email:', error);
         return res.status(500).json({ success: false, message: 'Error sending email', error: error.message });
     }
 }

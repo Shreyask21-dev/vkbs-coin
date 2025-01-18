@@ -7,7 +7,8 @@ export default function PopForm({ close, location }) {
   useEffect(() => {
     console.log(location)
   }, [])
-  
+
+  const [uploadedFilePath, setUploadedFilePath] = useState("");
 
   const [messageColor, setMessageColor] = useState("");
 
@@ -29,13 +30,113 @@ export default function PopForm({ close, location }) {
     setFormData({ ...formData, [name]: value });
   };
 
+
+  const [file, setFile] = useState(null);
+
+  // const handleFileChange = (e) => {
+  //   setFile(e.target.files[0]);
+  // };
+
+  // const handleFileChange = async (e) => {
+  //   const file = e.target.files[0];
+  //   setFile(file);
+
+  //   const formData = new FormData();
+  //   formData.append('file', file);
+
+  //   try {
+  //     const response = await fetch('/api/upload', {
+  //       method: 'POST',
+  //       body: formData,
+  //     });
+
+  //     const result = await response.json();
+  //     if (result.success) {
+  //       console.log('File uploaded successfully:', result.filePath);
+  //       alert('File uploaded successfully!');
+  //     } else {
+  //       console.error(result.message);
+  //       alert('File upload failed.');
+  //     }
+  //   } catch (error) {
+  //     console.error('Error uploading file:', error);
+  //     alert('An error occurred while uploading the file.');
+  //   }
+  // };
+
+  const handleFileChange = async (e) => {
+    const file = e.target.files[0];
+    const formData = new FormData();
+    formData.append('file', file);
+
+    try {
+      const response = await fetch('/api/upload', {
+        method: 'POST',
+        body: formData,
+      });
+      const result = await response.json();
+      if (result.success) {
+        console.log(result)
+        alert('File uploaded successfully!');
+        setUploadedFilePath(result.filePath); // Capture the uploaded file path
+      } else {
+        alert('File upload failed: ' + result.message);
+      }
+    } catch (error) {
+      console.error('Error uploading file:', error);
+      alert('Error uploading file.');
+    }
+  };
+
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   console.log("Uploaded File Path:", uploadedFilePath);
+  //   setLoader("Loading");
+
+  //   // Ensure all required fields are filled
+  //   for (let field in formData) {
+  //     if (!formData[field]) {
+  //       setLoader("Please fill out all required fields.");
+  //       setMessageColor("red");
+  //       return;
+  //     }
+  //   }
+
+  //   const submissionData = { ...formData, location, filePath: uploadedFilePath };
+
+  //   try {
+  //     const response = await fetch("/api/submit-form", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(submissionData),
+  //     });
+
+  //     const result = await response.json();
+  //     if (result.success) {
+  //       setLoader("Form submitted successfully!");
+  //       setMessageColor("green");
+  //       close();
+  //     } else {
+  //       setLoader(result.message);
+  //       setMessageColor("red");
+  //     }
+  //   } catch (error) {
+  //     setLoader("An error occurred: " + error.message);
+  //     setMessageColor("red");
+  //   } finally {
+  //     setLoader(false);
+  //   }
+  // };
+
   const handleSubmit = async (e) => {
-
-    setLoader("Loading")
-
     e.preventDefault();
+    console.log("Uploaded File Path:", uploadedFilePath);
+    setLoader("Loading");
 
-    // Check for empty fields
+    // Ensure all required fields are filled
     for (let field in formData) {
       if (!formData[field]) {
         setLoader("Please fill out all required fields.");
@@ -44,26 +145,23 @@ export default function PopForm({ close, location }) {
       }
     }
 
-    // Validate phone number
-    const phoneRegex = /^\d{10,15}$/;
-    if (!phoneRegex.test(formData.phone)) {
-      setLoader("Phone number must be between 10 to 15 digits and contain only numbers.");
-      setMessageColor("red");
-      return;
-    }
+     // Validate email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(formData.email)) {
+    setLoader("Please enter a valid email address.");
+    setMessageColor("red");
+    return;
+  }
 
-    // Validate email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      setLoader("Please enter a valid email address.");
-      setMessageColor("red");
-      return;
-    }
+  // Validate phone number
+  const phoneRegex = /^\d{10,15}$/;
+  if (!phoneRegex.test(formData.phone)) {
+    setLoader("Phone number must be between 10 to 15 digits and contain only numbers.");
+    setMessageColor("red");
+    return;
+  }
 
-    setLoader("Loading");
-
-    // Merge formData with location fields
-    const submissionData = { ...formData, ...location };
+    const submissionData = { ...formData, location, filePath: uploadedFilePath };
 
     try {
       const response = await fetch("/api/submit-form", {
@@ -75,25 +173,21 @@ export default function PopForm({ close, location }) {
       });
 
       const result = await response.json();
-
       if (result.success) {
-        // alert("Form submitted successfully!");
-        setLoader("Form submited")
-        setMessageColor("green");
-        close()
+        // Show alert and close form on "OK"
+        alert("Email sent successfully!");
+        close(); // Close the form using the provided `close` function
       } else {
-        setLoader(result.message)
+        setLoader(result.message);
         setMessageColor("red");
-        // alert("Error submitting form: " + result.message);
       }
     } catch (error) {
-      alert("An error occurred: " + error.message);
+      setLoader("An error occurred: " + error.message);
       setMessageColor("red");
+    } finally {
+      setLoader(false);
     }
-
-    setLoader(false);
   };
-
 
 
   return (
@@ -185,7 +279,7 @@ export default function PopForm({ close, location }) {
                     />
                   </div>
 
-                  <div class="col-12 mb-3">
+                  <div class="col-6 mb-3">
                     <input
                       type="text"
                       class="form-control custom-selecaddress"
@@ -194,6 +288,19 @@ export default function PopForm({ close, location }) {
                       value={formData.address}
                       onChange={handleChange}
                     />
+                  </div>
+
+                  <div className="col-6 mb-3">
+                    
+                    <input
+                      type="file"
+                      id="resumeUpload"
+                      className="form-control"
+                      onChange={handleFileChange}
+                    />
+                    <label htmlFor="resumeUpload" className="form-label text-dark mt-2 ms-2">
+                      Upload Your Resume
+                    </label>
                   </div>
 
                   <div className="btn-classes d-flex">
@@ -223,9 +330,9 @@ export default function PopForm({ close, location }) {
 
                   </div>
 
-                    {Loader && (
-                      <p style={{ color: messageColor, marginTop: "10px" }}>{Loader}</p>
-                    )}
+                  {Loader && (
+                    <p style={{ color: messageColor, marginTop: "10px" }}>{Loader}</p>
+                  )}
 
                 </div>
               </form>
