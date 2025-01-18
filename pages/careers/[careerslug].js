@@ -109,9 +109,9 @@ export default function CareersJobPage({ JobSingle }) {
        {showModal && (
         <div className='container'>
           <div className="modal-box">
-          <div className="modal-content-box">
+          <div className="modal-content-box mt-5">
           <div className='model-head d-flex-model'>
-          <h3>Please fill in details to proceed</h3>
+          <h3 className='ps-4'>Please fill in details to proceed</h3>
             <img src='/images/close.png' className='closeIcon' alt='close' onClick={handleCloseModal}/>
           </div>
             <PopForm close={handleCloseModal} location={objectForm}/>

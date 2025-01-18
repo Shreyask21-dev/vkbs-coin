@@ -35,6 +35,25 @@ export default function PopForm({ close, location }) {
 
   const handleFileChange = async (e) => {
     const file = e.target.files[0];
+
+    if (!file) {
+      alert("No file selected.");
+      return;
+    }
+  
+    // Validate file size (2 MB = 2 * 1024 * 1024 bytes)
+    if (file.size > 2 * 1024 * 1024) {
+      alert("File size must not exceed 2 MB.");
+      return;
+    }
+  
+    // Validate file type (MIME types for PDF and DOCX)
+    const validFileTypes = ["application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"];
+    if (!validFileTypes.includes(file.type)) {
+      alert("File type must be PDF or DOCX.");
+      return;
+    }
+
     const formData = new FormData();
     formData.append("file", file);
 
@@ -112,14 +131,14 @@ export default function PopForm({ close, location }) {
 
   return (
     <div>
-      <div className="container ">
+      <div className="container">
         <div className="col boderstylepop ">
           <div className="innersectionsty ">
             <div className="classy"></div>
             <div className="col-12 ">
               <form onSubmit={handleSubmit}>
                 <div className="row">
-                  <div className="col-6 mb-3 ">
+                  <div className="col-md-6 col-12 mb-3 ">
                     <input
                       type="text"
                       className="form-control custom-selecfirst"
@@ -129,7 +148,7 @@ export default function PopForm({ close, location }) {
                       onChange={handleChange}
                     />
                   </div>
-                  <div className="col-6 mb-3 classn">
+                  <div className="col-md-6 col-12 mb-3 classn">
                     <input
                       type="text"
                       className="form-control custom-selecfirst"
@@ -142,7 +161,7 @@ export default function PopForm({ close, location }) {
                 </div>
 
                 <div className="row">
-                  <div className="col-6  mb-3">
+                  <div className="col-md-6 col-12  mb-3">
                     <input
                       type="text"
                       className="form-control custom-selecee"
@@ -152,7 +171,7 @@ export default function PopForm({ close, location }) {
                       onChange={handleChange}
                     />
                   </div>
-                  <div className="col-6  mb-3">
+                  <div className="col-md-6 col-12  mb-3">
                     <input
                       type="text"
                       className="form-control custom-selecpp"
@@ -164,21 +183,8 @@ export default function PopForm({ close, location }) {
                   </div>
                 </div>
 
-                {/* <div className="row">
-                  <div className="col-12  mb-3">
-                    <input
-                      type="text"
-                      className="form-control custom-selecdd"
-                      placeholder="Select Country"
-                      name="country"
-                      value={formData.country}
-                      onChange={handleChange}
-                    />
-                  </div>
-                </div> */}
-
                 <div className="row">
-                  <div className="col-12 mb-3">
+                  <div className="col-md-12 col-12 mb-3">
                     <Select
                       options={countryOptions}
                       placeholder="Select Country"
@@ -194,7 +200,7 @@ export default function PopForm({ close, location }) {
                 </div>
 
                 <div className="row">
-                  <div className="col-6  mb-3">
+                  <div className="col-md-6 col-12  mb-3">
                     <input
                       type="text"
                       className="form-control custom-selecbuild"
@@ -204,7 +210,7 @@ export default function PopForm({ close, location }) {
                       onChange={handleChange}
                     />
                   </div>
-                  <div className="col-6  mb-3">
+                  <div className="col-md-6 col-12  mb-3">
                     <input
                       type="text"
                       className="form-control custom-selecsign"
@@ -214,7 +220,7 @@ export default function PopForm({ close, location }) {
                       onChange={handleChange}
                     />
                   </div>
-                  <div className="col-6 mb-3">
+                  <div className="col-md-6 col-12 mb-3">
                     <input
                       type="text"
                       className="form-control custom-selecaddress"
@@ -224,7 +230,7 @@ export default function PopForm({ close, location }) {
                       onChange={handleChange}
                     />
                   </div>
-                  <div className="col-6 mb-3">
+                  <div className="col-md-6 col-12 mb-3 ">
                     <input
                       type="file"
                       id="resumeUpload"
@@ -234,14 +240,14 @@ export default function PopForm({ close, location }) {
                     />
                     <label
                       htmlFor="resumeUpload"
-                      className="form-label text-dark mt-2 ms-2"
+                      className="form-label text-dark mt-2 ms-2 ps-2"
                     >
-                      Upload Your Resume
+                      Upload Your Resume ( PDF, Docx - Limit - 2mb )
                     </label>
                   </div>
                 </div>
 
-                <div className="row mb-3 d-flex justify-content-start">
+                <div className="row mb-3 d-flex justify-content-start ps-3">
                   <label
                     // htmlFor="captchaInput"
                     className="form-label text-dark me-2"

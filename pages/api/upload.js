@@ -17,6 +17,7 @@ export default async function handler(req, res) {
       const form = formidable({
         uploadDir, // Directory to save temporary files
         keepExtensions: true, // Keep file extensions
+        maxFileSize: 2 * 1024 * 1024, // 2 MB in bytes
       });
 
       // Ensure the upload directory exists
