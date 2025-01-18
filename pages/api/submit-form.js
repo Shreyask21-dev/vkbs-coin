@@ -47,7 +47,7 @@ export default async function handler(req, res) {
     to: "shreyas.k@coinage.in",
     subject: "New Job Enquiry from VKBS Website",
     html: `
-        <div>New Job Enquiry for role <strong>${role} </strong> at location <strong>${location}</strong> with experience between <strong>${experience}</strong> years</div>
+        <div>New Job Enquiry for role <strong>${location.role} </strong> at location <strong>${location.location}</strong> with experience between <strong>${location.experience}</strong> years</div>
         <table style="border-collapse: collapse; width: 100%; margin-top: 20px;">
             <tr>
                 <th style="text-align: left; padding: 8px; border: 1px solid #ddd;">Field</th>
