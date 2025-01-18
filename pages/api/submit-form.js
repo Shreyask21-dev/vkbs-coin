@@ -44,7 +44,7 @@ export default async function handler(req, res) {
 
   const mailOptions = {
     from: "VKBS Careers Enquiry <email@vkbs.in>",
-    to: "shreyas.k@coinage.in",
+    to: "careers@vkbs.in",
     subject: "New Job Enquiry from VKBS Website",
     html: `
         <div>New Job Enquiry for role <strong>${location.role} </strong> at location <strong>${location.location}</strong> with experience between <strong>${location.experience}</strong> years</div>
