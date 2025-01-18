@@ -295,6 +295,7 @@ export default function PopForm({ close, location }) {
                     <input
                       type="file"
                       id="resumeUpload"
+                      name="file"
                       className="form-control"
                       onChange={handleFileChange}
                     />
