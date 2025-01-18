@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
+import Select from "react-select";
+import countryList from "react-select-country-list";
 
 export default function PopForm({ close, location }) {
+
+  const countryOptions = countryList().getData().map((country) => ({ label: country.label, value: country.label }));
+
   useEffect(() => {
     console.log(location);
     generateCaptcha(); // Generate captcha when the component loads
@@ -159,7 +164,7 @@ export default function PopForm({ close, location }) {
                   </div>
                 </div>
 
-                <div className="row">
+                {/* <div className="row">
                   <div className="col-12  mb-3">
                     <input
                       type="text"
@@ -168,6 +173,22 @@ export default function PopForm({ close, location }) {
                       name="country"
                       value={formData.country}
                       onChange={handleChange}
+                    />
+                  </div>
+                </div> */}
+
+                <div className="row">
+                  <div className="col-12 mb-3">
+                    <Select
+                      options={countryOptions}
+                      placeholder="Select Country"
+                      value={countryOptions.find((option) => option.value === formData.country)}
+                      onChange={(selectedOption) =>
+                        handleChange({
+                          target: { name: "country", value: selectedOption.value },
+                        })
+                      }
+                      className="custom-selecdd"
                     />
                   </div>
                 </div>
@@ -221,6 +242,13 @@ export default function PopForm({ close, location }) {
                 </div>
 
                 <div className="row mb-3 d-flex justify-content-start">
+                  <label
+                    // htmlFor="captchaInput"
+                    className="form-label text-dark me-2"
+                    style={{ marginBottom: "0", fontWeight: "bold" }}
+                  >
+                    Enter CAPTCHA:
+                  </label>
                   <div className="col-auto d-flex align-items-center">
                     <div
                       style={{
@@ -259,7 +287,7 @@ export default function PopForm({ close, location }) {
                         Refresh
                       </button>
                     </div>
-                    <div style={{ display: "flex", alignItems: "center", marginTop: "10px", marginLeft:"2%" }}>
+                    <div style={{ display: "flex", alignItems: "center", marginTop: "10px", marginLeft: "2%" }}>
                       <input
                         type="text"
                         className="form-control"
