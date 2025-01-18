@@ -1,18 +1,16 @@
-import React, { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-
+import React, { useEffect, useState } from "react";
 
 export default function PopForm({ close, location }) {
-
   useEffect(() => {
-    console.log(location)
-  }, [])
+    console.log(location);
+    generateCaptcha(); // Generate captcha when the component loads
+  }, []);
 
   const [uploadedFilePath, setUploadedFilePath] = useState("");
-
   const [messageColor, setMessageColor] = useState("");
-
-  const [Loader, setLoader] = useState(false)
+  const [Loader, setLoader] = useState(false);
+  const [captchaInput, setCaptchaInput] = useState(""); // User input for CAPTCHA
+  const [captchaCode, setCaptchaCode] = useState(""); // CAPTCHA code to validate
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -30,109 +28,44 @@ export default function PopForm({ close, location }) {
     setFormData({ ...formData, [name]: value });
   };
 
-
-  const [file, setFile] = useState(null);
-
-  // const handleFileChange = (e) => {
-  //   setFile(e.target.files[0]);
-  // };
-
-  // const handleFileChange = async (e) => {
-  //   const file = e.target.files[0];
-  //   setFile(file);
-
-  //   const formData = new FormData();
-  //   formData.append('file', file);
-
-  //   try {
-  //     const response = await fetch('/api/upload', {
-  //       method: 'POST',
-  //       body: formData,
-  //     });
-
-  //     const result = await response.json();
-  //     if (result.success) {
-  //       console.log('File uploaded successfully:', result.filePath);
-  //       alert('File uploaded successfully!');
-  //     } else {
-  //       console.error(result.message);
-  //       alert('File upload failed.');
-  //     }
-  //   } catch (error) {
-  //     console.error('Error uploading file:', error);
-  //     alert('An error occurred while uploading the file.');
-  //   }
-  // };
-
   const handleFileChange = async (e) => {
     const file = e.target.files[0];
     const formData = new FormData();
-    formData.append('file', file);
+    formData.append("file", file);
 
     try {
-      const response = await fetch('/api/upload', {
-        method: 'POST',
+      const response = await fetch("/api/upload", {
+        method: "POST",
         body: formData,
       });
       const result = await response.json();
       if (result.success) {
-        console.log(result)
-        alert('File uploaded successfully!');
+        alert("File uploaded successfully!");
         setUploadedFilePath(result.filePath); // Capture the uploaded file path
       } else {
-        alert('File upload failed: ' + result.message);
+        alert("File upload failed: " + result.message);
       }
     } catch (error) {
-      console.error('Error uploading file:', error);
-      alert('Error uploading file.');
+      console.error("Error uploading file:", error);
+      alert("Error uploading file.");
     }
   };
 
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   console.log("Uploaded File Path:", uploadedFilePath);
-  //   setLoader("Loading");
-
-  //   // Ensure all required fields are filled
-  //   for (let field in formData) {
-  //     if (!formData[field]) {
-  //       setLoader("Please fill out all required fields.");
-  //       setMessageColor("red");
-  //       return;
-  //     }
-  //   }
-
-  //   const submissionData = { ...formData, location, filePath: uploadedFilePath };
-
-  //   try {
-  //     const response = await fetch("/api/submit-form", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(submissionData),
-  //     });
-
-  //     const result = await response.json();
-  //     if (result.success) {
-  //       setLoader("Form submitted successfully!");
-  //       setMessageColor("green");
-  //       close();
-  //     } else {
-  //       setLoader(result.message);
-  //       setMessageColor("red");
-  //     }
-  //   } catch (error) {
-  //     setLoader("An error occurred: " + error.message);
-  //     setMessageColor("red");
-  //   } finally {
-  //     setLoader(false);
-  //   }
-  // };
+  const generateCaptcha = () => {
+    const code = Math.random().toString(36).substring(2, 8).toUpperCase(); // Generate 6-character alphanumeric code
+    setCaptchaCode(code);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Validate CAPTCHA
+    if (captchaInput.toUpperCase() !== captchaCode) {
+      setLoader("Invalid CAPTCHA. Please try again.");
+      setMessageColor("red");
+      return;
+    }
+
     console.log("Uploaded File Path:", uploadedFilePath);
     setLoader("Loading");
 
@@ -144,22 +77,6 @@ export default function PopForm({ close, location }) {
         return;
       }
     }
-
-     // Validate email
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(formData.email)) {
-    setLoader("Please enter a valid email address.");
-    setMessageColor("red");
-    return;
-  }
-
-  // Validate phone number
-  const phoneRegex = /^\d{10,15}$/;
-  if (!phoneRegex.test(formData.phone)) {
-    setLoader("Phone number must be between 10 to 15 digits and contain only numbers.");
-    setMessageColor("red");
-    return;
-  }
 
     const submissionData = { ...formData, location, filePath: uploadedFilePath };
 
@@ -174,7 +91,6 @@ export default function PopForm({ close, location }) {
 
       const result = await response.json();
       if (result.success) {
-        // Show alert and close form on "OK"
         alert("Email sent successfully!");
         close(); // Close the form using the provided `close` function
       } else {
@@ -189,22 +105,19 @@ export default function PopForm({ close, location }) {
     }
   };
 
-
   return (
     <div>
-
       <div className="container ">
-        <div className="col  boderstylepop ">
-          <div className=" innersectionsty ">
-            <div className="classy">
-            </div>
-            <div className="col-12   ">
+        <div className="col boderstylepop ">
+          <div className="innersectionsty ">
+            <div className="classy"></div>
+            <div className="col-12 ">
               <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-6 mb-3 ">
                     <input
                       type="text"
-                      class="form-control custom-selecfirst"
+                      className="form-control custom-selecfirst"
                       placeholder="First Name"
                       name="firstName"
                       value={formData.firstName}
@@ -214,7 +127,7 @@ export default function PopForm({ close, location }) {
                   <div className="col-6 mb-3 classn">
                     <input
                       type="text"
-                      class="form-control custom-selecfirst"
+                      className="form-control custom-selecfirst"
                       placeholder="Last Name"
                       name="lastName"
                       value={formData.lastName}
@@ -223,33 +136,34 @@ export default function PopForm({ close, location }) {
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="col-6  mb-3">
+                <div className="row">
+                  <div className="col-6  mb-3">
                     <input
                       type="text"
-                      class="form-control custom-selecee"
-                      placeholder="email id"
+                      className="form-control custom-selecee"
+                      placeholder="Email ID"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
                     />
                   </div>
-                  <div class="col-6  mb-3">
+                  <div className="col-6  mb-3">
                     <input
                       type="text"
-                      class="form-control custom-selecpp"
-                      placeholder="contact no."
+                      className="form-control custom-selecpp"
+                      placeholder="Contact No."
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
                     />
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-12  mb-3">
+
+                <div className="row">
+                  <div className="col-12  mb-3">
                     <input
                       type="text"
-                      class="form-control custom-selecdd"
+                      className="form-control custom-selecdd"
                       placeholder="Select Country"
                       name="country"
                       value={formData.country}
@@ -257,41 +171,39 @@ export default function PopForm({ close, location }) {
                     />
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-6  mb-3">
+
+                <div className="row">
+                  <div className="col-6  mb-3">
                     <input
                       type="text"
-                      class="form-control custom-selecbuild"
-                      placeholder="city"
+                      className="form-control custom-selecbuild"
+                      placeholder="City"
                       name="city"
                       value={formData.city}
                       onChange={handleChange}
                     />
                   </div>
-                  <div class="col-6  mb-3">
+                  <div className="col-6  mb-3">
                     <input
                       type="text"
-                      class="form-control custom-selecsign "
-                      placeholder="Pin code"
+                      className="form-control custom-selecsign"
+                      placeholder="Pin Code"
                       name="pinCode"
                       value={formData.pinCode}
                       onChange={handleChange}
                     />
                   </div>
-
-                  <div class="col-6 mb-3">
+                  <div className="col-6 mb-3">
                     <input
                       type="text"
-                      class="form-control custom-selecaddress"
+                      className="form-control custom-selecaddress"
                       placeholder="Address"
                       name="address"
                       value={formData.address}
                       onChange={handleChange}
                     />
                   </div>
-
                   <div className="col-6 mb-3">
-                    
                     <input
                       type="file"
                       id="resumeUpload"
@@ -299,22 +211,84 @@ export default function PopForm({ close, location }) {
                       className="form-control"
                       onChange={handleFileChange}
                     />
-                    <label htmlFor="resumeUpload" className="form-label text-dark mt-2 ms-2">
+                    <label
+                      htmlFor="resumeUpload"
+                      className="form-label text-dark mt-2 ms-2"
+                    >
                       Upload Your Resume
                     </label>
                   </div>
+                </div>
 
-                  <div className="btn-classes d-flex">
-                    <button
-                      type="submit"
-                      className="mt-2 btn btn-primary btn-rounded btn-lg">
-                      Apply Now
-                    </button>
-                    <button
+                <div className="row mb-3 d-flex justify-content-start">
+                  <div className="col-auto d-flex align-items-center">
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                        padding: "8px 12px",
+                        backgroundColor: "#f8f9fa",
+                        borderRadius: "5px",
+                        border: "1px solid #ced4da",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontWeight: "bold",
+                          fontSize: "16px",
+                          color: "#495057",
+                          letterSpacing: "2px",
+                        }}
+                      >
+                        {captchaCode}
+                      </span>
+                      <button
+                        type="button"
+                        style={{
+                          backgroundColor: "#007bff",
+                          color: "white",
+                          border: "none",
+                          padding: "5px 10px",
+                          borderRadius: "3px",
+                          fontSize: "14px",
+                          cursor: "pointer",
+                        }}
+                        onClick={generateCaptcha}
+                      >
+                        Refresh
+                      </button>
+                    </div>
+                    <div style={{ display: "flex", alignItems: "center", marginTop: "10px", marginLeft:"2%" }}>
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Enter CAPTCHA"
+                        value={captchaInput}
+                        onChange={(e) => setCaptchaInput(e.target.value)}
+                        style={{
+                          width: "200px",
+                          marginRight: "10px", // Add some space between input and the next element
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
 
-                      type="button"
-                      className="mt-2 btn btn-lg"
-                      onClick={() => setFormData({
+
+
+                <div className="btn-classes d-flex">
+                  <button
+                    type="submit"
+                    className="mt-2 btn btn-primary btn-rounded btn-lg"
+                  >
+                    Apply Now
+                  </button>
+                  <button
+                    type="button"
+                    className="mt-2 btn btn-lg"
+                    onClick={() =>
+                      setFormData({
                         firstName: "",
                         lastName: "",
                         email: "",
@@ -323,26 +297,23 @@ export default function PopForm({ close, location }) {
                         city: "",
                         pinCode: "",
                         address: "",
-                      })}
-                    >
-                      Clear
-                    </button>
-
-
-                  </div>
-
-                  {Loader && (
-                    <p style={{ color: messageColor, marginTop: "10px" }}>{Loader}</p>
-                  )}
-
+                      })
+                    }
+                  >
+                    Clear
+                  </button>
                 </div>
-              </form>
 
+                {Loader && (
+                  <p style={{ color: messageColor, marginTop: "10px" }}>
+                    {Loader}
+                  </p>
+                )}
+              </form>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   );
 }
